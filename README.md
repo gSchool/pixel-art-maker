@@ -1,21 +1,21 @@
 # Assignment - Pixel Art Maker
 
-Create your own Pixel Art Maker, which lets you click on a grid to "paint" pixel art.  The interface is completely up to you, but it could look something like this:
+Create your own Pixel Art Paint Program, which lets you choose colors from a palette of your choice to "paint" pixel art. The interface is completely up to you, but it could look something like this:
 
-![Example of Pixel Art Maker](pixel-art-maker.png)
+![Example of Pixel Art Maker](pixel-art-maker-alt.png)
 
-It boils down to this: A user selects a color and clicks on pixels to paint them with the selected color.
+A user should be able to click on a color from their palette, allowing them to then be able click on individual pixels in a canvas area to paint them.
 
-Here's the order of steps that I would implement:
+Here's an example of a workflow that could be implemented:
 
-1. Get 10 or so small divs on the screen
-2. Add an event listener to each so that when I click on a pixel it turns red
-3. Add a color palette div with 2 colors(red and purple)which allows the user to set the current "paintbrush" color instead of it always being set to red
-4. Add the rest of the standard rainbow colors to the color palette
-5. Add enough divs to fill up the entire screen
+1. Create 10 or so small, white, square divs to start making a pixel canvas.
+2. Add an event listener to each so that when clicked on, that div's background turns red.
+3. Add a couple more square divs to make a palette. Begin with 2 background colors (red and blue), which allow the user to set the current "brush" color, instead of a pixel's background always turning red.
+4. Add the rest of the standard colors to your palette as well as an eraser. (Red, Orange, Yellow, Green, Blue, Purple, Black, Brown, White, etc.)
+5. Add more divs to expand the size of your pixel canvas.
 
-**Bonus Challenges:**
+### **Bonus Challenges:**
 
-* Add a color picker which allows the user to select any color. Look into the HTML5 color input.
-* Add the ability to click and drag to paint multiple pixels at once
-* Add a paintbucket tool which allows a user to drag a box across the screen and paint all pixels that fall inside that box
+* Pencil tool: Add the ability to click and drag to draw pencil lines
+* Selection tool: Add a tool which allows the user to drag across the screen and paint all pixels that fall inside the rectangular selection
+* Add a color picker which allows the user to select any color. Look into HTML5 color inputs
