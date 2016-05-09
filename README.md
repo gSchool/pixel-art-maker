@@ -16,6 +16,7 @@ Here's an example of a workflow that could be implemented:
 
 ### **Bonus Challenges:**
 
+* Color Palette: check out http://www.colors.commutercreative.com/grid/ for a list of all standard CSS colors
 * Pencil tool: Add the ability to click and drag to draw pencil lines
 * Selection tool: Add a tool which allows the user to drag across the screen and paint all pixels that fall inside the rectangular selection
 * Add a color picker which allows the user to select any color. Look into HTML5 color inputs
