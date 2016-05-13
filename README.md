@@ -25,11 +25,11 @@ Here's a development workflow that we recommend you use.
 
 ### Bonus 1
 
+Add a color picker which allows the user to select any color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
+
+### Bonus 2
+
 Add tools that augment the type of user interaction
 
 - Pencil tool: Click and drag across the canvas to paint pixels.
 - Selection tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
-
-### Bonus 2
-
-Add a color picker which allows the user to select any color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
