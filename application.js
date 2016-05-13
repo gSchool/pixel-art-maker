@@ -9,6 +9,7 @@ for (var i = 0; i < 2204; i++) {
   pixel.style.float = "left";
   pixel.style.backgroundColor = 'white';
   pixel.addEventListener('click',colorChange);
+  pixel.className = "pixel";
   document.querySelector('.canvass').appendChild(pixel);
 }
 
@@ -47,4 +48,18 @@ var colorIndicator = document.querySelector('.currentColor');
 
 window.addEventListener('click', function() {
   colorIndicator.style.backgroundColor = currentColor;
+});
+
+var canvass = document.querySelector('.canvass');
+
+function paintBrush (event) {
+  event.target.style.backgroundColor = currentColor;
+}
+
+canvass.addEventListener('mousedown', function() {
+  this.addEventListener('mouseover', paintBrush);
+});
+
+canvass.addEventListener('mouseup', function() {
+  this.removeEventListener('mouseover', paintBrush);
 });
