@@ -9,7 +9,7 @@ More specifically, your pixel art maker should allow a user to do the following.
 1. Start with a blank canvas of "pixels".
 1. Select a color from a palette.
 1. Paint the pixels on the canvas using the selected color.
-1. Repeat step 4.
+1. Repeat step 2.
 
 Here's a development workflow that we recommend you use.
 
