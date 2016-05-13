@@ -1,18 +1,23 @@
-# Assignment - Pixel Art Maker
+# Pixel Art Maker
 
-Create your own Pixel Art Paint Program, which lets you choose colors from a palette of your choice to "paint" pixel art. The interface is completely up to you, but it could look something like this:
+In this exercise, you'll create your own pixel art maker which lets you choose colors from a palette and then "paint" pixel art. The interface is completely up to you, but it could look something like this.
 
 ![Example of Pixel Art Maker](pixel-art-maker-alt.png)
 
-A user should be able to click on a color from their palette, allowing them to then be able click on individual pixels in a canvas area to paint them.
+A user should be able to:
 
-Here's an example of a workflow that could be implemented:
+1. Start with a blank canvas of "pixels"
+1. Select a color from a palette
+1. Paint the pixels on the canvas using the selected color
 
-1. Create 10 or so small, white, square divs to start making a pixel canvas.
-2. Add an event listener to each so that when clicked on, that div's background turns red.
-3. Add a couple more square divs to make a palette. Begin with 2 background colors (red and blue), which allow the user to set the current "brush" color, instead of a pixel's background always turning red.
-4. Add the rest of the standard colors to your palette as well as an eraser. (Red, Orange, Yellow, Green, Blue, Purple, Black, Brown, White, etc.)
-5. Add more divs to expand the size of your pixel canvas.
+Here's a development workflow that we recommend you use.
+
+1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
+1. Add an event listener to each `div` so when clicked the background turns red.
+1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
+1. Add an event listener to these `div` tags so when clicked the current "brush" color is stored in memory.
+1. Expand the dimensions of the pixel canvas.
+1. Expand the palette with the rest of the standard colors as well as an eraser. (Red, Orange, Yellow, Green, Blue, Purple, Black, Brown, White, etc.)
 
 ### **Bonus Challenges:**
 
