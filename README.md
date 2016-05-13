@@ -37,7 +37,7 @@ Add tools that augment the type of user interaction
 
 ### Deployment
 
-Read over the following articles on the Surge platform and then deploy your website to Surge.
+Review the following articles on the Surge platform and then deploy your website.
 
 - [Getting started with Surge](http://surge.sh/help/getting-started-with-surge)
 - [Remembering a domain](http://surge.sh/help/remembering-a-domain)
