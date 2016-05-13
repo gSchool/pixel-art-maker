@@ -12,6 +12,7 @@ More specifically, your pixel art maker should allow a user to do the following.
 
 Here's a development workflow that we recommend you use.
 
+1. Fork and clone this repository.
 1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
 1. Add an event listener to each `div` so when clicked the background turns red.
 1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
