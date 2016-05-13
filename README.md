@@ -17,11 +17,12 @@ Here's a development workflow that we recommend you use.
 1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
 1. Add an event listener to these `div` tags so when clicked the current "brush" color is remembered.
 1. Expand the dimensions of the pixel canvas.
-1. Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, black, brown, white, etc.)
+1. Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
+
+**TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
 
 ### **Bonus Challenges:**
 
-* Color Palette: check out http://www.colors.commutercreative.com/grid/ for a list of all standard CSS colors
 * Pencil tool: Add the ability to click and drag to draw pencil lines
 * Selection tool: Add a tool which allows the user to drag across the screen and paint all pixels that fall inside the rectangular selection
 * Add a color picker which allows the user to select any color. Look into HTML5 color inputs
