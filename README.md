@@ -34,3 +34,14 @@ Add tools that augment the type of user interaction
 
 - Pencil tool: Click and drag across the canvas to paint pixels.
 - Selection tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
+
+### Deployment
+
+Read over the following articles on how to deploy this web site to Surge.
+
+- [Getting started with Surge](http://surge.sh/help/getting-started-with-surge)
+- [Remembering a domain](http://surge.sh/help/remembering-a-domain)
+
+A good domain name for this project is `USERNAME-pixel-art-maker.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy the URL to your site and paste it below.
+
+PASTE YOUR SURGE URL HERE
