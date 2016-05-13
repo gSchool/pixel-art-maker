@@ -2,13 +2,14 @@ body {
   margin:0;
   height:900px;
   min-width: 1680px;
+  background-color: black;
 }
 
 .container {
   width: 80%;
   height:99%;
   margin:1% auto auto auto;
-  background-color: gray;
+  background-color: black;
   position:relative;
 }
 
@@ -24,7 +25,7 @@ body {
   height:9%;
   width:88.7%;
   margin:auto;
-  background-color:lightgray;
+  background-color:black;
 }
 
 input {
@@ -40,6 +41,7 @@ p.custom {
   font-size: 20px;
   right:115px;
   bottom:-4px;
+  color:white;
 }
 
 p.current {
@@ -47,6 +49,7 @@ p.current {
   font-size: 20px;
   right:270px;
   bottom:-4px;
+  color:white;
 }
 
 div.currentColor {
@@ -57,5 +60,5 @@ div.currentColor {
   width:5.5%;
   height:3%;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid white;
 }
