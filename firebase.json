@@ -1,0 +1,9 @@
+{
+  "firebase": "pixel-art-maker-jstafford",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
