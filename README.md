@@ -34,7 +34,7 @@ Add a color picker which allows the user to select any color using the [`<input 
 Add tools that augment the type of user interaction
 
 - Pencil tool: Click and drag across the canvas to paint pixels.
-- Selection tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
+- Rectangle tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
 
 ### Deployment
 
