@@ -32,4 +32,4 @@ Add tools that augment the type of user interaction
 
 ### Bonus 2
 
-Add a color picker which allows the user to select any color using the new, HTML5 [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
+Add a color picker which allows the user to select any color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
