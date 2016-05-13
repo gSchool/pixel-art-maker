@@ -19,6 +19,7 @@ Here's a development workflow that we recommend you use.
 1. Add an event listener to these `div` tags so when clicked the current "brush" color is remembered.
 1. Expand the dimensions of the pixel canvas.
 1. Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
+1. Create a current color indicator so the user knows which color was last selected.
 1. Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
 
 **TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
