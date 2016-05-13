@@ -1,0 +1,64 @@
+body {
+  margin:0;
+  height:900px;
+  min-width: 1680px;
+  background-color: black;
+}
+
+.container {
+  width: 80%;
+  height:99%;
+  margin:1% auto auto auto;
+  background-color: black;
+  position:relative;
+}
+
+.canvass {
+  border-top:1px solid black;
+  width:90.625%;
+  height:90%;
+  margin:2% auto auto auto;
+}
+
+.palette {
+  border: 1px solid black;
+  height:9%;
+  width:88.7%;
+  margin:auto;
+  background-color:black;
+}
+
+input {
+  right:80px;
+  bottom:11px;
+  height:3.3%;
+  width:2%;
+  position: absolute;
+}
+
+p.custom {
+  position: absolute;
+  font-size: 20px;
+  right:115px;
+  bottom:-4px;
+  color:white;
+}
+
+p.current {
+  position: absolute;
+  font-size: 20px;
+  right:270px;
+  bottom:-4px;
+  color:white;
+}
+
+div.currentColor {
+  position: absolute;
+  font-size: 20px;
+  right:192px;
+  bottom:12px;
+  width:5.5%;
+  height:3%;
+  background-color: black;
+  border: 1px solid white;
+}
