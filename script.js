@@ -1,6 +1,3 @@
-
-
-
 //creates the pixel boxes and assigns class attribute
 var pixelBox = document.createElement('div');
 pixelBox.setAttribute('class', 'pixelBox');
@@ -21,7 +18,10 @@ while (numberOfBoxes < 2100) { //row is 84 pixels long
   numberOfBoxes +=1;
 }
 
-//this function handles filling pixel box with color when clicked
+//WORK ON: POPULATE THE CONTAINER DIV USING TWO FOR LOOPS
+
+
+
 
 
 //creates the palette of colors below the grid
@@ -37,61 +37,39 @@ while (numberOfColors < 26) {
   numberOfColors +=1;
 }
 
+//create the current color div
+var currentColorDiv = document.createElement('h1');
+currentColorDiv.setAttribute('id', 'currentColorDiv');
+palette.appendChild(currentColorDiv);
+currentColorDiv.innerHTML = "Current Color";
+var currentColorPaletteCircle = pixelBox.cloneNode(true);
+palette.appendChild(currentColorPaletteCircle);
+currentColorPaletteCircle.setAttribute('id', 'currentColorPaletteCircle');
 
 
 // Add an event listener to these `div` tags so when clicked tiggers setCurrentColor().
-  //--> onClick, this.color is stored in a variable and displayed in a new div
-  var currentColor = "red";
-  function setCurrentColor() {
-    console.log("paletteCircleClone was clicked");
-    currentColor = this.style.backgroundColor;
-  }
+//--> onClick, this.color is stored in a variable and displayed in a new div
+var currentColor = "red";
+function setCurrentColor() {
+  console.log("paletteCircleClone was clicked");
+  currentColor = this.style.backgroundColor;
+  currentColorPaletteCircle.style.backgroundColor = currentColor;
+}
 
-  function addColor() {
-      //changes the background color
-      console.log("pixel box was clicked");
-      this.style.backgroundColor = currentColor;
-  }
+function addColor() {
+    //changes the background color
+    console.log("pixel box was clicked");
+    this.style.backgroundColor = currentColor;
+}
 
-
-  function colorAssignment() {
-    var colorCircles = document.getElementsByClassName('paletteCircle');
-    var theColors = ["lightgreen", "seagreen", "darkgreen", "darkseagreen", "violet", "orchid", "magenta", "darkmagenta", "aqua", "skyblue", "royalblue", "blue", "navy", "yellow", "gold", "tan", "orange", "salmon", "lightsalmon", "firebrick", "crimson", "maroon", "lightgray", "gray", "darkgray", "black"];
-    //nested for loops; assign colors to colorCircles from theColors array
-    for (var i = 0; i <colorCircles.length; i++) {
-      for (var j = 0; j < theColors.length; j++) {
-        colorCircles[i].style.backgroundColor = theColors[i];
-      }
+function colorAssignment() {
+  var colorCircles = document.getElementsByClassName('paletteCircle');
+  var theColors = ["lightgreen", "seagreen", "darkgreen", "darkseagreen", "violet", "orchid", "magenta", "darkmagenta", "aqua", "skyblue", "royalblue", "blue", "navy", "yellow", "gold", "tan", "orange", "salmon", "lightsalmon", "firebrick", "crimson",  "brown", "maroon", "gray", "darkgray", "black"];
+  //nested for loops; assign colors to colorCircles from theColors array
+  for (var i = 0; i <colorCircles.length; i++) {
+    for (var j = 0; j < theColors.length; j++) {
+      colorCircles[i].style.backgroundColor = theColors[i];
     }
   }
-  colorAssignment();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Expand the dimensions of the pixel canvas.
-// Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
-// Expand the palette with a current color indicator so the user knows which color was last selected.
-// Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
+}
+colorAssignment();
