@@ -21,8 +21,13 @@ Here's a development workflow that we recommend you use.
 
 **TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
 
-### **Bonus Challenges:**
+### Bonus 1
 
-* Pencil tool: Add the ability to click and drag to draw pencil lines
-* Selection tool: Add a tool which allows the user to drag across the screen and paint all pixels that fall inside the rectangular selection
-* Add a color picker which allows the user to select any color. Look into HTML5 color inputs
+Add tools that augment the type of user interaction
+
+* Pencil tool: Click and drag across the canvas to paint pixels.
+* Selection tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
+
+### Bonus 2
+
+Add a color picker which allows the user to select any color using the new, HTML5 `<input type="color">` tag. See the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) more information.
