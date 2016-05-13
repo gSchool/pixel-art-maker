@@ -4,20 +4,20 @@ In this exercise, you'll create your own pixel art maker which allows a user cho
 
 ![Example of Pixel Art Maker](pixel-art-maker-alt.png)
 
-A user should be able to:
+More specifically, your pixel art maker should allow a user should to do the following.
 
-1. Start with a blank canvas of "pixels"
-1. Select a color from a palette
-1. Paint the pixels on the canvas using the selected color
+1. Start with a blank canvas of "pixels".
+1. Select a color from a palette.
+1. Paint the pixels on the canvas using the selected color.
 
 Here's a development workflow that we recommend you use.
 
 1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
 1. Add an event listener to each `div` so when clicked the background turns red.
 1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
-1. Add an event listener to these `div` tags so when clicked the current "brush" color is stored in memory.
+1. Add an event listener to these `div` tags so when clicked the current "brush" color is remembered.
 1. Expand the dimensions of the pixel canvas.
-1. Expand the palette with the rest of the standard colors as well as an eraser. (Red, Orange, Yellow, Green, Blue, Purple, Black, Brown, White, etc.)
+1. Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, black, brown, white, etc.)
 
 ### **Bonus Challenges:**
 
