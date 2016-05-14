@@ -21,16 +21,19 @@ function createRow() {
     divC.style.backgroundColor = "orange";
     divC.style.border = ".25px black solid";
     divC.addEventListener('click', colorToggle);
+    divC.style.display = "border-box";
+    divC.setAttribute("class", "paint");
     containerDiv.appendChild(divC);
 
   }
 
   function colorToggle(event){
-    var hasColor = false;
-    if (hasColor === false) {
+    document.getElementsByClassName("paint");
+    var hasColor = true;
+    if (document.getElementsByClassName("paint") === true && hasColor === false) {
       //give color
       event.target.style.backgroundColor = "white";
-      hasColor = true;
+      var hasColor = true;
     } else {
       event.target.style.backgroundColor = "black";
       hasColor = false;
@@ -40,32 +43,25 @@ function createRow() {
 
   function palette() {
     var colorPallette = document.createElement('div');
-    colorPallette.setAttribute("class", "Pallette");
-    var palletDiv = document.getElementsByClassName('Pallette');
+    var classPallet = colorPallette.setAttribute("class", 'Pallette');
+    //var palletDiv = document.getElementsByClassName("classPallet");
     document.body.appendChild(colorPallette);
-    palletDiv.style.width = '30%';
-    palletDiv.style.height = '500px';
-    palletDiv.style.backgroundColor = "grey";
-    palletDiv. style.float = 'left';
-    palletDiv.addEventListener('click', colorToggle);
-    console.log(palletDiv);
+
 
      for(var i = 0; i < 8; i++) {
       var colorDiv = document.createElement('div');
-      palletDiv.appendChild(colorDiv);
-      colorDiv.style.width = '25px';
+      colorPallette.appendChild(colorDiv);
+      colorDiv.style.width = '100%';
       colorDiv.style.height = '25px';
       colorDiv.style.backgroundColor = "red";
-      colorDiv. style.float = 'left';
+      //colorDiv. style.float = 'left';
      }
-
-
-
-
-
-
-
-
+     colorPallette.style.width = '30%';
+     colorPallette.style.height = '500px';
+     colorPallette.style.backgroundColor = "grey";
+     colorPallette. style.float = 'right';
+     colorPallette.addEventListener('click', colorToggle);
+     //console.log(palletDiv);
   }
   palette();
 
