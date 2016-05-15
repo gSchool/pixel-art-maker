@@ -20,20 +20,20 @@ var hasColor;
     divC.style.width = "2.5%";
     divC.style.backgroundColor = "orange";
     divC.style.border = ".25px black solid";
-    divC.addEventListener('click', colorToggle);
+    divC.addEventListener('click', selectColor);
     divC.style.display = "border-box";
     divC.setAttribute("id", "paint");
     containerDiv.appendChild(divC);
   }
-
+var b;
   function colorToggle(event){
     var painter = document.getElementById("paint");
-    var b = document.getElementById('Blue');
-    var attribute = b.style.backgroundColor;
-      if (painter) {
-        event.target.style.backgroundColor = attribute;
+    b = event.target.style.backgroundColor;
+    //var attribute = b.style.backgroundColor;
+      // if (painter) {
+        event.target.style.backgroundColor = b;
 
-      }
+      //}
   }
 
   function palette() {
@@ -56,15 +56,14 @@ var hasColor;
      colorPallette.style.height = '500px';
      colorPallette.style.backgroundColor = "grey";
      colorPallette. style.float = 'right';
-     colorPallette.addEventListener('click', selectColor);
+     colorPallette.addEventListener('click', colorToggle);
      //console.log(palletDiv);
   }
   palette();
 
   function selectColor(event) {
-    var b = document.getElementById();
-    var attribute = b.style.backgroundColor;
-    event.target.style.backgroundColor = attribute;
+
+    event.target.style.backgroundColor = b;
   }
 
 
