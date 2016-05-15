@@ -69,18 +69,14 @@ var drawPalette = function() {
     palette.appendChild(color);
   }
 
-  var selection = document.createElement('div');
-  selection.className = 'selection';
-
   var heading = document.createElement('h2');
   heading.textContent = 'CURRENT COLOR >';
 
   var current = document.createElement('div');
   current.className = 'current';
 
-  selection.appendChild(heading);
-  selection.appendChild(current);
-  palette.appendChild(selection);
+  palette.appendChild(heading);
+  palette.appendChild(current);
 
   palette.addEventListener('click', function(event) {
     if (event.target.className !== 'color') {
