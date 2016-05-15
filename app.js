@@ -70,13 +70,13 @@ var drawPalette = function() {
   }
 
   var heading = document.createElement('h2');
-  heading.textContent = 'CURRENT COLOR >';
+  heading.textContent = 'BRUSH COLOR >';
 
-  var current = document.createElement('div');
-  current.className = 'current';
+  var brushColor = document.createElement('div');
+  brushColor.className = 'brushColor';
 
   palette.appendChild(heading);
-  palette.appendChild(current);
+  palette.appendChild(brushColor);
 
   palette.addEventListener('click', function(event) {
     if (event.target.className !== 'color') {
@@ -84,7 +84,7 @@ var drawPalette = function() {
     }
 
     brush = event.target.style.background;
-    current.style.background = brush;
+    brushColor.style.background = brush;
   });
 }
 
