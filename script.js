@@ -12,7 +12,7 @@ containerDiv.style.marginLeft = "25px";
 
 
 function createRow() {
-
+var hasColor;
   for(var i = 0; i < 1190; i++) {
     var divC = document.createElement('div');
     divC.style.float = "left";
@@ -22,62 +22,50 @@ function createRow() {
     divC.style.border = ".25px black solid";
     divC.addEventListener('click', colorToggle);
     divC.style.display = "border-box";
-    divC.setAttribute("class", "paint");
+    divC.setAttribute("id", "paint");
     containerDiv.appendChild(divC);
-
   }
 
   function colorToggle(event){
-    document.getElementsByClassName("paint");
-    var hasColor = true;
-    if (document.getElementsByClassName("paint") === true && hasColor === false) {
-      //give color
-      event.target.style.backgroundColor = "white";
-      var hasColor = true;
-    } else {
-      event.target.style.backgroundColor = "black";
-      hasColor = false;
+    var painter = document.getElementById("paint");
+    var b = document.getElementById('Blue');
+    var attribute = b.style.backgroundColor;
+      if (painter) {
+        event.target.style.backgroundColor = attribute;
 
-    }
+      }
   }
 
   function palette() {
-    var colorPallette = document.createElement('div');
+    var colorPallette = document.createElement('aside');
     var classPallet = colorPallette.setAttribute("class", 'Pallette');
     //var palletDiv = document.getElementsByClassName("classPallet");
     document.body.appendChild(colorPallette);
 
-
-     for(var i = 0; i < 8; i++) {
-      var colorDiv = document.createElement('div');
+     var paletteArray = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Black", "White"];
+     for(var i = 0; i < paletteArray.length; i++) {
+      var colorDiv = document.createElement('button');
       colorPallette.appendChild(colorDiv);
+      colorDiv.setAttribute('Id', [i]);
       colorDiv.style.width = '100%';
       colorDiv.style.height = '25px';
-      colorDiv.style.backgroundColor = "red";
+      colorDiv.style.backgroundColor = paletteArray[i];
       //colorDiv. style.float = 'left';
      }
      colorPallette.style.width = '30%';
      colorPallette.style.height = '500px';
      colorPallette.style.backgroundColor = "grey";
      colorPallette. style.float = 'right';
-     colorPallette.addEventListener('click', colorToggle);
+     colorPallette.addEventListener('click', selectColor);
      //console.log(palletDiv);
   }
   palette();
 
-
-// function colorSelect(event) {
-//   var event.target.style.backgroundColor = "red";
-//   var event.target.style.backgroundColor = "orange";
-//   var event.target.style.backgroundColor = "yellow";
-//   var event.target.style.backgroundColor = "green";
-//   var event.target.style.backgroundColor = "blue";
-//   var event.target.style.backgroundColor = "purple";
-//   var event.target.style.backgroundColor = "white";
-//   var event.target.style.backgroundColor = "black";
-//
-// }
-// colorSelect();
+  function selectColor(event) {
+    var b = document.getElementById();
+    var attribute = b.style.backgroundColor;
+    event.target.style.backgroundColor = attribute;
+  }
 
 
 }
