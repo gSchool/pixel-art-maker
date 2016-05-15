@@ -1,22 +1,48 @@
-# Assignment - Pixel Art Maker
+# Pixel Art Maker
 
-Create your own Pixel Art Paint Program, which lets you choose colors from a palette of your choice to "paint" pixel art. The interface is completely up to you, but it could look something like this:
+In this exercise, you'll create your own pixel art maker which will allow a user to choose colors from a palette and then "paint" pixel art. The interface is completely up to you, but it could look something like this.
 
 ![Example of Pixel Art Maker](pixel-art-maker-alt.png)
 
-A user should be able to click on a color from their palette, allowing them to then be able click on individual pixels in a canvas area to paint them.
+More specifically, your pixel art maker should allow a user to do the following.
 
-Here's an example of a workflow that could be implemented:
+1. Start with a blank canvas of "pixels".
+1. Select a color from a palette.
+1. Paint the pixels on the canvas using the selected color.
+1. Repeat step 2.
 
-1. Create 10 or so small, white, square divs to start making a pixel canvas.
-2. Add an event listener to each so that when clicked on, that div's background turns red.
-3. Add a couple more square divs to make a palette. Begin with 2 background colors (red and blue), which allow the user to set the current "brush" color, instead of a pixel's background always turning red.
-4. Add the rest of the standard colors to your palette as well as an eraser. (Red, Orange, Yellow, Green, Blue, Purple, Black, Brown, White, etc.)
-5. Add more divs to expand the size of your pixel canvas.
+Here's a development workflow that we recommend you use.
 
-### **Bonus Challenges:**
+1. Fork and clone this repository.
+1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
+1. Add an event listener to each `div` so when clicked the background turns red.
+1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
+1. Add an event listener to these `div` tags so when clicked the current "brush" color is remembered.
+1. Expand the dimensions of the pixel canvas.
+1. Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
+1. Expand the palette with a current color indicator so the user knows which color was last selected.
+1. Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
 
-* Color Palette: check out http://www.colors.commutercreative.com/grid/ for a list of all standard CSS colors
-* Pencil tool: Add the ability to click and drag to draw pencil lines
-* Selection tool: Add a tool which allows the user to drag across the screen and paint all pixels that fall inside the rectangular selection
-* Add a color picker which allows the user to select any color. Look into HTML5 color inputs
+**TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
+
+### Bonus 1
+
+Add a color picker which allows the user to select any color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
+
+### Bonus 2
+
+Add tools that augment the type of user interaction
+
+- Pencil tool: Click and drag across the canvas to paint pixels.
+- Rectangle tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
+
+### Deployment
+
+Review the following articles on the Surge platform and then deploy your website to production.
+
+- [Getting started with Surge](http://surge.sh/help/getting-started-with-surge)
+- [Remembering a domain](http://surge.sh/help/remembering-a-domain)
+
+A good domain name for this project is `USERNAME-pixel-art-maker.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy the URL to your site and paste it below.
+
+PASTE YOUR PRODUCTION URL HERE
