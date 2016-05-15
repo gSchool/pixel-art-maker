@@ -33,7 +33,7 @@ for(var i = 0; i < 2500; i++){
   pixel[i].style.borderTop = "1px solid grey";
   pixel[i].style.borderLeft = "1px solid grey";
   pixel[i].setAttribute("id", "p"+i);
-  if((i+1) % 50 ===0){
+  if((i+1) % 50 === 0){
     pixel[i].style.borderRight = "1px solid grey";
   }
   if(i>=2450){
@@ -147,11 +147,13 @@ function borderDelete(event){
   var bottomNeighbor = pixel[String(Number(event.target.id.slice(1)) + 50)];
   var leftNeighbor = pixel[String(Number(event.target.id.slice(1)) - 1)];
   var rightNeighbor = pixel[String(Number(event.target.id.slice(1)) + 1)];
+  console.log(leftNeighbor);
   if(topNeighbor !== undefined){
     if(event.target.style.backgroundColor === topNeighbor.style.backgroundColor){
       event.target.style.borderTop = "0";
-  }else{
+    }else{
       event.target.style.borderTop = "1px solid grey";
+    }
   }
   if(leftNeighbor !== undefined){
     if(event.target.style.backgroundColor === leftNeighbor.style.backgroundColor){
@@ -176,7 +178,7 @@ function borderDelete(event){
   }
 
 }
-}
+
 
 //define drag function
 function mouseDown(){
