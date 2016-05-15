@@ -19,7 +19,7 @@ Here's a development workflow that we recommend you use.
 1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
 1. Add an event listener to these `div` tags so when clicked the current "brush" color is remembered.
 1. Expand the dimensions of the pixel canvas.
-1. Expand the palette with the rest of the standard colors as well as an eraser. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
+1. Expand the palette with the rest of the standard colors. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
 1. Expand the palette with a current color indicator so the user knows which color was last selected.
 1. Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
 
