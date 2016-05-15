@@ -36,7 +36,9 @@ Add tools that augment the type of user interaction
 - Pencil tool: Click and drag across the canvas to paint pixels.
 - Rectangle tool: Click and drag across the canvas to paint all pixels that fall inside a rectangular selection.
 
-**TIP:** Check out the [`mouseover` event](http://jsfiddle.net/ryansobol/ynctwr0m/11/).
+For these tools, you'll need a combination of the `mousedown`, `mouseenter`, and `mouseup` events.
+
+**TIP:** The [`mouseenter` event](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter) doesn't bubble to up the DOM tree.
 
 ### Deployment
 
