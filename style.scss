@@ -1,0 +1,32 @@
+.unSelected {
+
+  border: 1px solid rgb(175, 175, 175);
+  min-width: 17px;
+  min-height: 17px;
+  max-width: 17px;
+  max-height: 17px;
+  background-color: white;
+}
+
+.columns {
+
+  display: inline-block;
+}
+
+#column0 {
+
+  padding-left: 19%;
+}
+
+
+
+body{
+
+  background-color: rgb(232, 232, 232);
+  height: 100%;
+}
+
+html {
+
+  height: 100%;
+}
