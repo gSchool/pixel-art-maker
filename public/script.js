@@ -23,7 +23,7 @@ canvas.addEventListener("mousedown", mouseDown);
 canvas.addEventListener("mouseup", mouseUp);
 
 //build my pixels
-var pixel = {}
+var pixel = {};
 for(var i = 0; i < 2500; i++){
   pixel[i] = document.createElement("div");
   pixel[i].style.display = "inline-block";
@@ -143,6 +143,11 @@ currentBox.style.backgroundColor = colorPicked;
 
 //write function to elimnate border
 function borderDelete(event){
+    console.log(event.target.id);
+    console.log(event.target.id.slice(1));
+    console.log(Number(event.target.id.slice(1))-1);
+    console.log(String(Number(event.target.id.slice(1))-1));
+    console.log(pixel[String(Number(event.target.id.slice(1))-1)]);
   var topNeighbor = pixel[Number(event.target.id.slice(1)) - 50];
   var bottomNeighbor = pixel[String(Number(event.target.id.slice(1)) + 50)];
   var leftNeighbor = pixel[String(Number(event.target.id.slice(1)) - 1)];
