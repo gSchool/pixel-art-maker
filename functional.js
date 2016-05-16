@@ -7,7 +7,6 @@ var currentColor = "#09e9db";
 
 function drawTable() {
 
-  console.log("Called");
   for (var i = 0; i < width; i++) {
 
     var divRow = document.createElement('div');
@@ -23,18 +22,35 @@ function drawTable() {
 
       document.getElementById('column' + i).appendChild(daDiv);
     }
-
-    //document.getElementById('drawingBoard').appendChild(document.createElement('br'));
   }
 }
 
-$(document).on("click", function (event) {
+var work = false;
 
+$(document).on("click", function(event) {
   if (event.target.parentNode.className.indexOf("column") >= 0) {
 
     event.target.style.backgroundColor = currentColor;
     event.target.style.border = "1px solid" + currentColor;
   }
+});
+
+$(document).on("mousedown", function (e) {
+
+  work = true;
+
+  $(document).on("mousemove", function(event) {
+    if (event.target.parentNode.className.indexOf("column") >= 0 && work === true) {
+
+      event.target.style.backgroundColor = currentColor;
+      event.target.style.border = "1px solid" + currentColor;
+    }
+  });
+});
+
+$(document).on("mouseup", function(e) {
+
+  work = false;
 });
 
 drawTable();
