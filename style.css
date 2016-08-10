@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ccc;
+}
+
+h2 {
+  color: #999;
+  font-family: Gill Sans;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 2.2rem;
+  margin: 6px 0 0 20px;
+}
+
+main {
+  background: #e5e5e5;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #999;
+  margin: 20px auto 0;
+  padding: 20px;
+  width: 894px;
+}
+
+.pixel {
+  background: white;
+  border: 1px solid #e5e5e5;
+  height: 14px;
+  width: 14px;
+}
+
+.color {
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  height: 35.5px;
+  margin: 5px 5px 0 0;
+  width: 35.5px;
+}
+
+.brushColor {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  height: 35.5px;
+  margin: 6px 0 0 12px;
+  width: 100px;
+}
+
+#canvas, #palette {
+  display: flex;
+  flex-wrap: wrap;
+}
