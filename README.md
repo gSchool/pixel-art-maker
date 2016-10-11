@@ -25,13 +25,13 @@ Here's a development workflow that we recommend you use.
 
 **TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
 
-### Bonus 1
+### Bonus 1 (Done)
 
 Improve the mouse so it behaves like a real paintbrush. In other words, allow the user to paint by clicking and dragging across the canvas. For this, you'll need a combination of the `mousedown`, `mouseenter`, and `mouseup` events.
 
 **TIP:** The [`mouseenter` event](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter) doesn't bubble up the DOM tree.
 
-### Bonus 2
+### Bonus 2 (Done)
 
 Add a color picker which allows the user to select any brush color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
 
@@ -44,4 +44,4 @@ Review the following articles on the Surge platform and then deploy your website
 
 A good domain name for this project is `USERNAME-pixel-art-maker.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy the URL to your site and paste it below.
 
-PASTE YOUR PRODUCTION URL HERE
+http://jkaffrey-pixel-art-maker.surge.sh/
