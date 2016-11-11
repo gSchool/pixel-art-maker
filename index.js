@@ -1,6 +1,6 @@
 'use strict';
 
-let brush;
+let brushClass;
 
 const drawCanvas = function() {
   const canvas = document.querySelector('#canvas');
@@ -8,83 +8,83 @@ const drawCanvas = function() {
 
   for (let i = 0; i < 2013; i++) {
     pixel = document.createElement('div');
-    pixel.className = 'pixel';
+    pixel.classList.add('pixel');
     canvas.appendChild(pixel);
   }
 
   canvas.addEventListener('click', (event) => {
-    if (event.target.className !== 'pixel') {
+    if (event.target === canvas) {
       return;
     }
 
-    event.target.style.background = brush;
-    event.target.style.borderColor = brush;
+    event.target.classList.add(brushClass);
   });
 }
 
 const drawPalette = function() {
   const palette = document.querySelector('#palette');
 
-  const hexColors = [
-    '#b23232',
-    '#ff4848',
-    '#ff6c6c',
-    '#e59b40',
-    '#ffad48',
-    '#ffc57e',
-    '#e5de40',
-    '#fff748',
-    '#fffa91',
-    '#39cc4b',
-    '#48ff5e',
-    '#91ff9e',
-    '#3248b2',
-    '#4867ff',
-    '#91a3ff',
-    '#6432b2',
-    '#8f48ff',
-    '#bb91ff',
-    '#7c2b99',
-    '#cf48ff',
-    '#e291ff',
-    '#000000',
-    '#323232',
-    '#666666',
-    '#999999',
-    '#cccccc',
-    '#ffffff',
-    '#3a2119',
-    '#512e23',
-    '#754233',
-    '#90675b',
-    '#ac8d84'
+  const colorClasses = [
+    'carmine-red',
+    'coral-red',
+    'pastel-red',
+    'tigers-eye-orange',
+    'pastel-orange',
+    'topaz-orange',
+    'sandstorm-yellow',
+    'lemon-yellow',
+    'pastel-yellow',
+    'lime-green',
+    'ufo-green',
+    'mint-green',
+    'cerulean-blue',
+    'ultramarine-blue',
+    'carolina-blue',
+    'purple-heart',
+    'lavender-indigo',
+    'bright-lavender',
+    'bruise-purple',
+    'heliotrope-purple',
+    'lavender-magenta',
+    'black-black',
+    'drab-black',
+    'dim-gray',
+    'manatee-gray',
+    'pastel-gray',
+    'white-white',
+    'bistre-brown',
+    'noir-brown',
+    'bole-brown',
+    'chestnut-brown',
+    'grullo-brown'
   ];
 
   let color;
 
-  for (const hexColor of hexColors) {
+  for (const colorClass of colorClasses) {
     color = document.createElement('div');
-    color.className = 'color';
-    color.style.background = hexColor;
+    color.classList.add('color', colorClass);
     palette.appendChild(color);
   }
 
   const heading = document.createElement('h2');
   heading.textContent = 'BRUSH COLOR >';
 
-  const brushColor = document.createElement('div');
-  brushColor.className = 'brushColor';
+  const brush = document.createElement('div');
+  brush.classList.add('brush');
 
   palette.appendChild(heading);
-  palette.appendChild(brushColor);
+  palette.appendChild(brush);
 
   palette.addEventListener('click', (event) => {
-    if (event.target.className !== 'color') {
+    if (event.target === palette) {
       return;
     }
 
-    brush = event.target.style.background;
-    brushColor.style.background = brush;
+    brushClass = event.target.classList.item(1);
+
+    brush.classList.remove(brush.classList.item(1));
+    brush.classList.add(brushClass);
   });
 }
 

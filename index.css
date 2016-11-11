@@ -36,20 +36,181 @@ main {
   width: 14px;
 }
 
+.brush {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  height: 35.5px;
+  margin: 6px 0 0 12px;
+  width: 100px;
+}
+
 .color {
-  border: 1px solid #bbbbbb;
+  /* Prevent classes like 'carmine-red' from specifying the border-color */
+  border: 1px solid #bbbbbb !important;
   border-radius: 50%;
   height: 35.5px;
   margin: 5px 5px 0 0;
   width: 35.5px;
 }
 
-.brushColor {
-  border: 1px solid #999999;
-  border-radius: 3px;
-  height: 35.5px;
-  margin: 6px 0 0 12px;
-  width: 100px;
+.carmine-red {
+  background-color: #b23232;
+  border-color: #b23232;
+}
+
+.coral-red {
+  background-color: #ff4848;
+  border-color: #ff4848;
+}
+
+.pastel-red {
+  background-color: #ff6c6c;
+  border-color: #ff6c6c;
+}
+
+.tigers-eye-orange {
+  background-color: #e59b40;
+  border-color: #e59b40;
+}
+
+.pastel-orange {
+  background-color: #ffad48;
+  border-color: #ffad48;
+}
+
+.topaz-orange {
+  background-color: #ffc57e;
+  border-color: #ffc57e;
+}
+
+.sandstorm-yellow {
+  background-color: #e5de40;
+  border-color: #e5de40;
+}
+
+.lemon-yellow {
+  background-color: #fff748;
+  border-color: #fff748;
+}
+
+.pastel-yellow {
+  background-color: #fffa91;
+  border-color: #fffa91;
+}
+
+.lime-green {
+  background-color: #39cc4b;
+  border-color: #39cc4b;
+}
+
+.ufo-green {
+  background-color: #48ff5e;
+  border-color: #48ff5e;
+}
+
+.mint-green {
+  background-color: #91ff9e;
+  border-color: #91ff9e;
+}
+
+.cerulean-blue {
+  background-color: #3248b2;
+  border-color: #3248b2;
+}
+
+.ultramarine-blue {
+  background-color: #4867ff;
+  border-color: #4867ff;
+}
+
+.carolina-blue {
+  background-color: #91a3ff;
+  border-color: #91a3ff;
+}
+
+.purple-heart {
+  background-color: #6432b2;
+  border-color: #6432b2;
+}
+
+.lavender-indigo {
+  background-color: #8f48ff;
+  border-color: #8f48ff;
+}
+
+.bright-lavender {
+  background-color: #bb91ff;
+  border-color: #bb91ff;
+}
+
+.bruise-purple {
+  background-color: #7c2b99;
+  border-color: #7c2b99;
+}
+
+.heliotrope-purple {
+  background-color: #cf48ff;
+  border-color: #cf48ff;
+}
+
+.lavender-magenta {
+  background-color: #e291ff;
+  border-color: #e291ff;
+}
+
+.black-black {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.drab-black {
+  background-color: #323232;
+  border-color: #323232;
+}
+
+.dim-gray {
+  background-color: #666666;
+  border-color: #666666;
+}
+
+.manatee-gray {
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.pastel-gray {
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
+
+.white-white {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.bistre-brown {
+  background-color: #3a2119;
+  border-color: #3a2119;
+}
+
+.noir-brown {
+  background-color: #512e23;
+  border-color: #512e23;
+}
+
+.bole-brown {
+  background-color: #754233;
+  border-color: #754233;
+}
+
+.chestnut-brown {
+  background-color: #90675b;
+  border-color: #90675b;
+}
+
+.grullo-brown {
+  background-color: #ac8d84;
+  border-color: #ac8d84;
 }
 
 #canvas, #palette {
