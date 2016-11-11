@@ -17,7 +17,9 @@ const drawCanvas = function() {
       return;
     }
 
-    event.target.classList.add(brushClass);
+    if (brushClass) {
+      event.target.classList.add(brushClass);
+    }
   });
 }
 
