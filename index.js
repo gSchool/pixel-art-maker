@@ -1,18 +1,18 @@
 'use strict';
 
-var brush;
+let brush;
 
-var drawCanvas = function() {
-  var canvas = document.querySelector('#canvas');
-  var pixel;
+const drawCanvas = function() {
+  const canvas = document.querySelector('#canvas');
+  let pixel;
 
-  for (var i = 0; i < 2013; i++) {
+  for (let i = 0; i < 2013; i++) {
     pixel = document.createElement('div');
     pixel.className = 'pixel';
     canvas.appendChild(pixel);
   }
 
-  canvas.addEventListener('click', function(event) {
+  canvas.addEventListener('click', (event) => {
     if (event.target.className !== 'pixel') {
       return;
     }
@@ -22,10 +22,10 @@ var drawCanvas = function() {
   });
 }
 
-var drawPalette = function() {
-  var palette = document.querySelector('#palette');
+const drawPalette = function() {
+  const palette = document.querySelector('#palette');
 
-  var hexColors = [
+  const hexColors = [
     '#b23232',
     '#ff4848',
     '#ff6c6c',
@@ -60,25 +60,25 @@ var drawPalette = function() {
     '#ac8d84'
   ];
 
-  var color;
+  let color;
 
-  for (var hexColor of hexColors) {
+  for (const hexColor of hexColors) {
     color = document.createElement('div');
     color.className = 'color';
     color.style.background = hexColor;
     palette.appendChild(color);
   }
 
-  var heading = document.createElement('h2');
+  const heading = document.createElement('h2');
   heading.textContent = 'BRUSH COLOR >';
 
-  var brushColor = document.createElement('div');
+  const brushColor = document.createElement('div');
   brushColor.className = 'brushColor';
 
   palette.appendChild(heading);
   palette.appendChild(brushColor);
 
-  palette.addEventListener('click', function(event) {
+  palette.addEventListener('click', (event) => {
     if (event.target.className !== 'color') {
       return;
     }
