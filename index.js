@@ -1,6 +1,11 @@
 'use strict';
 
-let brushClass;
+let brushClass = 'drab-black';
+
+const paintPixel = function(pixel) {
+  pixel.classList.remove(pixel.classList.item(1));
+  pixel.classList.add(brushClass);
+}
 
 const drawCanvas = function() {
   const canvas = document.querySelector('#canvas');
@@ -17,10 +22,35 @@ const drawCanvas = function() {
       return;
     }
 
-    if (brushClass) {
-      event.target.classList.add(brushClass);
-    }
+    paintPixel(event.target);
   });
+
+  // or...
+  // let isPainting = false;
+  //
+  // canvas.addEventListener('mousedown', () => {
+  //   isPainting = true;
+  //
+  //   if (event.target === canvas) {
+  //     return;
+  //   }
+  //
+  //   paintPixel(event.target);
+  // });
+  //
+  // canvas.addEventListener('mouseup', () => {
+  //   isPainting = false;
+  // });
+  //
+  // const pixels = document.querySelectorAll('.pixel');
+  //
+  // for (const pixel of pixels) {
+  //   pixel.addEventListener('mouseenter', () => {
+  //     if (isPainting) {
+  //       paintPixel(event.target);
+  //     }
+  //   });
+  // }
 }
 
 const drawPalette = function() {
@@ -73,7 +103,7 @@ const drawPalette = function() {
   heading.textContent = 'BRUSH COLOR >';
 
   const brush = document.createElement('div');
-  brush.classList.add('brush');
+  brush.classList.add('brush', brushClass);
 
   palette.appendChild(heading);
   palette.appendChild(brush);
