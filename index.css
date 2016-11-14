@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: #ccc;
+  background-color: #ccc;
 }
 
 h2 {
@@ -21,7 +21,7 @@ h2 {
 }
 
 main {
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   border-radius: 15px;
   box-shadow: 0 0 20px #999;
   margin: 20px auto 0;
@@ -30,13 +30,13 @@ main {
 }
 
 .pixel {
-  background: white;
+  background-color: white;
   border: 1px solid #e5e5e5;
   height: 14px;
   width: 14px;
 }
 
-.brush {
+.brushIndicator {
   border: 1px solid #999999;
   border-radius: 3px;
   height: 35.5px;
