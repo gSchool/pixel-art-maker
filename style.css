@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: grey;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: "Arial Black";
+}
+
+.board{
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #999;
+  margin: 20px auto 0;
+  width: 800px;
+  height: 600px;
+  display:block;
+  font-family: "Arial";
+}
+
+.pix{
+  background-color: white;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #e5e5e5;
+  float:left;
+}
+
+form{
+  display: flex;
+  float:right;
+  font-family: "Arial";
+}
