@@ -1,0 +1,56 @@
+.firstbox, .secondbox, .tirdbox, .forthbox {
+  width: 250px;
+  height: 250px;
+  border: 3px solid black;
+  margin:0px;
+  background-color: white;
+}
+
+main{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+section{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+nav{
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.nav1{
+  width: 80px;
+  height: 50px;
+  border: 3px solid black;
+  margin:20px;
+  margin-top: 20px;
+  background-color: #009b3a;
+}
+.nav2{
+  width: 80px;
+  height: 50px;
+  border: 3px solid black;
+  margin:20px;
+  margin-top: 20px;
+  background-color: #fedf00;
+}
+.nav3{
+  width: 80px;
+  height: 50px;
+  border: 3px solid black;
+  margin:20px;
+  margin-top: 20px;
+  background-color: #002776;
+}
+.nav4{
+  width: 80px;
+  height: 50px;
+  border: 3px solid black;
+  margin:20px;
+  margin-top: 20px;
+  background-color: #D294C0;
+
+}
