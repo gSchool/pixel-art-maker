@@ -26,4 +26,7 @@ window.onload = function() {
             colorBox.style.backgroundColor = currentColor;
         });
     }
+    // document.addEventListener("mousedown", function() {
+    //     console.log(mousedown === true);
+    // });
 };
