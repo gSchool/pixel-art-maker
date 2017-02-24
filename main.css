@@ -13,16 +13,18 @@ body {
 
 .grid {
   display: flex;
-  width: 500px;
-  height: 500px;
+  width: 540px;
+  height: 540px;
   flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
 }
 
 .square {
-  border: 2px solid black;
+  border: 1px solid LightGrey;
   margin: 0;
-  width: 50%;
-  height: 50%;
+  width: 25px;
+  height: 25px;
 }
 
 .palette {
@@ -33,16 +35,32 @@ body {
   margin-top: 25px;
 }
 
-.red, .blue {
+.swatch {
   height: 75px;
   width: 75px;
   margin-right: 10px;
 }
 
-.red {
-  background-color: DarkRed;
+.rose {
+  background-color: MistyRose;
 }
 
 .blue {
-  background-color: CornflowerBlue;
+  background-color: LightCyan;
+}
+
+.green {
+  background-color: Aquamarine;
+}
+
+.yellow {
+  background-color: LemonChiffon;
+}
+
+.lavender {
+  background-color: Lavender;
+}
+
+.grey {
+  background-color: LightGrey;
 }
