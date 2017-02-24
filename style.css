@@ -1,0 +1,23 @@
+div{
+  boxing-size: border-box;
+  backgroud-color: white;
+  border: 1px solid black;
+  height:100px;
+  width:100px;
+}
+
+.canvasBox {
+  height:204px;
+  width:204px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.palette{
+  margin-top:20px;
+  width:714px;
+  height:102px;
+  display:flex;
+
+}
