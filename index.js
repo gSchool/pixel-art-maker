@@ -1,8 +1,29 @@
 var grid=document.querySelector('.grid')
-
 grid.addEventListener('click', function (event) {
-  event.target.style.backgroundColor = 'red'
+  event.target.style.backgroundColor = color;
 })
+
+var color = 'white';
+
+var paintbrush = document.querySelector('.color-palette')
+
+paintbrush.addEventListener('click', function(event){
+  var targetStyle = window.getComputedStyle(event.target)
+    var color = targetStyle.getPropertyValue('background-color')
+  console.log(color)
+    if (event.target.classList.contains('pixel')) {
+      event.target.classList.toggle('colored')
+    }
+})
+
+
+//set var paintbrush (to select color from palette)  -> add event listener to paintbrush , get style elements, then set new color via saving;
+//
+// // function to save colors
+// var color=document.querySelector('.color')
+// color.addEventListener('click', function (event) {
+//   event.target.style.backgroundColor = '.color'
+// })
 
 
 // // Tutorial on Event Delegation (Chad)
