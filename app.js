@@ -1,15 +1,27 @@
 'use strict';
 
-window.onLoad = function (){
+window.onload = function() {
+    var divElem = document.createElement('div');
+    var canvas = document.getElementById('canvas');
+    var red = document.getElementsByClassName("colorRed")[0];
+    var green = document.getElementsByClassName("colorGreen")[0];
+    canvas.append(divElem);
+    divElem.style.backgroundColor = "red";
+    divElem.style.height = "10%";
+    divElem.style.width = "10%";
+    var currentColor = '';
 
-var divElem = document.createElement('div');
-var canvas = document.getElementById('canvas');
-canvas.append('divElem')
-divElem.style.backgroundColor="red";
-divElem.style.heigth="10%";
-divElem.style.width="10%";
-
-
+    divElem.addEventListener("click", () => {
+        divElem.style.backgroundColor = currentColor;
+    })
+    red.addEventListener("click", (event) => {
+        currentColor = getComputedStyle(red)
+            .backgroundColor;
+    });
+    green.addEventListener("click", (event) => {
+        currentColor = getComputedStyle(green)
+            .backgroundColor;
+    });
 
 
 };
