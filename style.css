@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.appStyle {
+  width: 50vw;
+  height: 50vh;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.canvasStyle {
+
+}
+
+.palleteStyle {
+
+}
