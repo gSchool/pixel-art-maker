@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.colored {
+  background-color: green;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+section div {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+menu {
+  align-self: flex-end;;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+menuitem {
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+}
+ #blue {
+   background-color: blue;
+ }
+
+ #red {
+   background-color: red;
+ }
