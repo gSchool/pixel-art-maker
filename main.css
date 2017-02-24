@@ -5,32 +5,67 @@ html {
   box-sizing: inherit;
 }
 
-body{
-  display: flex;
-}
-
 main{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .grid{
   display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cell{
+  flex: none;
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+
+.colorPalet{
+  display: flex;
   flex-wrap: flow;
-  height: 50vh;
-  width: 50vw;
+  justify-content: center;
+  height: 50px;
+  width: 400px;
   margin: 5px;
   border: 2px solid black;
 }
-.boxOne,
-.boxTwo,
-.boxThree,
-.boxFour {
+
+.colorButton{
   display: flex;
   flex-wrap: flow;
-  height: 20vh;
-  width: 20vw;
+  height: 20px;
+  width: 30px;
   margin: 5px;
   border: 2px solid black;
+  background-color:LightSkyBlue;
+}
 
+.lightSkyBlue{
+  background-color: lightSkyBlue;
+}
+
+.green{
+  background-color:green;
+}
+
+.red{
+  background-color:red;
+}
+.brown{
+  background-color:brown;
 }
