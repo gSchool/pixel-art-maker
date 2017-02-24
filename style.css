@@ -1,15 +1,15 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 128px;
+    box-sizing: border-box;
+    width: auto;
     height: auto;
-    border: 5px black solid;
-    padding: 2px;
+    border: 2px black solid;
 }
 
 .container > div {
-    width: 50px;
-    height: 50px;
-    border: 5px black solid;
-    margin: 2px;
+    width: 5%;
+    box-sizing: border-box;
+    padding-top: 5%;
+    border: 2px black solid;
 }
