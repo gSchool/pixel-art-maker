@@ -1,3 +1,5 @@
+'use strict';
+
 window.onLoad = function (){
 
 var divElem = document.createElement('div');
@@ -6,7 +8,6 @@ canvas.append('divElem')
 divElem.style.backgroundColor="red";
 divElem.style.heigth="10%";
 divElem.style.width="10%";
-
 
 
 
