@@ -118,3 +118,20 @@
   border-radius: 100%;
   float: left;
 }
+
+.currentColor {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  float: right;
+  position: relative;
+  right: 60px;
+}
+
+.currentColorBox {
+  display: inline-block;
+  border: 1px solid black;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  top: 1.7px;
+}
