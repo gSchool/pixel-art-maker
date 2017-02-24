@@ -1,32 +1,31 @@
 'use strict';
 
 window.onload = function() {
-    var divElem = document.createElement('div');
-    var canvas = document.getElementById('canvas');
-    var red = document.getElementsByClassName("colorRed")[0];
-    var green = document.getElementsByClassName("colorGreen")[0];
-    var colorButtons = document.getElementsByClassName("commonStyle");
-    canvas.append(divElem);
-    divElem.style.backgroundColor = "red";
-    divElem.style.height = "10%";
-    divElem.style.width = "10%";
-    var currentColor = '';
+  var canvas = document.getElementById('canvas');
+  var colorButtons = document.getElementsByClassName("commonStyle");
+  var currentColor = '';
 
-    divElem.addEventListener("click", () => {
-        divElem.style.backgroundColor = currentColor;
-    })
-    red.addEventListener("click", (event) => {
-        currentColor = getComputedStyle(red)
-            .backgroundColor;
-    });
-    green.addEventListener("click", (event) => {
-        currentColor = getComputedStyle(green)
-            .backgroundColor;
-    });
 
-    for (let i = 0; i < colorButtons.length; i++) {
-      colorButtons[i].addEventListener("click", function() {
-        console.log("hey");
+  for (var i = 0; i < 363; i++) {
+      var divElem = document.createElement('div');
+      canvas.append(divElem);
+      divElem.style.border = "1px solid gray";
+      divElem.style.height = "9%";
+      divElem.style.width = "3%";
+      divElem.style.float = "left";
+
+      divElem.addEventListener("click", (event) => {
+          event.target.style.backgroundColor = currentColor;
       });
-    }
+  }
+
+  for (let i = 0; i < colorButtons.length; i++) {
+      colorButtons[i].addEventListener("click", function(event) {
+          currentColor = getComputedStyle(colorButtons[i])
+              .backgroundColor;
+      });
+      colorButtons[i].addEventListener("click", function() {
+          console.log("hey");
+      });
+  }
 };
