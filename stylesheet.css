@@ -2,10 +2,15 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+}
 .grid {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
@@ -14,9 +19,27 @@ section {
 }
 
 section div {
+  display: flex;
   box-sizing: border-box;
-  width: 250px;
-  height: 250px;
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+.color-palette {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+
+}
+.color {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
   border-color: black;
   border-width: thin;
   border-style: solid;
