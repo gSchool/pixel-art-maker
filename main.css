@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  display: flex;
+}
+
+main{
+  display: flex;
+}
+
+
+.grid{
+  display: flex;
+  flex-wrap: flow;
+  height: 50vh;
+  width: 50vw;
+  margin: 5px;
+  border: 2px solid black;
+}
+.boxOne,
+.boxTwo,
+.boxThree,
+.boxFour {
+  display: flex;
+  flex-wrap: flow;
+  height: 20vh;
+  width: 20vw;
+  margin: 5px;
+  border: 2px solid black;
+
+}
