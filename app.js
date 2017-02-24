@@ -1,3 +1,5 @@
+'use_strict';
+
 window.onLoad = function (){
 
 
@@ -7,4 +9,4 @@ window.onLoad = function (){
 
 
 
-}
+};
