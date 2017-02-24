@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+section div {
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
