@@ -2,14 +2,54 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: auto;
+    width: 60%;
     height: auto;
+    margin: auto;
+    margin-top: 50px;
     border: 2px black solid;
 }
 
-.container > div {
-    width: 5%;
+.container>div {
     box-sizing: border-box;
-    padding-top: 5%;
     border: 2px black solid;
+}
+
+.paletteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+
+.paletteContainer>div {
+    width: 5%;
+    padding-top: 5%;
+    margin: 0 1% 0 1%;
+    border: 4px black solid;
+}
+
+#white {
+    background-color: #FFFFFF;
+}
+
+#blue {
+    background-color: #0000FF;
+}
+
+#red {
+    background-color: #FF0000;
+}
+
+#yellow {
+    background-color: #FFFF00;
+}
+
+#green {
+    background-color: #00FF00;
+}
+
+#purple {
+    background-color: #8800FF;
 }
