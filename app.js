@@ -25,6 +25,8 @@ window.onload = function() {
     });
 
     for (let i = 0; i < colorButtons.length; i++) {
-      console.log(colorButtons[i]);
+      colorButtons[i].addEventListener("click", function() {
+        console.log("hey");
+      });
     }
 };
