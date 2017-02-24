@@ -1,0 +1,48 @@
+
+.container {
+  background: #bdbac4;
+  width: 520px
+  /*border: solid 1px black;*/
+}
+
+.grid {
+  width: 50px;
+  height: 50px;
+  border: solid 1px grey;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+}
+
+
+/*.palette{
+ margin-top:20px;
+ width:204px;
+ height:102px;
+ display:flex;
+}*/
+
+
+/*.colored {
+  background: green;
+  color: white;
+}*/
+
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: #2ae831;
+}
