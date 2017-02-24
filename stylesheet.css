@@ -44,3 +44,21 @@ section div {
   border-width: thin;
   border-style: solid;
 }
+
+.color-one {
+  background-color: red;
+}
+
+.color-two {
+  background-color: blue;
+}
+
+.color-three {
+  background-color: green;
+}
+.color-four {
+  background-color: black;
+}
+.color-five {
+  background-color: yellow;
+}
