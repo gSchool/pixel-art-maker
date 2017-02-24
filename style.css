@@ -3,8 +3,8 @@
 }
 
 .appStyle {
-  width: 50vw;
-  height: 50vh;
+  width: 600px;
+  height: 300px;
   border: 2px solid black;
   margin: auto;
 }
@@ -25,6 +25,7 @@
 
 .colorRed {
   background-color: red;
+  visibility: visible;
 }
 
 .colorGreen {
@@ -100,14 +101,11 @@
 }
 
 .colorDarkGoldenRod {
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  border-radius: 100%;
   background-color: darkgoldenrod;
 }
 
 .commonStyle {
+  margin: 5px;
   width: 30px;
   height: 30px;
   border: 2px solid black;
