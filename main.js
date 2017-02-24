@@ -1,1 +1,3 @@
-console.log('working')
+function setPixelColor(pixel) {
+  pixel.style.backgroundColor = 'black';
+}
