@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .grid {
@@ -22,4 +23,26 @@ body {
   margin: 0;
   width: 50%;
   height: 50%;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 500px;
+  margin-top: 25px;
+}
+
+.red, .blue {
+  height: 75px;
+  width: 75px;
+  margin-right: 10px;
+}
+
+.red {
+  background-color: DarkRed;
+}
+
+.blue {
+  background-color: CornflowerBlue;
 }
