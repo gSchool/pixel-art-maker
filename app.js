@@ -53,6 +53,6 @@ window.onload = function() {
         colorButtons[i].addEventListener("click", function() {
             console.log("hey");
         });
-    } >>>
-    >>> > 7 dcdc44098ca31bb8872fc536f639c1de662c093
+    }
+
 };
