@@ -41,7 +41,7 @@ Research [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage
 
 ### Bonus 4
 
-Create a fill tool that will [flood fill](https://en.wikipedia.org/wiki/Flood_fill) boundaries with a chosen paint color. 
+Create a fill tool that will [flood fill](https://en.wikipedia.org/wiki/Flood_fill) boundaries with a chosen paint color.
 
 
 ### Deployment

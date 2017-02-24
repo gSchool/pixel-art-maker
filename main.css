@@ -1,0 +1,25 @@
+
+
+.first {
+  width: 100px;
+  height: 100px;
+  color: blue;
+}
+
+.second {
+  width: 100px;
+  height:100px;
+  color: red;
+}
+
+.third {
+  width:100px;
+  height:100px;
+  color: green;
+}
+
+.fourth {
+  width:100px
+  height:100px
+  color: yellow;
+}
