@@ -1,0 +1,76 @@
+body {
+  background-image: url(http://www.zingerbugimages.com/backgrounds/tie_dye_candy_colors_seamless.jpg);
+
+}
+.whole {
+padding: 0;
+background-color: white;
+margin: 0 auto;
+ height: 547px;
+ width: 859.5px;
+ border-top: 40px solid #4B0082;
+ border-bottom: 40px solid #4B0082;
+ border-left:40px solid #E066FF;
+ border-right:40px solid #E066FF;
+ margin-bottom: 20px;
+}
+.pixel {
+  height: 12px;
+  width: 12px;
+  border: 1px solid black;
+  float: left;
+  background-image: none;
+}
+
+input {
+  margin-right: 30px;
+  -moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    -khtml-border-radius: 10px; /* KHTML */
+    border-radius: 10px; /* CSS3 */
+    behavior:url("border-radius.htc");
+}
+section.colors{
+  margin-left: 10%;
+  clear: both;
+  border: 3px solid black;
+  height: 50px;
+  width: 79.6%;
+  /* fallback */
+ background-color:#063053;
+ /* chrome 2+, safari 4+; multiple color stops */
+ background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.20,red),color-stop(0.40,green), color-stop(0.6,blue), color-stop(0.8,purple), color-stop(1,orange));
+ /* chrome 10+, safari 5.1+ */
+ background-image:-webkit-linear-gradient(,green,blue,purple,orange);
+ /* firefox; multiple color stops */
+ background-image:-moz-linear-gradient(top,red,green,blue,purple,orange);
+ /* ie10 */
+ background-image: -ms-linear-gradient(red,green,blue,purple,orange);
+ /* opera 11.1 */
+ background-image: -o-linear-gradient(red,green,blue,purple,orange);
+ /* The "standard" */
+ background-image: linear-gradient(red,green,blue,purple,orange);
+}
+.colorBTN {
+  margin: 10px 20px;
+  display: inline;
+  float: left;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+
+
+}
+h1 {
+  font-size: 72px;
+ color: white !important;
+  font-style: bold;
+  text-align: center;
+  font-size: 55px !important;
+  /*background: -webkit-linear-gradient(white, gray);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  padding: 0;
+  margin: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+  font-size: 72px;
+}
