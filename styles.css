@@ -18,3 +18,10 @@
    width: 40px;
    height: 40px;
  }
+
+ .pen {
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   border: 2px solid black;
+ }
