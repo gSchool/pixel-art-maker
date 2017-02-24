@@ -5,6 +5,7 @@ window.onload = function() {
     var canvas = document.getElementById('canvas');
     var red = document.getElementsByClassName("colorRed")[0];
     var green = document.getElementsByClassName("colorGreen")[0];
+    var colorButtons = document.getElementsByClassName("commonStyle");
     canvas.append(divElem);
     divElem.style.backgroundColor = "red";
     divElem.style.height = "10%";
@@ -22,4 +23,8 @@ window.onload = function() {
         currentColor = getComputedStyle(green)
             .backgroundColor;
     });
+
+    for (let i = 0; i < colorButtons.length; i++) {
+      console.log(colorButtons[i]);
+    }
 };
