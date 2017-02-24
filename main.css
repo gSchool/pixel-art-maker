@@ -1,0 +1,47 @@
+
+body {
+  margin: 0;
+}
+
+.pixelHolder {
+  display: flex;
+/*  border: 1px black dotted; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 42px;
+  height: auto;
+  border-spacing: inherit;
+
+}
+.pixels {
+  box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-color: black;
+    padding: none;
+    border-width: thin;
+}
+.pallet {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  width: 42px;
+  height: 42px;
+}
+
+#color1 {
+  height: 5px;
+  width: 10px;
+  border: 1px black solid;
+  background-color: blue;
+
+}
+#color2 {
+  height: 5px;
+  width: 10px;
+  border: 1px black solid;
+  background-color: orange;
+
+}
