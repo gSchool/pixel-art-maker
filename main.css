@@ -1,0 +1,78 @@
+body {
+  height: 90%;
+  box-sizing: border-box;
+}
+
+.container1 {
+  display: flex;
+  width: 100%;
+  background-color: yellow;
+  border-color: pink;
+  border-radius: 15px;
+  flex-flow: wrap;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 50%;
+  height: 200px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.box1 {
+  background-color: cyan;
+}
+
+.box2 {
+  background-color: magenta;
+}
+
+.box3 {
+  background-color: teal;
+}
+
+.box4 {
+  background-color: orchid;
+}
+
+
+.container2 {
+  display: flex;
+  /*width: 420;
+  height: 420;*/
+  width: 100%;
+  background-color: yellow;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 10px;
+  flex-direction: row;
+}
+
+.paint1,
+.paint2,
+.paint3,
+.paint4 {
+  width: 25%;
+  height: 50px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.paint1 {
+  background-color: red;
+}
+
+.paint2 {
+  background-color: orange;
+}
+
+.paint3 {
+  background-color: dimgrey;
+}
+
+.paint4 {
+  background-color: greenyellow;
+}
