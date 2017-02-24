@@ -15,8 +15,8 @@
  .pixel {
    display: table-cell;
    background-color: white;
-   width: 80px;
-   height: 80px;
+   width: 40px;
+   height: 40px;
  }
 
  .pallette_row {
@@ -41,13 +41,69 @@
  #red {
    background-color: red;
    display: table-cell;
-   width: 80px;
-   height: 80px;
+   width: 40px;
+   height: 40px;
  }
 
  #blue {
    background-color: blue;
    display: table-cell;
-   width: 80px;
-   height: 80px;
+   width: 40px;
+   height: 40px;
  }
+
+ #purple {
+   background-color: purple;
+   display: table-cell;
+   width: 40px;
+   height: 40px;
+ }
+
+ #yellow {
+   background-color: yellow;
+   display: table-cell;
+   width: 40px;
+   height: 40px;
+ }
+
+#green {
+  background-color: green;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}
+
+#orange {
+  background-color: orange;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}
+
+#magenta {
+  background-color: magenta;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}
+
+#maroon {
+  background-color: maroon;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}
+
+#teal {
+  background-color: teal;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}
+
+#mint {
+  background-color: aquamarine;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}

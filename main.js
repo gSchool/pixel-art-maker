@@ -20,3 +20,4 @@ paint.addEventListener('click', function(event){
 
    }
  })
+ 
