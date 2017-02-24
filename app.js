@@ -1,6 +1,7 @@
 'use strict';
 
 window.onload = function() {
+
     var canvas = document.getElementById('canvas');
     var colorButtons = document.getElementsByClassName("commonStyle");
     var currentColor = '';
@@ -25,4 +26,33 @@ window.onload = function() {
                 .backgroundColor;
         });
     }
+
+    var canvas = document.getElementById('canvas');
+    var colorButtons = document.getElementsByClassName("commonStyle");
+    var currentColor = '';
+
+
+    for (var i = 0; i < 363; i++) {
+        var divElem = document.createElement('div');
+        canvas.append(divElem);
+        divElem.style.border = "1px solid gray";
+        divElem.style.height = "9%";
+        divElem.style.width = "3%";
+        divElem.style.float = "left";
+
+        divElem.addEventListener("click", (event) => {
+            event.target.style.backgroundColor = currentColor;
+        });
+    }
+
+    for (let i = 0; i < colorButtons.length; i++) {
+        colorButtons[i].addEventListener("click", function(event) {
+            currentColor = getComputedStyle(colorButtons[i])
+                .backgroundColor;
+        });
+        colorButtons[i].addEventListener("click", function() {
+            console.log("hey");
+        });
+    } >>>
+    >>> > 7 dcdc44098ca31bb8872fc536f639c1de662c093
 };
