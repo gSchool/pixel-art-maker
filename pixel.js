@@ -21,15 +21,11 @@ var currentColor;
            });
     }
 
-
+  var container = document.getElementById("container");
   var board = document.createElement("div");
-  document.body.append(board);
-  board.style.height = "500px";
-  board.style.width = "500px"; // all elements by default have width of auto 100
-  board.style.backgroundColor = "lightgrey";
-  board.style.margin = "15%";
-  board.style.padding = "15px";
-  board.style.borderRadius = "30px";
+  container.prepend(board);
+  board.style.overflow = "auto";
+
 
 
   var square;
@@ -40,8 +36,8 @@ var currentColor;
     square.addEventListener("click", function(ev) {
         ev.target.style.backgroundColor = currentColor;
     })
-    square.style.height = "3%";
-    square.style.width = "3%";
+    square.style.height = "15px";
+    square.style.width = "15px";
     square.style.float = "left";
     board.append(square);
     square.style.border = ".25px solid darkgrey";

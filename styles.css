@@ -86,7 +86,16 @@
     justify-content: center;
     height: 50px;
     width: 450px;
-    position: absolute;
     top: 580px;
-    margin-left: 20%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#container {
+  /*height: 500px;*/
+  width: 500px;
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 0 auto;
 }
