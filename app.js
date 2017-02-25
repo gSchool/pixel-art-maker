@@ -8,6 +8,18 @@ window.onload = function() {
     var mouseIsDown = false;
     var gridToggle = document.getElementById("gridToggle");
 
+    document.addEventListener("mousedown", function() {
+      mouseIsDown = true;
+    });
+
+    document.addEventListener("mouseup", function() {
+      mouseIsDown = false;
+      document.body.style.cursor = "auto";
+    });
+
+    canvas.addEventListener("mousedown", (event) => {
+      document.body.style.cursor = "pointer";
+    });
 
     for (var i = 0; i < 6344; i++) {
         var divElem = document.createElement('div');
@@ -24,12 +36,6 @@ window.onload = function() {
         divElem.style.height = "8px";
         divElem.style.float = "left";
 
-        document.addEventListener("mousedown", function() {
-          mouseIsDown = true;
-        });
-        document.addEventListener("mouseup", function() {
-          mouseIsDown = false;
-        });
         divElem.addEventListener("mouseover", (event) => {
           if (mouseIsDown) {
             event.target.style.backgroundColor = currentColor;
