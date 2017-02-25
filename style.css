@@ -31,7 +31,8 @@
 }
 
 .paletteStyle {
-  width: 100%;
+  width: 98%;
+  margin: auto;
   height: 30%;
   background: rgb(14,14,14);
   background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
@@ -44,8 +45,36 @@
 }
 
 .colorsStyle {
+  padding-top: 14px;
+  padding-right: 2px;
   width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
 }
+
+.currentColor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  justify-content: space-between;
+  padding: 0.5em;
+  color: yellow;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  float: left;
+  position: relative;
+  /*right: 80px;
+  bottom: 50px;*/
+  width: 50%;
+  /*background-color: papayawhip;*/
+  height: 100%;
+}
+
+
 
 .colorRed {
   background-color: red;
@@ -157,9 +186,9 @@
 }
 
 .commonStyle {
-  margin: 5px;
-  width: 45px;
-  height: 45px;
+  /*margin: 5px;*/
+  width: 50px;
+  height: 50px;
   border: 1px solid black;
   border-radius: 100%;
   float: left;
@@ -169,16 +198,6 @@
   border: 5px solid gold;
 }
 
-.currentColor {
-  color: yellow;
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  float: right;
-  position: relative;
-  right: 80px;
-  bottom: 50px;
-}
-
 .currentColorBox {
   display: inline-block;
   border: 1px solid black;
@@ -186,4 +205,9 @@
   width: 1em;
   position: relative;
   top: 1.7px;
+}
+
+.gridToggle {
+  height: 40px;
+  font-size: 20px;
 }
