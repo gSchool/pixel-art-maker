@@ -1,5 +1,5 @@
-var gridSize = 8;
-var boxSize = 50;
+var gridSize = 20;
+var boxSize = 25;
 var colorPick = "#ffffff";
 
 //select your color
