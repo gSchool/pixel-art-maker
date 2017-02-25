@@ -155,6 +155,10 @@
   float: left;
 }
 
+.special {
+  border: 5px solid gold;
+}
+
 .currentColor {
   color: yellow;
   font-family: 'Raleway', sans-serif;
