@@ -9,22 +9,24 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    border: 5px solid;
 
 }
 section {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
  section div {
 
   flex-wrap: nowrap;
-  width: 120px;
-  height: 120px;
-  padding: 50px;
-  border: 5px solid gray;
-  margin: 2px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 0px solid;
+  margin: 0px;
   box-sizing: border-box;
 }
 
@@ -46,14 +48,15 @@ section {
   box-sizing: border-box;
 }
 
-.green {
-  background-color: green;
+.black {
+  background-color: black;
+  color: white;
 }
 
-.red {
-  background-color: red;
+.grey {
+  background-color: grey;
 }
 
-.blue {
-  background-color: blue;
+.white {
+  background-color: white;
 }
