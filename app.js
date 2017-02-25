@@ -6,7 +6,7 @@ window.onload = function() {
     var currentColor = '';
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
-
+  
     for (var i = 0; i < 6344; i++) {
         var divElem = document.createElement('div');
         canvas.append(divElem);
@@ -34,6 +34,7 @@ window.onload = function() {
         });
     }
 
+    // cycle through colors
     for (let i = 0; i < colorButtons.length; i++) {
         colorButtons[i].addEventListener("click", function(event) {
             currentColor = getComputedStyle(colorButtons[i])
