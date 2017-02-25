@@ -7,7 +7,7 @@ window.onload = function() {
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
 
-    for (var i = 0; i < 4000; i++) {
+    for (var i = 0; i < 5704; i++) {
         var divElem = document.createElement('div');
         canvas.append(divElem);
         // divElem.style.border = "1px solid gray";

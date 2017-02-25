@@ -29,6 +29,10 @@
   border-bottom-left-radius: 8px;
 }
 
+.colorsStyle {
+  width: 50%;
+}
+
 .colorRed {
   background-color: red;
   visibility: visible;
@@ -122,9 +126,11 @@
 .currentColor {
   color: yellow;
   font-family: 'Raleway', sans-serif;
+  font-size: 50px;
   float: right;
   position: relative;
   right: 60px;
+  bottom: 50px;
 }
 
 .currentColorBox {
