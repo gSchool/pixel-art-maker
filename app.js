@@ -7,12 +7,18 @@ window.onload = function() {
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
 
-    for (var i = 0; i < 5704; i++) {
+    for (var i = 0; i < 6344; i++) {
         var divElem = document.createElement('div');
         canvas.append(divElem);
+        if (i === 0) {
+          divElem.style.borderTopLeftRadius = "10px";
+        }
+        if (i === 121) {
+          divElem.style.borderTopRightRadius = "10px";
+        }
         // divElem.style.border = "1px solid gray";
-        divElem.style.height = "6px";
-        divElem.style.width = "6px";
+        divElem.style.width = "8px";
+        divElem.style.height = "8px";
         divElem.style.float = "left";
 
         document.addEventListener("mousedown", function() {
