@@ -23,7 +23,11 @@
 .paletteStyle {
   width: 100%;
   height: 30%;
-  background-color: rgba(124, 74, 42, 0.3);
+  background: rgb(14,14,14);
+  background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );
   border-radius: 0px;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -114,11 +118,39 @@
   background-color: darkgoldenrod;
 }
 
+.colorNavy {
+  background-color: navy;
+}
+
+.colorFuchsia {
+  background-color: fuchsia;
+}
+
+.colorSeaGreen {
+  background-color: seagreen;
+}
+
+.colorDarkGreen {
+  background-color: darkgreen;
+}
+
+.colorDarkSlateGrey {
+  background-color: darkslategrey;
+}
+
+.colorCrimson {
+  background-color: crimson;
+}
+
+.colorCadetBlue {
+  background-color: cadetblue;
+}
+
 .commonStyle {
   margin: 5px;
   width: 30px;
   height: 30px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 100%;
   float: left;
 }
