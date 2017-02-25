@@ -5,17 +5,26 @@ window.onload = function() {
     var colorButtons = document.getElementsByClassName("commonStyle");
     var currentColor = '';
     var colorBox = document.getElementById("currentColor");
+    var mouseIsDown = false;
 
-    for (var i = 0; i < 363; i++) {
+    for (var i = 0; i < 4000; i++) {
         var divElem = document.createElement('div');
         canvas.append(divElem);
-        divElem.style.border = "1px solid gray";
-        divElem.style.height = "9%";
-        divElem.style.width = "3%";
+        // divElem.style.border = "1px solid gray";
+        divElem.style.height = "6px";
+        divElem.style.width = "6px";
         divElem.style.float = "left";
 
-        divElem.addEventListener("click", (event) => {
+        document.addEventListener("mousedown", function() {
+          mouseIsDown = true;
+        });
+        document.addEventListener("mouseup", function() {
+          mouseIsDown = false;
+        })
+        divElem.addEventListener("mouseover", (event) => {
+          if (mouseIsDown) {
             event.target.style.backgroundColor = currentColor;
+          }
         });
     }
 
