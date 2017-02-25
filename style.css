@@ -3,18 +3,28 @@
 }
 
 .appStyle {
-  width: 600px;
-  height: 300px;
+  width: 1000px;
+  height: 600px;
+  max-width: 1000px;
+  max-height: 600px;
+  min-width: 1000px;
+  min-height: 600px;
   border: 2px solid black;
   margin: auto;
   border-radius: 10px;
+  background: rgb(14,14,14);
+  background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );
 }
 
 .canvasStyle {
-  width: 100%;
+  width: 98%;
   height: 70%;
-  border-bottom: 2px solid black;
-  background-color: rgba(224, 219, 219, 0.6);
+  margin: auto;
+  /*border-bottom: 1px solid black;*/
+  background-color: white;
   border-radius: 8px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -23,10 +33,18 @@
 .paletteStyle {
   width: 100%;
   height: 30%;
-  background-color: rgba(124, 74, 42, 0.3);
+  background: rgb(14,14,14);
+  background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );
   border-radius: 0px;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.colorsStyle {
+  width: 50%;
 }
 
 .colorRed {
@@ -110,21 +128,55 @@
   background-color: darkgoldenrod;
 }
 
+.colorNavy {
+  background-color: navy;
+}
+
+.colorFuchsia {
+  background-color: fuchsia;
+}
+
+.colorSeaGreen {
+  background-color: seagreen;
+}
+
+.colorDarkGreen {
+  background-color: darkgreen;
+}
+
+.colorDarkSlateGrey {
+  background-color: darkslategrey;
+}
+
+.colorCrimson {
+  background-color: crimson;
+}
+
+.colorCadetBlue {
+  background-color: cadetblue;
+}
+
 .commonStyle {
   margin: 5px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
   border-radius: 100%;
   float: left;
 }
 
+.special {
+  border: 5px solid gold;
+}
+
 .currentColor {
-  color: white;
+  color: yellow;
   font-family: 'Raleway', sans-serif;
+  font-size: 50px;
   float: right;
   position: relative;
-  right: 60px;
+  right: 80px;
+  bottom: 50px;
 }
 
 .currentColorBox {
