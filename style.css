@@ -27,7 +27,7 @@ body {
   width: 98%;
   height: 70%;
   margin: auto;
-  /*border-bottom: 1px solid black;*/
+  border-bottom: 1px solid black;
   background-color: white;
   border-radius: 8px;
   border-bottom-right-radius: 0px;
@@ -61,11 +61,11 @@ body {
 }
 
 .currentColor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  justify-content: space-between;
-  padding: 0.5em;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*justify-content: left;*/
+  /*justify-content: space-between;*/
+  padding: 10px;
   color: yellow;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
@@ -203,16 +203,19 @@ body {
 }
 
 .currentColorBox {
-  display: inline-block;
+  /*display: inline-block;*/
   border: 1px solid black;
-  height: 1em;
-  width: 1em;
-  position: relative;
-  top: 1.7px;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  /*position: relative;
+  top: 1.7px;*/
+  float: right;
   background-color: black;
 }
 
 .gridToggle {
   height: 40px;
   font-size: 20px;
+  float: right;
 }
