@@ -298,3 +298,15 @@ body {
   position: absolute;
   top: 5px;
 }
+
+.eraserWhite {
+  position: absolute;
+  bottom: 31px;
+  right: 96px;
+  height: 36px;
+  width: 42px;
+  background-color: white;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+}
