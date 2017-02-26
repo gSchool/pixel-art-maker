@@ -1,5 +1,6 @@
-var gridSize = 20;
-var boxSize = 25;
+var gridRow = 25;
+var gridColumn = 25;
+const BOXSIZE = 15;
 var colorPick = "#ffffff";
 
 //select your color
@@ -8,11 +9,13 @@ colors.addEventListener('click', function(event){
   //console.log(event.target)
   if(event.target.classList.contains('colorBlock')){
     colorPick = event.target.style.backgroundColor;
+    document.querySelector('.colorSelect').style.backgroundColor = colorPick;
   }
 })
 
 //paint a square
 var container = document.querySelector('.canvasBox');
+
 container.addEventListener('click', function(event){
   //console.log(event.target)
   if(event.target.classList.contains('grid')){
@@ -20,17 +23,27 @@ container.addEventListener('click', function(event){
   }
 })
 
-//draw grid
-container.style.width = (gridSize * boxSize + (gridSize*2))+"px";
-container.style.height = (gridSize * boxSize + (gridSize*2)) +"px";
-
-for(let i=0; i <gridSize*gridSize; i++){
-  let gridBox = document.createElement('div');
-  gridBox.className = 'grid'
-  gridBox.style.width = boxSize + "px";
-  gridBox.style.height = boxSize + "px";
-  container.appendChild(gridBox)
+//resize Canvas
+document.querySelector('#buttonResize').addEventListener('click', function(){
+    container.innerHTML = "";
+    gridRow = document.querySelector('#inputRow').value;
+    gridColumn = document.querySelector('#inputColumn').value;
+    drawGrid();
+})
+function drawGrid(){
+  container.style.width = (gridColumn * BOXSIZE + (gridColumn*2))+"px";
+  container.style.height = (gridRow * BOXSIZE + (gridRow*2)) +"px";
+  for(let i=0; i <gridColumn*gridRow; i++){
+    let gridBox = document.createElement('div');
+    gridBox.className = 'grid'
+    gridBox.style.width = BOXSIZE + "px";
+    gridBox.style.height = BOXSIZE + "px";
+    container.appendChild(gridBox)
+  }
 }
+//draw starting grid
+drawGrid();
+
 
 // //Blue
 // var paletteBlue = document.querySelector("#blue");

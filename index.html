@@ -4,17 +4,32 @@
   <title>My First Paint</title>
 </head>
 <body>
-  <p id="colorSelect"></p>
-  <div class="palette">
-    <div class='colorBlock' id="white" style="background-color:#ffffff"></div>
-    <div class='colorBlock' id="blue" style="background-color:#2462ab"></div>
-    <div class='colorBlock' id="violet" style="background-color:#b620e3"></div>
-    <div class='colorBlock' id="red" style="background-color:#e32020"></div>
-    <div class='colorBlock' id="orange" style="background-color:#e87826"></div>
-    <div class='colorBlock' id="yellow" style="background-color:#e8ec1f"></div>
-    <div class='colorBlock' id="green" style="background-color:#29a615"></div>
+  <div class="leftBar">
+    <p class="pSelect">Selected Color</p>
+    <div class="colorSelect"></div>
+    <div class="palette">
+      <div class='colorBlock'style="background-color:#ffffff"></div>
+      <div class='colorBlock'style="background-color:#2462ab"></div>
+      <div class='colorBlock'style="background-color:#b620e3"></div>
+      <div class='colorBlock'style="background-color:#e32020"></div>
+      <div class='colorBlock'style="background-color:#e87826"></div>
+      <div class='colorBlock'style="background-color:#e8ec1f"></div>
+      <div class='colorBlock'style="background-color:#29a615"></div>
+    </div>
   </div>
-  <div class="canvasBox"></div>
+  <div class="centerPage">
+    <div class="canvasBox"></div>
+  </div>
+  <div class="rightBar">
+    <p class="pSelect">Resize grid</p>
+    <section>
+      <p class="inputText"># of Rows:</p>
+      <input class="inputGrid" id="inputRow"/>
+      <p class="inputText"># of Columns:</p>
+      <input class="inputGrid" id="inputColumn"/>
+      <button class="buttonSide" id="buttonResize">click to resize</button>
+    </section>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
