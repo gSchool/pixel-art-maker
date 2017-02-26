@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="app.js">
     </script>
-</head>
+  </head>
   <body>
     <div id="container" class="appStyle">
       <div id="canvas" class="canvasStyle"></div>
@@ -29,30 +29,13 @@
             <div class="commonStyle colorBrown"></div>
             <div class="commonStyle colorBlack"></div>
             <div class="commonStyle colorWhite"></div>
-            <div class="commonStyle colorPapayawhip special"></div>
+            <div class="commonStyle colorPapayawhip"></div>
             <div class="commonStyle colorDimGrey"></div>
             <div class="commonStyle colorDodgerBlue"></div>
             <div class="commonStyle colorDarkGoldenRod"></div>
-            <div class="commonStyle colorNavy"></div>
-            <div class="commonStyle colorFuchsia"></div>
-            <div class="commonStyle colorSeaGreen"></div>
-            <div class="commonStyle colorDarkGreen"></div>
-            <div class="commonStyle colorDarkSlateGrey"></div>
-            <div class="commonStyle colorCrimson"></div>
-            <div class="commonStyle colorCadetBlue"></div>
           </div>
           <div class="currentColor">
-            <div>
-              <label for="currentColor" class="currentColorLabel">color = </label>
-              <div id="currentColor" class="currentColorBox"></div>
-            </div>
-            <div>
-            <label for="gridToggle">toggle = </label>
-              <select name="gridToggle" id="gridToggle" class="gridToggle">
-                <option value="displayGrid">Display Grid</option>
-                <option value="hideGrid">Hide Grid</option>
-              </select>
-            </div>
+            Color = <div id="currentColor" class="currentColorBox"></div>
           </div>
       </div>
     </div>
