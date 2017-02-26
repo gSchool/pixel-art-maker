@@ -72,112 +72,112 @@ body {
 
 
 
-.colorRed {
+.red {
   background-color: red;
   visibility: visible;
 }
 
-.colorGreen {
+.green {
   background-color: green;
 }
 
-.colorBlue {
+.blue {
   background-color: blue;
 }
 
-.colorYellow {
+.yellow {
   background-color: yellow;
 }
 
-.colorPurple {
+.purple {
   background-color: purple;
 }
 
-.colorCyan {
+.cyan {
   background-color: cyan;
 }
 
-.colorMagenta {
+.magenta {
   background-color: magenta;
 }
 
-.colorTeal {
+.teal {
   background-color: teal;
 }
 
-.colorTomato {
+.tomato {
   background-color: tomato;
 }
 
-.colorViolet {
+.violet {
   background-color: violet;
 }
 
-.colorGold {
+.gold {
   background-color: gold;
 }
 
-.colorChartreuse {
+.chartreuse {
   background-color: chartreuse;
 }
 
-.colorPink {
+.pink {
   background-color: pink;
 }
 
-.colorBrown {
+.brown {
   background-color: brown;
 }
 
-.colorBlack {
+.black {
   background-color: black;
 }
 
-.colorWhite {
+.white {
   background-color: white;
 }
 
-.colorPapayawhip {
+.papayawhip {
   background-color: papayawhip;
 }
 
-.colorDimGrey {
+.dimGrey {
   background-color: dimgrey;
 }
 
-.colorDodgerBlue {
+.dodgerBlue {
   background-color: dodgerblue;
 }
 
-.colorDarkGoldenRod {
+.darkGoldenRod {
   background-color: darkgoldenrod;
 }
 
-.colorNavy {
+.navy {
   background-color: navy;
 }
 
-.colorFuchsia {
+.fuchsia {
   background-color: fuchsia;
 }
 
-.colorSeaGreen {
+.seaGreen {
   background-color: seagreen;
 }
 
-.colorDarkGreen {
+.darkGreen {
   background-color: darkgreen;
 }
 
-.colorDarkSlateGrey {
+.darkSlateGrey {
   background-color: darkslategrey;
 }
 
-.colorCrimson {
+.crimson {
   background-color: crimson;
 }
 
-.colorCadetBlue {
+.cadetBlue {
   background-color: cadetblue;
 }
 
@@ -269,4 +269,15 @@ body {
   justify-content: center;
   color: white;
   background-color: red;
+}
+
+#nameDisplay {
+  float: left;
+  /*border: 1px solid black;*/
+  /*height: 20px;
+  width: 50px;*/
+  font-size: 34px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
 }

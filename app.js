@@ -13,23 +13,27 @@ window.onload = function() {
     var eraseButton = document.getElementById("eraseButton");
     var resetButton = document.getElementById("resetButton");
     var pixels = document.getElementsByClassName("pixels");
+    var nameDisplay = document.getElementById("nameDisplay");
 
     eraseButton.addEventListener("click", function() {
-      currentColor = "white";
-      colorBox.style.backgroundColor = currentColor;
+        currentColor = "white";
+        colorBox.style.backgroundColor = currentColor;
+        nameDisplay.innerHTML = currentColor;
     });
 
     resetButton.addEventListener("click", function() {
-      currentColor = "black";
-      colorBox.style.backgroundColor = currentColor;
-      for (let i = 0; i < pixels.length; i++) {
-        pixels[i].style.backgroundColor = "white";
-      }
+        currentColor = "black";
+        colorBox.style.backgroundColor = currentColor;
+        for (let i = 0; i < pixels.length; i++) {
+            pixels[i].style.backgroundColor = "white";
+        }
+        nameDisplay.innerHTML = currentColor;
     });
 
     colorSetter.addEventListener("click", function() {
         currentColor = colorWheel.value;
         colorBox.style.backgroundColor = currentColor;
+        nameDisplay.innerHTML = currentColor;
     });
 
     document.addEventListener("mousedown", function() {
@@ -78,9 +82,9 @@ window.onload = function() {
     // cycle through colors
     for (let i = 0; i < colorButtons.length; i++) {
         colorButtons[i].addEventListener("click", function(event) {
-            currentColor = getComputedStyle(colorButtons[i])
-                .backgroundColor;
+            currentColor = getComputedStyle(colorButtons[i]).backgroundColor;
             colorBox.style.backgroundColor = currentColor;
+            nameDisplay.innerHTML = colorButtons[i].classList[2];
         });
     }
 };
