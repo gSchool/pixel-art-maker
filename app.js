@@ -72,7 +72,7 @@ window.onload = function() {
         divElem.style.height = "9px";
         divElem.style.float = "left";
 
-        divElem.addEventListener("mouseover", (event) => {
+        divElem.addEventListener("mouseenter", (event) => {
             if (mouseIsDown) {
                 event.target.style.backgroundColor = currentColor;
             }
