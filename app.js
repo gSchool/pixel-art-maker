@@ -10,6 +10,22 @@ window.onload = function() {
     var gridToggle = document.getElementById("gridToggle");
     var colorSetter = document.getElementById("colorSetter");
     var colorWheel = document.getElementById("colorWheel");
+    var eraseButton = document.getElementById("eraseButton");
+    var resetButton = document.getElementById("resetButton");
+    var pixels = document.getElementsByClassName("pixels");
+
+    eraseButton.addEventListener("click", function() {
+      currentColor = "white";
+      colorBox.style.backgroundColor = currentColor;
+    });
+
+    resetButton.addEventListener("click", function() {
+      currentColor = "black";
+      colorBox.style.backgroundColor = currentColor;
+      for (let i = 0; i < pixels.length; i++) {
+        pixels[i].style.backgroundColor = "white";
+      }
+    });
 
     colorSetter.addEventListener("click", function() {
         currentColor = colorWheel.value;
@@ -46,7 +62,6 @@ window.onload = function() {
         });
 
     }
-    var pixels = document.getElementsByClassName("pixels");
     gridToggle.addEventListener("change", function(ev) {
         if (ev.target.value === "hideGrid") {
             for (let i = 0; i < pixels.length; i++) {
