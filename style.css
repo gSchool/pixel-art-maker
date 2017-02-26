@@ -4,9 +4,11 @@
 
 body {
   background-color: papayawhip;
+  cursor: default;
 }
 
 .appStyle {
+  cursor: default;
   width: 1000px;
   height: 600px;
   max-width: 1000px;
@@ -25,15 +27,12 @@ body {
 
 .canvasStyle {
   width: 98%;
-  /*display: inline-block;*/
   height: 70%;
-  /*max-height: 600px;*/
   margin: auto;
   border-bottom: 1px solid rgba(224, 224, 224, 0.4);
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
-  /*border-bottom-right-radius: 0;*/
 }
 
 .paletteStyle {
@@ -51,32 +50,23 @@ body {
 }
 
 .colorsStyle {
-  padding-top: 14px;
-  padding-right: 2px;
+  height: 100%;
   width: 50%;
   float: left;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
   justify-content: space-between;
-  align-items: stretch;
 }
 
 .currentColor {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*justify-content: left;*/
-  /*justify-content: space-between;*/
   padding: 10px;
   color: yellow;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   float: left;
   position: relative;
-  /*right: 80px;
-  bottom: 50px;*/
   width: 50%;
-  /*background-color: papayawhip;*/
   height: 100%;
 }
 
@@ -205,13 +195,10 @@ body {
 }
 
 .currentColorBox {
-  /*display: inline-block;*/
   border: 1px solid black;
   height: 40px;
   width: 40px;
   margin-left: 10px;
-  /*position: relative;
-  top: 1.7px;*/
   float: right;
   background-color: black;
 }
@@ -232,16 +219,18 @@ body {
 
 #colorWheel {
   border: 1px solid black;
+  border-radius: 4px;
+  background-color: "#C0C0C0";
   float: right;
-  clear: both;
   width: 40px;
   height: 40px;
-  margin-left: 10px;
   margin-top: 10px;
 }
 
 #colorSetter {
+  clear: both;
   float: right;
+  margin-left: 10px;
   height: 40px;
   width: 133px;
   margin-top: 10px;
@@ -252,4 +241,20 @@ body {
 
 #colorSetter:focus {
   outline: 0;
+}
+
+#colorWheel:focus {
+  outline: 0;
+}
+
+.eraser:hover {
+  cursor: default;
+}
+
+.clickable:active{
+  cursor: pointer;
+}
+
+.canvasStyle:active {
+  cursor: pointer;
 }

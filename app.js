@@ -1,6 +1,7 @@
 'use strict';
 
 window.onload = function() {
+
     var canvas = document.getElementById('canvas');
     var colorButtons = document.getElementsByClassName("commonStyle");
     var currentColor = 'black';
@@ -11,24 +12,20 @@ window.onload = function() {
     var colorWheel = document.getElementById("colorWheel");
 
     colorSetter.addEventListener("click", function() {
-      currentColor = colorWheel.value;
-      colorBox.style.backgroundColor = currentColor;
-    })
+        currentColor = colorWheel.value;
+        colorBox.style.backgroundColor = currentColor;
+    });
 
     document.addEventListener("mousedown", function() {
-      mouseIsDown = true;
+        mouseIsDown = true;
     });
 
     document.addEventListener("mouseup", function() {
-      mouseIsDown = false;
-      document.body.style.cursor = "auto";
-    });
-
-    canvas.addEventListener("mousedown", (event) => {
-      document.body.style.cursor = "pointer";
+        mouseIsDown = false;
     });
 
     for (var i = 0; i < 6344; i++) {
+
         var divElem = document.createElement('div');
         canvas.append(divElem);
 
@@ -39,23 +36,28 @@ window.onload = function() {
         divElem.style.float = "left";
 
         divElem.addEventListener("mouseover", (event) => {
-          if (mouseIsDown) {
-            event.target.style.backgroundColor = currentColor;
-          }
+            if (mouseIsDown) {
+                event.target.style.backgroundColor = currentColor;
+            }
         });
+
+        divElem.addEventListener("click", (event) => {
+            event.target.style.backgroundColor = currentColor;
+        });
+
     }
     var pixels = document.getElementsByClassName("pixels");
     gridToggle.addEventListener("change", function(ev) {
-      if (ev.target.value === "hideGrid") {
-        for (let i = 0; i < pixels.length; i++) {
-          pixels[i].style.border = null;
+        if (ev.target.value === "hideGrid") {
+            for (let i = 0; i < pixels.length; i++) {
+                pixels[i].style.border = null;
+            }
         }
-      }
-      if (ev.target.value === "displayGrid") {
-        for (let j = 0; j < pixels.length; j++) {
-          pixels[j].style.border = "1px solid rgba(224, 224, 224, 0.4)";
+        if (ev.target.value === "displayGrid") {
+            for (let j = 0; j < pixels.length; j++) {
+                pixels[j].style.border = "1px solid rgba(224, 224, 224, 0.4)";
+            }
         }
-      }
     });
 
     // cycle through colors
@@ -66,7 +68,4 @@ window.onload = function() {
             colorBox.style.backgroundColor = currentColor;
         });
     }
-    // document.addEventListener("mousedown", function() {
-    //     console.log(mousedown === true);
-    // });
 };
