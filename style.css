@@ -29,7 +29,7 @@ body {
   border: 2px solid black;
   border-top-color: grey;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 2vh;
   border-radius: 10px;
   background: rgb(14,14,14);
   background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
@@ -250,7 +250,7 @@ body {
   font-size: 20px;
 }
 
-#colorSetter:focus, #colorWheel:focus, #resetButton:focus, #eraseButton:focus {
+#colorSetter:focus, #colorWheel:focus, #resetButton:focus, #eraseButton:focus, #fillButton {
   outline: 0;
 }
 
@@ -310,4 +310,21 @@ body {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 
+}
+
+#fillButton {
+  height: 80%;
+  border-radius: 4px;
+  text-align: center;
+  font: 'Raleway', sans-serif;
+  color: yellow;
+  font-size: 14px;
+  width: 20px;
+  border: 2px outset grey;
+  position: absolute;
+  left: 10px;
+}
+
+.fillDisplay {
+  color: black;
 }
