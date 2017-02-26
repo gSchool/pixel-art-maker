@@ -27,11 +27,11 @@ body {
   width: 98%;
   height: 70%;
   margin: auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.4);
   background-color: white;
   border-radius: 8px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  overflow: hidden;
+  /*border-bottom-right-radius: 0;*/
 }
 
 .paletteStyle {

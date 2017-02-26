@@ -24,12 +24,7 @@ window.onload = function() {
     for (var i = 0; i < 6344; i++) {
         var divElem = document.createElement('div');
         canvas.append(divElem);
-        if (i === 0) {
-          divElem.style.borderTopLeftRadius = "10px";
-        }
-        if (i === 121) {
-          divElem.style.borderTopRightRadius = "10px";
-        }
+
         divElem.className = "pixels";
         divElem.style.border = "1px solid rgba(224, 224, 224, 0.4)";
         divElem.style.width = "8px";
