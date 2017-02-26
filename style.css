@@ -73,6 +73,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-left: 1px;
 }
 
 .currentColor {
@@ -203,14 +204,14 @@ body {
   /*margin: 5px;*/
   width: 50px;
   height: 50px;
-  border: 1px solid black;
+  border: 2px outset grey;
   border-radius: 100%;
   float: left;
 }
 
-.special {
+/*.special {
   border: 5px solid gold;
-}
+}*/
 
 .currentColorBox {
   border: 1px solid black;
