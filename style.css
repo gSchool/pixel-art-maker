@@ -25,7 +25,9 @@ body {
 
 .canvasStyle {
   width: 98%;
+  /*display: inline-block;*/
   height: 70%;
+  /*max-height: 600px;*/
   margin: auto;
   border-bottom: 1px solid rgba(224, 224, 224, 0.4);
   background-color: white;
@@ -218,4 +220,36 @@ body {
   height: 40px;
   font-size: 20px;
   float: right;
+}
+
+.eraser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+#colorWheel {
+  border: 1px solid black;
+  float: right;
+  clear: both;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#colorSetter {
+  float: right;
+  height: 40px;
+  width: 133px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+#colorSetter:focus {
+  outline: 0;
 }

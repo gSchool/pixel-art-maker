@@ -7,6 +7,13 @@ window.onload = function() {
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
     var gridToggle = document.getElementById("gridToggle");
+    var colorSetter = document.getElementById("colorSetter");
+    var colorWheel = document.getElementById("colorWheel");
+
+    colorSetter.addEventListener("click", function() {
+      currentColor = colorWheel.value;
+      colorBox.style.backgroundColor = currentColor;
+    })
 
     document.addEventListener("mousedown", function() {
       mouseIsDown = true;
