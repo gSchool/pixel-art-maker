@@ -1,22 +1,30 @@
-var grid=document.querySelector('.grid')
-grid.addEventListener('click', function (event) {
-  event.target.style.backgroundColor = color;
-})
-
 var color = 'white';
 
-var paintbrush = document.querySelector('.color-palette')
+ var paintbrush = document.querySelector('.color-palette')
 
-paintbrush.addEventListener('click', function(event){
-  var targetStyle = window.getComputedStyle(event.target)
-    var color = targetStyle.getPropertyValue('background-color')
-  console.log(color)
-    if (event.target.classList.contains('pixel')) {
-      event.target.classList.toggle('colored')
-    }
+ paintbrush.addEventListener('click', function(event){
+   var target = window.getComputedStyle(event.target)
+   color = target.getPropertyValue('background-color')
+   console.log(color);
+   })
+
+var clicker = document.querySelector('.grid');
+clicker.addEventListener('click', function(event) {
+event.target.style.backgroundColor = color;
 })
 
+//     if (event.target.classList.contains('pixel')) {
+//       event.target.classList.toggle('colored')
+//     }
+// })
 
+// var art = document.querySelector('.pallette_row')
+// art.addEventListener('click', function(event) {
+//   var targetStyle = window.getComputedStyle(event.target)
+//    var color = targetStyle.getPropertyValue("background-color")
+//   console.log(color)
+//    if(event.target.classList.contains('pixel')) {
+//      event.target.classList.toggle('colored')
 //set var paintbrush (to select color from palette)  -> add event listener to paintbrush , get style elements, then set new color via saving;
 //
 // // function to save colors
