@@ -209,14 +209,6 @@ body {
   float: right;
 }
 
-.eraser {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 40px;
-}
-
 #colorWheel {
   border: 1px solid black;
   border-radius: 4px;
@@ -239,22 +231,42 @@ body {
   font-size: 20px;
 }
 
-#colorSetter:focus {
+#colorSetter:focus, #colorWheel:focus, #resetButton:focus, #eraseButton:focus {
   outline: 0;
 }
 
-#colorWheel:focus {
-  outline: 0;
-}
-
-.eraser:hover {
-  cursor: default;
-}
-
-.clickable:active{
+.clickable:active, .canvasStyle:active {
   cursor: pointer;
 }
 
-.canvasStyle:active {
-  cursor: pointer;
+#eraseButton {
+  border-radius: 4px;
+  clear: left;
+  float: right;
+  height: 40px;
+  width: 90px;
+  margin-top: 10px;
+  font: 'Raleway', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+#resetButton {
+  border-radius: 4px;
+  clear: both;
+  float: right;
+  margin-left: 4px;
+  height: 40px;
+  width: 90px;
+  margin-top: 10px;
+  font: 'Raleway', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: red;
 }
