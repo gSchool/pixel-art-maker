@@ -1,3 +1,5 @@
+// Intial Start
+
 // var sectionOne= document.querySelector('.one');
 //
 // sectionOne.querySelector(".first").style.backgroundColor = "red";
@@ -13,6 +15,7 @@ var artColor = "fff";
 
 var paint =
 document.querySelector(".colorBar");
+
 paint.addEventListener('click', function(event){
 console.log(event.target);
   var targetStyle = window.getComputedStyle(event.target);
@@ -28,6 +31,9 @@ container.addEventListener('click', function(event) {
     event.target.style.backgroundColor = artColor;
   }
 });
+
+// Chad's code
+
 // var container = document.querySelector('.container')
 //
 // container.addEventListener('click', function(event) {
