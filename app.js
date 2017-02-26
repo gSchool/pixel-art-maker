@@ -5,6 +5,7 @@ window.onload = function() {
     var canvas = document.getElementById('canvas');
     var colorButtons = document.getElementsByClassName("commonStyle");
     var currentColor = 'black';
+    var fillColor = "black";
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
     var gridToggle = document.getElementById("gridToggle");
@@ -20,11 +21,15 @@ window.onload = function() {
     fillButton.addEventListener("click", function() {
       for (let i = 0; i < pixels.length; i++) {
         pixels[i].style.backgroundColor = currentColor;
+        fillColor = currentColor;
+        for (let i = 0; i < fillDisplay.length; i++) {
+          fillDisplay[i].style.color = currentColor;
+        }
       }
     })
 
     eraseButton.addEventListener("click", function() {
-        currentColor = "white";
+        currentColor = fillColor;
         colorBox.style.backgroundColor = currentColor;
         nameDisplay.innerHTML = currentColor;
         for (let i = 0; i < fillDisplay.length; i++) {
@@ -102,9 +107,9 @@ window.onload = function() {
             currentColor = getComputedStyle(colorButtons[i]).backgroundColor;
             colorBox.style.backgroundColor = currentColor;
             nameDisplay.innerHTML = colorButtons[i].classList[2];
-            for (let i = 0; i < fillDisplay.length; i++) {
-              fillDisplay[i].style.color = currentColor;
-            }
+            // for (let i = 0; i < fillDisplay.length; i++) {
+            //   fillDisplay[i].style.color = currentColor;
+            // }
         });
     }
 };
