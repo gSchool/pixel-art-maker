@@ -51,8 +51,8 @@ window.onload = function() {
 
         divElem.className = "pixels";
         divElem.style.border = "1px solid rgba(224, 224, 224, 0.4)";
-        divElem.style.width = "8px";
-        divElem.style.height = "8px";
+        divElem.style.width = "9px";
+        divElem.style.height = "9px";
         divElem.style.float = "left";
 
         divElem.addEventListener("mouseover", (event) => {
