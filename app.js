@@ -3,7 +3,7 @@
 window.onload = function() {
     var canvas = document.getElementById('canvas');
     var colorButtons = document.getElementsByClassName("commonStyle");
-    var currentColor = '';
+    var currentColor = 'black';
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
     var gridToggle = document.getElementById("gridToggle");
