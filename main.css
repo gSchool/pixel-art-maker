@@ -1,20 +1,26 @@
 
-main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
+.container {
+  background: dodgerblue;
 }
 
-section {
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-content: center;
+  border: solid 1px Black;
+  height: 20px;
 }
 
- section div {
-  height: 10px;
-  width: 10px;
-  border: 1px solid black;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  flex-wrap: nowrap;
+  border: solid 1px Black;
+  width: =20px;
+}
+
+.colored {
+  background: green;
+  color: white;
 }

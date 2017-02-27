@@ -1,21 +1,35 @@
-var container = document.querySelector('.container')
+function setGrid() {
+  var gridwidth= doucument.querySelector('.width');
+  var gridheight= document.querySelector('.height');
+  var container = document.querySelector('.container');
 
-container.addEventListener('click', function(event) {
-  console.log(event.target)
-  if (event.target.classList.contains('cell')) {
-    event.target.classList.toggle('colored')
-  }
-})
+  for (var i = 0; i < gridheight; i++) {
+    var newRow = document.createElement('section')
+    newRow.classList.add('row');
+    container.appendChild(newRow);
+    for (var j = 0; j < gridwidth; j++) {
+      var newColumn = document.createElement('div');
+      newColumn.classList.add('column')
+      newRow.appendChild(newColumn);
 
-var width = 10
-var height = 10
-for (var i = 1; i <= height; i++) {
-  var newColumn = document.createElement('section')
-  newColumn.classList.add('column')
-  container.appendChild(new)
-  for (var j = 1; j <= width; j++) {
-    var newCell = document.createElement('div')
-    newCell.classList.add('column')
-    newRow.appendChild(newCell)
+    }
+
   }
 }
+
+// function getColor() {
+//  var container = document.querySelector('container');
+//  container.addEventListener("click", function(event){
+//    if (event.target.classList('column')) {
+//
+//    }
+//  }
+// }
+
+setGrid();
+
+// container.addEventListener("click", function(event) {
+//   if (event.target.classList.contains('cell')) {
+//
+//   }
+// }
