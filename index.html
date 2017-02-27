@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pixel Art Maker</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js">
+    </script>
+</head>
+  <body>
+    <!-- <div id="shadow"></div> -->
+    <div id="container" class="appStyle">
+      <div id="canvas" class="canvasStyle"></div>
+      <div id="palette" class="paletteStyle">
+          <div class="colorsStyle">
+            <div class="clickable commonStyle red"></div>
+            <div class="clickable commonStyle green"></div>
+            <div class="clickable commonStyle blue"></div>
+            <div class="clickable commonStyle yellow"></div>
+            <div class="clickable commonStyle purple"></div>
+            <div class="clickable commonStyle tomato"></div>
+            <div class="clickable commonStyle cyan"></div>
+            <div class="clickable commonStyle magenta"></div>
+            <div class="clickable commonStyle teal"></div>
+            <div class="clickable commonStyle violet"></div>
+            <div class="clickable commonStyle gold"></div>
+            <div class="clickable commonStyle chartreuse"></div>
+            <div class="clickable commonStyle pink"></div>
+            <div class="clickable commonStyle brown"></div>
+            <div class="clickable commonStyle black"></div>
+            <div class="clickable commonStyle white"></div>
+            <div class="clickable commonStyle papayaWhip special"></div>
+            <div class="clickable commonStyle dimGrey"></div>
+            <div class="clickable commonStyle dodgerBlue"></div>
+            <div class="clickable commonStyle darkGoldenRod"></div>
+            <div class="clickable commonStyle navy"></div>
+            <div class="clickable commonStyle fuchsia"></div>
+            <div class="clickable commonStyle seaGreen"></div>
+            <div class="clickable commonStyle darkGreen"></div>
+            <div class="clickable commonStyle darkSlateGrey"></div>
+            <div class="clickable commonStyle crimson"></div>
+            <div class="clickable commonStyle cadetBlue"></div>
+          </div>
+          <div class="currentColor">
+            <div id="nameDisplay">black</div>
+            <div id="currentColor" class="currentColorBox"></div>
+            <select name="gridToggle" id="gridToggle" class="clickable gridToggle">
+              <option value="displayGrid">Display Grid</option>
+              <option value="hideGrid">Hide Grid</option>
+            </select>
+            <button id="colorSetter" class="clickable">Set from CW</button>
+            <input type="color" id="colorWheel" class="clickable" value="#00FF00">
+            <button id="resetButton" class="clickable">RESET</button>
+            <button id="eraseButton" class="clickable"><div class="eraserWhite"></div></button>
+            <button id="fillButton" class="clickable">
+              <div class="fillDisplay">f</div>
+              <div class="fillDisplay">i</div>
+              <div class="fillDisplay">l</div>
+              <div class="fillDisplay">l</div>
+            </button>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

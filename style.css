@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: papayawhip;
+  cursor: default;
+  background-image: url("https://static.pexels.com/photos/5049/forest-trees-fog-foggy.jpg");
+  background-position: center;
+}
+
+/*#shadow {
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  background-color: rgba(71, 59, 59, 0.7);
+  border-radius: 10px;
+  left: 20vw;
+}*/
+
+.appStyle {
+  cursor: default;
+  width: 1000px;
+  height: 600px;
+  max-width: 1000px;
+  max-height: 600px;
+  min-width: 1000px;
+  min-height: 600px;
+  border: 2px solid black;
+  border-top-color: grey;
+  margin: auto;
+  margin-top: 2vh;
+  border-radius: 10px;
+  background: rgb(14,14,14);
+  background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );
+}
+
+.canvasStyle {
+  width: 98%;
+  height: 70%;
+  margin: auto;
+  border: 2px inset black;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.paletteStyle {
+  width: 98%;
+  margin: auto;
+  height: 30%;
+  background: rgb(14,14,14);
+  background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );
+  border-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.colorsStyle {
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1px;
+}
+
+.currentColor {
+  padding: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: yellow;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+
+
+.red {
+  background-color: red;
+  visibility: visible;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.chartreuse {
+  background-color: chartreuse;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.papayaWhip {
+  background-color: papayawhip;
+}
+
+.dimGrey {
+  background-color: dimgrey;
+}
+
+.dodgerBlue {
+  background-color: dodgerblue;
+}
+
+.darkGoldenRod {
+  background-color: darkgoldenrod;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.fuchsia {
+  background-color: fuchsia;
+}
+
+.seaGreen {
+  background-color: seagreen;
+}
+
+.darkGreen {
+  background-color: darkgreen;
+}
+
+.darkSlateGrey {
+  background-color: darkslategrey;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.cadetBlue {
+  background-color: cadetblue;
+}
+
+.commonStyle {
+  /*margin: 5px;*/
+  width: 50px;
+  height: 50px;
+  border: 2px outset grey;
+  border-radius: 100%;
+  float: left;
+}
+
+/*.special {
+  border: 5px solid gold;
+}*/
+
+.currentColorBox {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  float: right;
+  background-color: black;
+}
+
+.gridToggle {
+  height: 40px;
+  font-size: 20px;
+  float: right;
+}
+
+#colorWheel {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: "#C0C0C0";
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#colorSetter {
+  clear: both;
+  float: right;
+  margin-left: 10px;
+  height: 40px;
+  width: 133px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+#colorSetter:focus, #colorWheel:focus, #resetButton:focus, #eraseButton:focus, #fillButton {
+  outline: 0;
+}
+
+.clickable:hover, .canvasStyle:active {
+  cursor: pointer;
+}
+
+#eraseButton {
+  border-radius: 4px;
+  clear: left;
+  float: right;
+  height: 40px;
+  width: 90px;
+  margin-top: 10px;
+  font: 'Raleway', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+#resetButton {
+  border-radius: 4px;
+  clear: both;
+  float: right;
+  margin-left: 4px;
+  height: 40px;
+  width: 90px;
+  margin-top: 10px;
+  font: 'Raleway', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: red;
+}
+
+#nameDisplay {
+  float: left;
+  height: 34px;
+  width: 306px;
+  font-size: 34px;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.eraserWhite {
+  position: absolute;
+  bottom: 31px;
+  right: 96px;
+  height: 36px;
+  width: 42px;
+  background-color: white;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+}
+
+#fillButton {
+  height: 91%;
+  border-radius: 4px;
+  font: 'Raleway', sans-serif;
+  color: yellow;
+  font-size: 20px;
+  width: 20px;
+  border: 2px outset grey;
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.fillDisplay {
+  color: white;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
