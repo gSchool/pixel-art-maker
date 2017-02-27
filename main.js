@@ -2,6 +2,8 @@ var gridRow = 25;
 var gridColumn = 25;
 const BOXSIZE = 15;
 var colorPick = "#ffffff";
+var paintOn = false;
+
 
 //select your color
 var colors = document.querySelector('.palette')
@@ -13,9 +15,12 @@ colors.addEventListener('click', function(event){
   }
 })
 
-//paint a square
-var container = document.querySelector('.canvasBox');
+// document.addEventListener('mousedown', mouseDownHandler, false);
+// document.addEventListener('mouseup', mouseUpHandler, false);
 
+
+//pencil a square with selected color
+var container = document.querySelector('.canvasBox');
 container.addEventListener('click', function(event){
   //console.log(event.target)
   if(event.target.classList.contains('grid')){
@@ -23,13 +28,35 @@ container.addEventListener('click', function(event){
   }
 })
 
-//resize Canvas
+document.querySelector('#buttonPaint').addEventListener('click', function(){
+  if(paintOn){
+    paintOn = false;
+    document.querySelector('#textPaint').textContent ='Paintbrush: off'
+  } else {
+    paintOn = true;
+    document.querySelector('#textPaint').textContent='Paintbrush: on'
+  }
+})
+
+container.addEventListener('mouseover', function(event){
+  if(paintOn && mouseState == "down"){
+    if(event.target.classList.contains('grid')){
+      event.target.style.backgroundColor = colorPick;
+    }
+  }
+})
+
+
+
+//resize Canvas with user inputs
 document.querySelector('#buttonResize').addEventListener('click', function(){
     container.innerHTML = "";
     gridRow = document.querySelector('#inputRow').value;
     gridColumn = document.querySelector('#inputColumn').value;
     drawGrid();
 })
+
+//draw canvas grid
 function drawGrid(){
   container.style.width = (gridColumn * BOXSIZE + (gridColumn*2))+"px";
   container.style.height = (gridRow * BOXSIZE + (gridRow*2)) +"px";
@@ -43,6 +70,18 @@ function drawGrid(){
 }
 //draw starting grid
 drawGrid();
+
+//mouse states **not my code**
+document.onmousedown = mouseDown;
+document.onmouseup   = mouseUp;
+var mouseState = "up";
+function mouseDown(ev) {
+    mouseState = "down";
+}
+function mouseUp(ev) {
+    mouseState = "up";
+}
+
 
 
 // //Blue
