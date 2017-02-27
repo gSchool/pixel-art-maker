@@ -6,8 +6,8 @@ var container = document.querySelector('.container')
 
 container.addEventListener('click', function(event) {
 	console.log(event.target)
-  if (event.target.classList.contains('cell')) {
-  	event.target.classList.toggle('colored')
+  if (event.target.classList.contains('grid')) {
+  	event.target.style.backgroundColor = color
   }
 })
 
@@ -15,7 +15,7 @@ var cellCount = 100
 for (var i = 1; i <= cellCount; i++) {
   var newCell = document.createElement('div')
   newCell.classList.add('grid')
-  newCell.textContent = i
+  // newCell.textContent =
   container.appendChild(newCell)
 }
 
@@ -44,7 +44,7 @@ paletteGreen.addEventListener("click", function(){
 })
 
 var container = document.getElementsByClassName('container');
-for (let i = 0; i <gridBoxes.length; i++){
+for (let i = 0; i < container.length; i++){
  document.getElementsByClassName('grid')[i].addEventListener( 'click', function() {
    document.getElementsByClassName('grid')[i].style.backgroundColor = color;
  })
