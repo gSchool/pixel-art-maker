@@ -11,15 +11,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 section {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .row{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.square {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
@@ -31,7 +37,6 @@ section {
   display: flex;
   flex-direction: row;
   margin: 20px;
-
 }
 .color {
   display: flex;

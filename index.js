@@ -1,8 +1,9 @@
-var cellCount = 101
-for (var i = 0; i <cellCount; i++) {
+var grid = document.querySelector('.grid')
+var cellCount = 400;
+for (var i = 1; i<=cellCount; i++) {
   var newCell = document.createElement('section');
-  newCell.classList.add('.row');
-  document.querySelector('.grid').appendChild(newCell)
+  newCell.classList.add('square');
+  grid.appendChild(newCell)
 }
 
 var color = 'white';
@@ -18,11 +19,8 @@ paintbrush.addEventListener('click', function(event){
 var clicker = document.querySelector('.grid');
 clicker.addEventListener('click', function(event) {
 event.target.style.backgroundColor = color;
+  // if (event.target.classList.toggle(paintbrush))
 })
-
-
-
-
 
 // // Tutorial on Event Delegation (Chad)
 // var container = document.querySelector('.container')
