@@ -5,53 +5,41 @@ var colorFour = "#0000FF"
 var colorFive = "#87CEEB"
 var colorSix = "#00EE76"
 var colorSeven = "#FFFF00"
-var soManyColors = [colorOne,colorTwo,colorThree,colorFour,colorFive,colorSix,colorSeven];
+var colorEight = '#000'
+var soManyColors = [colorOne,colorTwo,colorThree,colorFour,colorFive,colorSix,colorSeven,colorEight];
 var offWhite = "faebd7"
 var selectedColor = offWhite;
 
 
+
+var newPaletItem = document.createElement('a');
+var inner = document.createElement('li');
+newPaletItem.appendChild(inner);
+var paletList = document.querySelector('.colorKey');
+paletList.appendChild(newPaletItem);
+
 var allKeys = document.querySelectorAll('.colorKey li');
+
 
 for(var i = 0; i < soManyColors.length; i++){
   allKeys[i].style.background = soManyColors[i];
 }
 
 
-var numOne = allKeys[0];
-var numTwo = allKeys[1];
-var numThree = allKeys[2];
-var numFour = allKeys[3];
-var numFive = allKeys[4];
-var numSix = allKeys[5];
-var numSeven = allKeys[6];
 
-// for(var z=0;z<allKeys.length;z++){
-//   allKeys[z].addEventListener('click', function(event){
-//     selectedColor = allKeys[z].style.background;
-//   })
-// }
+// var numOne = allKeys[0];
+// var numTwo = allKeys[1];
+// var numThree = allKeys[2];
+// var numFour = allKeys[3];
+// var numFive = allKeys[4];
+// var numSix = allKeys[5];
+// var numSeven = allKeys[6];
 
-numOne.addEventListener('click',function(event){
-  selectedColor = numOne.style.background;
-})
-numTwo.addEventListener('click',function(event){
-  selectedColor = numTwo.style.background;
-})
-numThree.addEventListener('click',function(event){
-  selectedColor = numThree.style.background;
-})
-numFour.addEventListener('click',function(event){
-  selectedColor = numFour.style.background;
-})
-numFive.addEventListener('click',function(event){
-  selectedColor = numFive.style.background;
-})
-numSix.addEventListener('click',function(event){
-  selectedColor = numSix.style.background;
-})
-numSeven.addEventListener('click',function(event){
-  selectedColor = numSeven.style.background;
-})
+for(var z=0;z<allKeys.length;z++){
+  allKeys[z].addEventListener('click', function(event){
+    selectedColor = event.target.style.background;
+  })
+}
 
 
 var len = allKeys.length;
@@ -80,44 +68,6 @@ for(var k = 0; k < allDivs.length;k++){
 // var oneOfThem3 = allDivs[6];
 // var oneOfThem4 = allDivs[7];
 // var oneOfThem5 = allDivs[8];
-
-
-
-
-// topLeftDiv.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// topRightDiv.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// bottomLeftDiv.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// bottomRightDiv.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// oneOfThem1.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// oneOfThem2.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// oneOfThem3.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// oneOfThem4.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-// oneOfThem5.addEventListener('click',function(event){
-//   event.target.style.background = selectedColor;
-// })
-
-
-
-
-
-
-
 
 //chad code...
 
