@@ -36,13 +36,14 @@ window.onload = function() {
 
     resetButton.addEventListener("click", function() {
         currentColor = "black";
+        fillColor = "white";
         colorBox.style.backgroundColor = currentColor;
         for (let i = 0; i < pixels.length; i++) {
             pixels[i].style.backgroundColor = "white";
         }
         nameDisplay.innerHTML = currentColor;
         for (let i = 0; i < fillDisplay.length; i++) {
-          fillDisplay[i].style.color = currentColor;
+          fillDisplay[i].style.color = "white";
         }
     });
 
@@ -50,9 +51,6 @@ window.onload = function() {
         currentColor = colorWheel.value;
         colorBox.style.backgroundColor = currentColor;
         nameDisplay.innerHTML = currentColor;
-        for (let i = 0; i < fillDisplay.length; i++) {
-          fillDisplay[i].style.color = currentColor;
-        }
     });
 
     document.addEventListener("mousedown", function() {
