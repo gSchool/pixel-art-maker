@@ -5,7 +5,7 @@ window.onload = function() {
     var canvas = document.getElementById('canvas');
     var colorButtons = document.getElementsByClassName("commonStyle");
     var currentColor = 'black';
-    var fillColor = "black";
+    var fillColor = "white";
     var colorBox = document.getElementById("currentColor");
     var mouseIsDown = false;
     var gridToggle = document.getElementById("gridToggle");
@@ -32,9 +32,6 @@ window.onload = function() {
         currentColor = fillColor;
         colorBox.style.backgroundColor = currentColor;
         nameDisplay.innerHTML = currentColor;
-        for (let i = 0; i < fillDisplay.length; i++) {
-          fillDisplay[i].style.color = currentColor;
-        }
     });
 
     resetButton.addEventListener("click", function() {
