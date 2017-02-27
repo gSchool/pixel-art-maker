@@ -10,6 +10,7 @@
 // sectionTwo.querySelector(".third").style.backgroundColor = "green";
 // sectionTwo.querySelector(".fourth").style.backgroundColor = "red";
 
+function pixelSelect() {
 
 var artColor = "fff";
 
@@ -31,7 +32,8 @@ container.addEventListener('click', function(event) {
     event.target.style.backgroundColor = artColor;
   }
 });
-
+}
+pixelSelect();
 // Chad's code
 
 // var container = document.querySelector('.container')
