@@ -12,7 +12,20 @@ var colorButton = document.querySelector('.colorPalet')
     colorSelected.style.backgroundColor= newColor
   })
 
+  var storeGridSize = 1
+  var gridCanvas = ""
+
+var submit =document.querySelector(".submit")
+submit.addEventListener("click", function(event){
+  var theResult = document.getElementById("theResult").value
+  storeGridSize = theResult
+  gridCanvas = storeGridSize*storeGridSize
+  
+
   var grid = document.querySelector('.grid')
+  grid.style.width = (storeGridSize*26)+"px"
+  console.log("whats current grid size")
+  console.log(storeGridSize)
   grid.addEventListener ('click', function(event){
     console.log(event.target)
     if (event.target.classList.contains('cell'))
@@ -21,14 +34,7 @@ var colorButton = document.querySelector('.colorPalet')
   })
 
 
-var storeGridSize = 4
-
-var submit =document.querySelector(".submit")
-submit.addEventListener("click", function(event){
-  var theResult = document.getElementById("theResult").value
-  var storeGridSize = theResult
-
-  for (var i = 1; i <= storeGridSize; i++) {
+  for (var i = 1; i <= gridCanvas; i++) {
     var newCell = document.createElement('div')
     newCell.classList.add('cell')
     // newCell.textContent = i+8

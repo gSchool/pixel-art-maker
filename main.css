@@ -20,8 +20,6 @@ body{
 
 .grid{
   display: flex;
-  flex-direction: row;
-  width: 600px;
   justify-content: center;
   flex-wrap: wrap;
 }
