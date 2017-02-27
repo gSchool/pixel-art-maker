@@ -19,9 +19,22 @@ body {
 }
 
 .square {
-  height: 50%;
-  width: 50%;
+  height: 25%;
+  width: 25%;
   border: 2px solid black;
+}
+
+.currentColorSelected {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+}
+
+.currentColorSelected {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+
 }
 
 .colorPalette {
@@ -43,4 +56,12 @@ body {
 
 #blue {
   background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+#yellow{
+  background-color: yellow;
 }
