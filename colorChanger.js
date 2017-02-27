@@ -1,25 +1,41 @@
-var grid = document.querySelector('.grid')
-
+var colorSelected = document.querySelector('.colorSelected')
 
 
 var newColor = "color"
-var colorButton =
 
- document.querySelector('.colorPalet')
-
+var colorButton = document.querySelector('.colorPalet')
    colorButton.addEventListener('click', function(event) {
     var colorChanger = window.getComputedStyle(event.target)
      var color = colorChanger.getPropertyValue("background-color")
     console.log(color)
     newColor = color
+    colorSelected.style.backgroundColor= newColor
   })
 
+  var grid = document.querySelector('.grid')
   grid.addEventListener ('click', function(event){
     console.log(event.target)
     if (event.target.classList.contains('cell'))
       // event.target.classList.toggle('lightSkyBlue')
       event.target.style.backgroundColor=newColor
   })
+
+
+var storeGridSize = 4
+
+var submit =document.querySelector(".submit")
+submit.addEventListener("click", function(event){
+  var theResult = document.getElementById("theResult").value
+  var storeGridSize = theResult
+
+  for (var i = 1; i <= storeGridSize; i++) {
+    var newCell = document.createElement('div')
+    newCell.classList.add('cell')
+    // newCell.textContent = i+8
+    grid.appendChild(newCell)
+  }
+})
+
 
 
 
