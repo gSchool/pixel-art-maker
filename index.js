@@ -1,6 +1,7 @@
 var grid = document.querySelector('.grid')
-var cellCount = 400;
-for (var i = 1; i<=cellCount; i++) {
+var cellCount = 60;
+grid.style.width=(cellCount*10)+'px'
+for (var i = 0; i<(cellCount*cellCount); i++) {
   var newCell = document.createElement('section');
   newCell.classList.add('square');
   grid.appendChild(newCell)
