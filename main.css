@@ -5,10 +5,11 @@
 
   background: rgb(255, 255, 255);
   width: 400px;
-  /*margin: auto;*/
+  margin: 2em;
   border: solid 1px black;
   /*box-sizing: border-box;*/
   /*border-spacing: 0*/
+
 }
 
 .grid {
@@ -23,23 +24,23 @@
   border-spacing: 0;
 }
 
+.background {
+    background-color: rgb(226, 226, 226);
+}
 div {
+    /*display: flex;*/
+    /*align-content: center;*/
     border-spacing: 0;
     box-sizing: border-box;
     /*margin: 0;*/
 }
-/*.palette{
- margin-top:20px;
- width:204px;
- height:102px;
- display:flex;
-}*/
-
-
-/*.colored {
-  background: green;
-  color: white;
-}*/
+.palette{
+width: 98%;
+display: flex;
+flex-wrap: nowrap;
+padding-bottom: 20px;
+justify-content: space-between;
+}
 
 td {
     border: 1px solid black;
@@ -49,10 +50,27 @@ td {
 
 h4 {
     border: 1px solid black;
-    width: 380px;
+    /*width: 400px;*/
     padding: 10px;
     background-color: black;
     color: white;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.current{
+    border: 0px solid black;
+    width: 100px;
+    height: 20px;
+}
+.currentColor {
+    border: 1px solid black;
+    width: 60px;
+    height: 20px;
+
 }
 
 #blue {
@@ -71,4 +89,9 @@ h4 {
 
 #yellow {
     background-color: yellow;
+}
+
+#purple {
+    background-color: purple;
+}
 }

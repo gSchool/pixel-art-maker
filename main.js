@@ -4,6 +4,7 @@
 
 var container = document.querySelector('.container')
 
+
 container.addEventListener('click', function(event) {
 	console.log(event.target)
   if (event.target.classList.contains('grid')) {
@@ -11,7 +12,7 @@ container.addEventListener('click', function(event) {
   }
 })
 
-var cellCount = 1000
+var cellCount = 1600
 for (var i = 1; i <= cellCount; i++) {
   var newCell = document.createElement('div')
   newCell.classList.add('grid')
@@ -22,12 +23,14 @@ for (var i = 1; i <= cellCount; i++) {
 
 var color = "#ffffff";
 
+
+
 var paletteBlue = document.querySelector("#blue");
 var paletteRed = document.querySelector("#red");
 var paletteWhite = document.querySelector("#white");
 var paletteGreen = document.querySelector("#green");
 var paletteYellow = document.querySelector("#yellow");
-
+var palettePurple = document.querySelector("#purple");
 
 
 
@@ -58,6 +61,14 @@ paletteGreen.addEventListener("click", function(){
  console.log("green");
 
 })
+
+
+palettePurple.addEventListener("click", function(){
+ color = "purple";
+ console.log("purple");
+
+})
+
 
 var container = document.getElementsByClassName('container');
 for (let i = 0; i < container.length; i++){
