@@ -13,11 +13,11 @@ More specifically, your pixel art maker should allow a user to do the following.
 
 Here's a development workflow that we recommend you use.
 
-1. Fork and clone this repository.
-1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
-1. Add an event listener to each `div` so when clicked the background turns red.
-1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
-1. Add an event listener to these `div` tags so when clicked the brush color is saved.
+<!-- 1. Fork and clone this repository. -->
+<!-- 1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border. -->
+<!-- 1. Add an event listener to each `div` so when clicked the background turns red. -->
+<!-- 1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags. -->
+<!-- 1. Add an event listener to these `div` tags so when clicked the brush color is saved. -->
 1. Expand the dimensions of the pixel canvas.
 1. Expand the palette with more colors. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
 1. Expand the palette with a brush color indicator.
@@ -41,7 +41,7 @@ Research [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage
 
 ### Bonus 4
 
-Create a fill tool that will [flood fill](https://en.wikipedia.org/wiki/Flood_fill) boundaries with a chosen paint color. 
+Create a fill tool that will [flood fill](https://en.wikipedia.org/wiki/Flood_fill) boundaries with a chosen paint color.
 
 
 ### Deployment
