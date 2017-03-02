@@ -7,9 +7,12 @@ var container = document.querySelector('.container')
 
 container.addEventListener('click', function(event) {
 	console.log(event.target)
+
   if (event.target.classList.contains('grid')) {
   	event.target.style.backgroundColor = color
   }
+
+
 })
 
 var cellCount = 1600
@@ -31,48 +34,55 @@ var paletteWhite = document.querySelector("#white");
 var paletteGreen = document.querySelector("#green");
 var paletteYellow = document.querySelector("#yellow");
 var palettePurple = document.querySelector("#purple");
-
+var paletteBlack = document.querySelector("#black");
 
 
 paletteBlue.addEventListener("click", function(){
  color = "blue";
  console.log("blue");
-
+    document.querySelector('.currentColor').style.backgroundColor = color;
 })
 
 paletteYellow.addEventListener("click", function(){
  color = "yellow";
+ document.querySelector('.currentColor').style.backgroundColor = color;
+
  console.log("yellow");
 })
 
 paletteWhite.addEventListener("click", function(){
  color = "white";
+ document.querySelector('.currentColor').style.backgroundColor = color;
+
  console.log("white");
 
 })
 paletteRed.addEventListener("click", function(){
  color = "#e32020 ";
+ document.querySelector('.currentColor').style.backgroundColor = color;
+
  console.log("red");
 
 })
 
 paletteGreen.addEventListener("click", function(){
  color = "#2ae831";
- console.log("green");
+ document.querySelector('.currentColor').style.backgroundColor = color;
 
+ console.log("green");
 })
 
 
 palettePurple.addEventListener("click", function(){
  color = "purple";
- console.log("purple");
+ document.querySelector('.currentColor').style.backgroundColor = color;
 
+ console.log("purple");
 })
 
+paletteBlack.addEventListener("click", function(){
+ color = "black";
+ document.querySelector('.currentColor').style.backgroundColor = color;
 
-var container = document.getElementsByClassName('container');
-for (let i = 0; i < container.length; i++){
- document.getElementsByClassName('grid')[i].addEventListener( 'click', function() {
-   document.getElementsByClassName('grid')[i].style.backgroundColor = color;
- })
-}
+ console.log("black");
+})

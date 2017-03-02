@@ -63,13 +63,15 @@ p {
 
 .current{
     border: 0px solid black;
-    width: 100px;
+    width: 120px;
     height: 20px;
+    color: rgb(134, 134, 134);
 }
 .currentColor {
     border: 1px solid black;
     width: 60px;
     height: 20px;
+    c
 
 }
 
@@ -94,4 +96,8 @@ p {
 #purple {
     background-color: purple;
 }
+
+
+#black {
+    background-color: black;
 }
