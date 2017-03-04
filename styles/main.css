@@ -1,0 +1,115 @@
+* KAY KREWSON g48_Seattle */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* STANDARD STUFF HERE */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #42454C;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+header {
+
+}
+
+/* CUSTOM STUFF HERE */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.framework {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #A9B1C4;
+  height: 800px;
+  width: 700px;
+  border-width: 20px;
+  border-color: black:
+  border-radius: 18px;
+  padding: 30px 0;
+}
+
+.canvas {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #F0ACBB;
+  display: flex;
+  width: 600px;
+  height: 600px;
+
+}
+
+/*.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  background: #C2CEA9;
+  height: 20px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}*/
+
+/*.square1 {
+  background: white;
+  height: 20px;
+  width: 20px;
+}*/
+
+
+.palette {
+
+}
