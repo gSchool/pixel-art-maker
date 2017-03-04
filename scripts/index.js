@@ -1,5 +1,3 @@
-console.log('sanity check');
-
 function createCanvas(rowSize, columnSize) {
   let pixelWidth = (100 / rowSize)
   for (var i = 0; i < rowSize * columnSize; i++) {
@@ -10,5 +8,5 @@ function createCanvas(rowSize, columnSize) {
 };
 
 $(document).ready(function () {
-  createCanvas(100, 100);
+  createCanvas(50, 25);
 });
