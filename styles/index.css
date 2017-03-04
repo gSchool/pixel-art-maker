@@ -10,5 +10,18 @@
 }
 
 div.canvas {
-  
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+
+div.pixel {
+  width: 50%;
+  border: 1px solid black;
+  padding: .1rem;
+}
+div.pixel:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
