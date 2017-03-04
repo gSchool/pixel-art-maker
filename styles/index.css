@@ -2,3 +2,13 @@
   box-sizing: border-box;
   color: blue
 }
+.canvas {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  border: 2px solid red;
+}
+
+div.canvas {
+  
+}
