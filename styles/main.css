@@ -68,32 +68,29 @@ header {
 
 .container {
   display: flex;
-  justify-content: center;
-}
-.framework {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  background: #A9B1C4;
-  height: 800px;
-  width: 700px;
-  border-width: 20px;
-  border-color: black:
-  border-radius: 18px;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+.workspace {
   padding: 30px 0;
+  background: #A9B1C4;
+  height: 700px;
+  width: 700px;
+  border-radius: 24px;
 }
 
 .canvas {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background: #F0ACBB;
-  display: flex;
   width: 600px;
   height: 600px;
-
+  margin: 12px auto;
 }
 
-/*.row1 {
+/*.canvas .row1 {
   display: flex;
   flex-wrap: wrap;
   background: #C2CEA9;
@@ -103,13 +100,26 @@ header {
   margin: 0;
 }*/
 
-/*.square1 {
+.canvas div {
   background: white;
-  height: 20px;
-  width: 20px;
-}*/
+  height: 10%;
+  width: 10%;
+  border: solid red 1px;
+}
 
 
 .palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: blue;
+  width: auto;
+  margin: 2px 20px;
+}
 
+.palette div {
+  border: solid 1px red;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
 }
