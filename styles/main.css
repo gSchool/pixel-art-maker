@@ -75,7 +75,7 @@ header {
 }
 .workspace {
   padding: 20px 0;
-  background: #A9B1C4;
+  background: #E5E5E5;
   height: 740px;
   width: 600px;
   border-radius: 24px;
@@ -84,7 +84,6 @@ header {
 .canvas {
   display: flex;
   flex-wrap: wrap;
-  background: #F0ACBB;
   width: 540px;
   height: 540px;
   margin: 12px auto;
@@ -94,29 +93,49 @@ header {
   background: white;
   height: 5%;
   width: 5%;
-  border: solid #A9B1C4 1px;
+  border: solid #E5E5E5 1px;
 }
-
 
 .palette {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background: #A9B1C4;
-  width: auto;
-  margin: 2px 40px;
+  margin: 6px 30px;
 }
 
-.palette div {
+.standard-colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  background: #E5E5E5;
+  width: 75%;
+}
+
+.standard-colors div {
+  display: flex;
   width: 30px;
   height: 30px;
   border-radius: 30px;
   margin: 3px 3px;
 }
 
+.custom-color-container {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+.custom-color-container input {
+  width: 50px;
+  height:  50px;
+  border: solid black 1px;
+  padding: 0;
+}
+
+/*.custom-color-container label {
+  color: #7A7A7A;
+
+}*/
+
 .color-picker {
-  width: 300px;
-  height: 30px;
   margin: 3px 3px;
+  width: 60px;
   background: white;
 }

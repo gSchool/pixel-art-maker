@@ -20,24 +20,24 @@
   <body >
     <section class="container">
       <div class="workspace">
-
-        <div class="canvas">
+        <section class="canvas">
           <!-- This will be filled by pixels created by pixelartmaker.js -->
-        </div> <!-- end canvas-->
+        </section> <!-- end canvas-->
 
-        <div class="palette">
-          <!-- This will be filled by pixels created by pixelartmaker.js -->
-        </div> <!-- end palette -->
+        <section class="palette">
+          <div class="standard-colors">
+            <!-- This will be filled by pixels created by pixelartmaker.js -->
 
-        <div class="custom-color">
-          <!-- <form class='addedSongs' action="#" method="get"> -->
-          <!-- <fieldset class="songInfo"> -->
-            <input id="color-picker" type="color" placeholder="Pick a color" name="color-picker">
-            <!-- <input type="submit" value="Submit"> -->
-            <!-- this will redirect to the action information at the top of the form section. "Value" is to give the button some text-->
-        <!-- </fieldset> -->
-        <!-- </form> -->
-        </div> <!-- end custom-color -->
+          </div> <!-- end standard-colors -->
+          <div class="custom-color-container">
+            <!-- <form class='addedSongs' action="#" method="get"> -->
+              <h1>CURRENT COLOR</hi><br>
+              <input id="color-picker" type="color" placeholder="Pick a color" name="color-picker">
+              <!-- <input type="submit" value="Submit"> -->
+              <!-- this will redirect to the action information at the top of the form section. "Value" is to give the button some text-->
+            <!-- </form> -->
+          </div> <!-- end custom-color-container -->
+        </section> <!-- end palette -->
 
       </div> <!-- end workspace -->
     </section> <!-- end container -->
