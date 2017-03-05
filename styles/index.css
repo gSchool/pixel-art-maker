@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   margin: 2rem;
-  border: 2px solid red;
+  border: 2px solid black;
 }
 
 div.canvas {
@@ -18,9 +18,27 @@ div.canvas {
 div.pixel {
   border: .1px solid rgba(182, 182, 182, 0.25);
   padding: .1rem;
+  /*background-color: blue*/
 }
+
+/* makes divs into responsive squares */
 div.pixel:after {
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+section.color-select, .palette {
+  display: flex;
+}
+.current-color, .color-choice {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border: 2px solid black;
+}
+
+.color-choice {
+  width: 2.5rem;
+  height: 2.5rem;
 }
