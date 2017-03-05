@@ -111,4 +111,12 @@ header {
   width: 30px;
   height: 30px;
   border-radius: 30px;
+  margin: 3px 3px;
+}
+
+.color-picker {
+  width: 300px;
+  height: 30px;
+  margin: 3px 3px;
+  background: white;
 }

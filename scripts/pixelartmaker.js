@@ -1,5 +1,5 @@
 
-
+var brushColor = '';
 
 $(function(){
   var canvas = $(".canvas");
@@ -11,7 +11,7 @@ $(function(){
   $('.canvas div').on('click', function(e) {
     var currentTarget = $(e.currentTarget);
 
-    currentTarget.css('background-color', 'red'); //second param will set
+    currentTarget.css('background-color', brushColor); //second param will set
     console.log(e.currentTarget);
   });
 
@@ -28,12 +28,16 @@ for (var i = 0; i < colors.length; i++) {
 
   $('.palette div').on('click', function(e) {
     var currentTarget = $(e.currentTarget);
-    var selectedColor = currentTarget.css('background-color'); //second param will set
+    var selectedColor = currentTarget.css('background-color');
+    brushColor = selectedColor;
     console.log('selectedColor', selectedColor);
+    console.log('brushColor', brushColor);
     console.log('click', currentTarget);
   });
 
 });
+
+
 
 
 // myObject.css({
