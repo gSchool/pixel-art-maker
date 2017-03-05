@@ -90,16 +90,6 @@ header {
   margin: 12px auto;
 }
 
-/*.canvas .row1 {
-  display: flex;
-  flex-wrap: wrap;
-  background: #C2CEA9;
-  height: 20px;
-  width: auto;
-  padding: 0;
-  margin: 0;
-}*/
-
 .canvas div {
   background: white;
   height: 10%;

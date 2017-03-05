@@ -5,8 +5,15 @@ $(function(){
   var canvas = $(".canvas");
 
   for(var i=0;i<100;i++){
-    canvas.append("<div></div>");
+    canvas.append("<div></div>"); // appends to bottom of what is already there
   }
+// $(this).toggleClass
+  $('.canvas div').on('click', function(e) {
+    var currentTarget = (e.currentTarget);
+    currentTarget.css('background-color', 'red'); //second param will set
+    console.log(e.currentTarget);
+  });
+
 });
 
 $(function() {
@@ -19,8 +26,17 @@ for (var i = 0; i < colors.length; i++) {
   }
 
   $('.palette div').on('click', function(e) {
-
-    console.log('click', e.currentTarget);
+    var currentTarget = $(e.currentTarget);
+    var selectedColor = currentTarget.css('background-color'); //second param will set
+    console.log('selectedColor', selectedColor);
+    console.log('click', currentTarget);
   });
 
 });
+
+
+// myObject.css({
+//   "background-color":"red",
+//   "width":"20px",
+//   "height":"10px"
+// })
