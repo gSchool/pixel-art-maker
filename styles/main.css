@@ -85,8 +85,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   background: #F0ACBB;
-  width: 600px;
-  height: 600px;
+  width: 540px;
+  height: 540px;
   margin: 12px auto;
 }
 
@@ -94,7 +94,7 @@ header {
   background: white;
   height: 10%;
   width: 10%;
-  border: solid red 1px;
+  border: solid black 1px;
 }
 
 
@@ -102,14 +102,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: blue;
+  background: #A9B1C4;
   width: auto;
-  margin: 2px 20px;
+  margin: 2px 64px;
 }
 
 .palette div {
-  border: solid 1px red;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
 }

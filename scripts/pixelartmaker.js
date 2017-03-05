@@ -9,7 +9,8 @@ $(function(){
   }
 // $(this).toggleClass
   $('.canvas div').on('click', function(e) {
-    var currentTarget = (e.currentTarget);
+    var currentTarget = $(e.currentTarget);
+
     currentTarget.css('background-color', 'red'); //second param will set
     console.log(e.currentTarget);
   });
@@ -17,7 +18,7 @@ $(function(){
 });
 
 $(function() {
-var colors = ['#9C4A40', '#E06B5C', '#E38278', '#D59F5B', '#EDB166'];
+var colors = ['#9C4A40', '#E06B5C', '#E38278', '#D59F5B', '#EDB166', '#F2C78E', '#E5D866', '#FFF073', '#7EBE5D','#9EEE74', '#BAF2A7', '#3255A9', '#4879F3'];
 var palette = $(".palette");
 
 for (var i = 0; i < colors.length; i++) {
