@@ -7,21 +7,24 @@ function createCanvas(rowSize, columnSize) {
 };
 
 function createPalette(palette) {
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 7; i++) {
     $('div.palette').append(`<div id="c-${i}" class="color-choice"></div>`);
     $(`#c-${i}`).css('background', palette[i])
   }
 };
 
 $(document).ready(function () {
-  let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+  let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'white'];
   createPalette(colors);
   createCanvas(16, 9);
 });
 
 //TBD determine pixel's color
-
+$('.palette').on('click', '.color-choice', function () {
+  let $color = $(this).css('background');
+  $('.current-color').css('background', $color);
+})
 // change pixel's color on click
 $('.canvas').on('click', '.pixel', function () {
-  $(this).css('background-color', 'red')
+  $(this).css('background', $('.current-color').css('background'))
 })
