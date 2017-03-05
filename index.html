@@ -1,0 +1,279 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./background-colors.css" type="text/css" media="all">
+    <title>Daniel's Pixel Art Maker</title>
+  </head>
+  <body>
+
+<main>
+  <header>
+    <h1>Daniel's Magical Pixel Art Machine</h1>
+  </header>
+  <section class="top">
+    <pixelCanvas>
+    </pixelCanvas>
+    <buttons>
+      <saveButton>Save</saveButton>
+      <loadButton>Load</loadButton>
+    </buttons>
+  </section>
+
+
+  <section class="bottom">
+    <palette>
+      <paletteCol>
+        <!-- <colorTile class='colorfdfefe'></colorTile> -->
+        <colorTile class='colorfbfcfc'></colorTile>
+        <colorTile class='colorf7f9f9'></colorTile>
+        <colorTile class='colorf4f6f7'></colorTile>
+        <colorTile class='colorf0f3f4'></colorTile>
+        <colorTile class='colorecf0f1'></colorTile>
+        <colorTile class='colord0d3d4'></colorTile>
+        <colorTile class='colorb3b6b7'></colorTile>
+        <colorTile class='color979a9a'></colorTile>
+        <colorTile class='color7b7d7d'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorf8f9f9'></colorTile> -->
+        <colorTile class='colorf2f3f4'></colorTile>
+        <colorTile class='colore5e7e9'></colorTile>
+        <colorTile class='colord7dbdd'></colorTile>
+        <colorTile class='colorcacfd2'></colorTile>
+        <colorTile class='colorbdc3c7'></colorTile>
+        <colorTile class='colora6acaf'></colorTile>
+        <colorTile class='color909497'></colorTile>
+        <colorTile class='color797d7f'></colorTile>
+        <colorTile class='color626567'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorf4f6f6'></colorTile> -->
+        <colorTile class='coloreaeded'></colorTile>
+        <colorTile class='colord5dbdb'></colorTile>
+        <colorTile class='colorbfc9ca'></colorTile>
+        <colorTile class='coloraab7b8'></colorTile>
+        <colorTile class='color95a5a6'></colorTile>
+        <colorTile class='color839192'></colorTile>
+        <colorTile class='color717d7e'></colorTile>
+        <colorTile class='color5f6a6a'></colorTile>
+        <colorTile class='color4d5656'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorf2f4f4'></colorTile> -->
+        <colorTile class='colore5e8e8'></colorTile>
+        <colorTile class='colorccd1d1'></colorTile>
+        <colorTile class='colorb2babb'></colorTile>
+        <colorTile class='color99a3a4'></colorTile>
+        <colorTile class='color7f8c8d'></colorTile>
+        <colorTile class='color707b7c'></colorTile>
+        <colorTile class='color616a6b'></colorTile>
+        <colorTile class='color515a5a'></colorTile>
+        <colorTile class='color424949'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorebedef'></colorTile> -->
+        <colorTile class='colord6dbdf'></colorTile>
+        <colorTile class='coloraeb6bf'></colorTile>
+        <colorTile class='color85929e'></colorTile>
+        <colorTile class='color5d6d7e'></colorTile>
+        <colorTile class='color34495e'></colorTile>
+        <colorTile class='color2e4053'></colorTile>
+        <colorTile class='color283747'></colorTile>
+        <colorTile class='color212f3c'></colorTile>
+        <colorTile class='color1b2631'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='coloreaecee'></colorTile> -->
+        <colorTile class='colord5d8dc'></colorTile>
+        <colorTile class='colorabb2b9'></colorTile>
+        <colorTile class='color808b96'></colorTile>
+        <colorTile class='color566573'></colorTile>
+        <colorTile class='color2c3e50'></colorTile>
+        <colorTile class='color273746'></colorTile>
+        <colorTile class='color212f3d'></colorTile>
+        <colorTile class='color1c2833'></colorTile>
+        <colorTile class='color17202a'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorf9ebea'></colorTile> -->
+        <colorTile class='colorf2d7d5'></colorTile>
+        <colorTile class='colore6b0aa'></colorTile>
+        <colorTile class='colord98880'></colorTile>
+        <colorTile class='colorcd6155'></colorTile>
+        <colorTile class='colorc0392b'></colorTile>
+        <colorTile class='colora93226'></colorTile>
+        <colorTile class='color922b21'></colorTile>
+        <colorTile class='color7b241c'></colorTile>
+        <colorTile class='color641e16'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorfdedec'></colorTile> -->
+        <colorTile class='colorfadbd8'></colorTile>
+        <colorTile class='colorf5b7b1'></colorTile>
+        <colorTile class='colorf1948a'></colorTile>
+        <colorTile class='colorec7063'></colorTile>
+        <colorTile class='colore74c3c'></colorTile>
+        <colorTile class='colorcb4335'></colorTile>
+        <colorTile class='colorb03a2e'></colorTile>
+        <colorTile class='color943126'></colorTile>
+        <colorTile class='color78281f'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorf5eef8'></colorTile> -->
+        <colorTile class='colorebdef0'></colorTile>
+        <colorTile class='colord7bde2'></colorTile>
+        <colorTile class='colorc39bd3'></colorTile>
+        <colorTile class='coloraf7ac5'></colorTile>
+        <colorTile class='color9b59b6'></colorTile>
+        <colorTile class='color884ea0'></colorTile>
+        <colorTile class='color76448a'></colorTile>
+        <colorTile class='color633974'></colorTile>
+        <colorTile class='color512e5f'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorf4ecf7'></colorTile> -->
+        <colorTile class='colore8daef'></colorTile>
+        <colorTile class='colord2b4de'></colorTile>
+        <colorTile class='colorbb8fce'></colorTile>
+        <colorTile class='colora569bd'></colorTile>
+        <colorTile class='color8e44ad'></colorTile>
+        <colorTile class='color7d3c98'></colorTile>
+        <colorTile class='color6c3483'></colorTile>
+        <colorTile class='color5b2c6f'></colorTile>
+        <colorTile class='color4a235a'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='coloreaf2f8'></colorTile> -->
+        <colorTile class='colord4e6f1'></colorTile>
+        <colorTile class='colora9cce3'></colorTile>
+        <colorTile class='color7fb3d5'></colorTile>
+        <colorTile class='color5499c7'></colorTile>
+        <colorTile class='color2980b9'></colorTile>
+        <colorTile class='color2471a3'></colorTile>
+        <colorTile class='color1f618d'></colorTile>
+        <colorTile class='color1a5276'></colorTile>
+        <colorTile class='color154360'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorebf5fb'></colorTile> -->
+        <colorTile class='colord6eaf8'></colorTile>
+        <colorTile class='coloraed6f1'></colorTile>
+        <colorTile class='color85c1e9'></colorTile>
+        <colorTile class='color5dade2'></colorTile>
+        <colorTile class='color3498db'></colorTile>
+        <colorTile class='color2e86c1'></colorTile>
+        <colorTile class='color2874a6'></colorTile>
+        <colorTile class='color21618c'></colorTile>
+        <colorTile class='color1b4f72'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colore8f8f5'></colorTile> -->
+        <colorTile class='colord1f2eb'></colorTile>
+        <colorTile class='colora3e4d7'></colorTile>
+        <colorTile class='color76d7c4'></colorTile>
+        <colorTile class='color48c9b0'></colorTile>
+        <colorTile class='color1abc9c'></colorTile>
+        <colorTile class='color17a589'></colorTile>
+        <colorTile class='color148f77'></colorTile>
+        <colorTile class='color117864'></colorTile>
+        <colorTile class='color0e6251'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colore8f6f3'></colorTile> -->
+        <colorTile class='colord0ece7'></colorTile>
+        <colorTile class='colora2d9ce'></colorTile>
+        <colorTile class='color73c6b6'></colorTile>
+        <colorTile class='color45b39d'></colorTile>
+        <colorTile class='color16a085'></colorTile>
+        <colorTile class='color138d75'></colorTile>
+        <colorTile class='color117a65'></colorTile>
+        <colorTile class='color0e6655'></colorTile>
+        <colorTile class='color0b5345'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colore9f7ef'></colorTile> -->
+        <colorTile class='colord4efdf'></colorTile>
+        <colorTile class='colora9dfbf'></colorTile>
+        <colorTile class='color7dcea0'></colorTile>
+        <colorTile class='color52be80'></colorTile>
+        <colorTile class='color27ae60'></colorTile>
+        <colorTile class='color229954'></colorTile>
+        <colorTile class='color1e8449'></colorTile>
+        <colorTile class='color196f3d'></colorTile>
+        <colorTile class='color145a32'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='coloreafaf1'></colorTile> -->
+        <colorTile class='colord5f5e3'></colorTile>
+        <colorTile class='colorabebc6'></colorTile>
+        <colorTile class='color82e0aa'></colorTile>
+        <colorTile class='color58d68d'></colorTile>
+        <colorTile class='color2ecc71'></colorTile>
+        <colorTile class='color28b463'></colorTile>
+        <colorTile class='color239b56'></colorTile>
+        <colorTile class='color1d8348'></colorTile>
+        <colorTile class='color186a3b'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorfef9e7'></colorTile> -->
+        <colorTile class='colorfcf3cf'></colorTile>
+        <colorTile class='colorf9e79f'></colorTile>
+        <colorTile class='colorf7dc6f'></colorTile>
+        <colorTile class='colorf4d03f'></colorTile>
+        <colorTile class='colorf1c40f'></colorTile>
+        <colorTile class='colord4ac0d'></colorTile>
+        <colorTile class='colorb7950b'></colorTile>
+        <colorTile class='color9a7d0a'></colorTile>
+        <colorTile class='color7d6608'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorfef5e7'></colorTile> -->
+        <colorTile class='colorfdebd0'></colorTile>
+        <colorTile class='colorfad7a0'></colorTile>
+        <colorTile class='colorf8c471'></colorTile>
+        <colorTile class='colorf5b041'></colorTile>
+        <colorTile class='colorf39c12'></colorTile>
+        <colorTile class='colord68910'></colorTile>
+        <colorTile class='colorb9770e'></colorTile>
+        <colorTile class='color9c640c'></colorTile>
+        <colorTile class='color7e5109'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorfdf2e9'></colorTile> -->
+        <colorTile class='colorfae5d3'></colorTile>
+        <colorTile class='colorf5cba7'></colorTile>
+        <colorTile class='colorf0b27a'></colorTile>
+        <colorTile class='coloreb984e'></colorTile>
+        <colorTile class='colore67e22'></colorTile>
+        <colorTile class='colorca6f1e'></colorTile>
+        <colorTile class='coloraf601a'></colorTile>
+        <colorTile class='color935116'></colorTile>
+        <colorTile class='color784212'></colorTile>
+      </paletteCol>
+      <paletteCol>
+        <!-- <colorTile class='colorfbeee6'></colorTile> -->
+        <colorTile class='colorf6ddcc'></colorTile>
+        <colorTile class='coloredbb99'></colorTile>
+        <colorTile class='colore59866'></colorTile>
+        <colorTile class='colordc7633'></colorTile>
+        <colorTile class='colord35400'></colorTile>
+        <colorTile class='colorba4a00'></colorTile>
+        <colorTile class='colora04000'></colorTile>
+        <colorTile class='color873600'></colorTile>
+        <colorTile class='color6e2c00'></colorTile>
+      </paletteCol>
+    </palette>
+    <selection>
+      <h1>Selected<br/>Color:</h1>
+      <input type="color"></input>
+      <!-- <currentColor></currentColor> -->
+    </selection>
+  </section>
+</main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./main.js" charset="utf-8"></script>
+  </body>
+</html>
