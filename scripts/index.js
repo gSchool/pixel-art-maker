@@ -7,14 +7,14 @@ function createCanvas(rowSize, columnSize) {
 };
 
 function createPalette(palette) {
-  for (var i = 0; i < 7; i++) {
+  for (var i = 0; i < palette.length; i++) {
     $('div.palette').append(`<div id="c-${i}" class="color-choice"></div>`);
     $(`#c-${i}`).css('background', palette[i])
   }
 };
 
 $(document).ready(function () {
-  let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'white'];
+  let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'lightgreen', 'white'];
   createPalette(colors);
   createCanvas(16, 9);
 });

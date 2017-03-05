@@ -41,4 +41,5 @@ section.color-select, .palette {
 .color-choice {
   width: 2.5rem;
   height: 2.5rem;
+  border: 1px solid rgba(100, 100, 100, 0.1);
 }
