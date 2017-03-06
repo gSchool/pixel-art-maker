@@ -17,25 +17,26 @@ function createPalette(palette) {
     $('div.palette').append(`<div id="c-${i}" class="color-choice"></div>`);
     $(`#c-${i}`).css('background', palette[i])
   };
-  $('div.palette').append('<div class="color-wheel"><input id="color-wheel" type="color"/></div>');
 
 };
 
 $(document).ready(function () {
   let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'lightgreen', 'white'];
   createPalette(colors);
-  createCanvas(64, 36);
+  createCanvas(32, 18);
 });
 
 // determine pixel's color from preset
 $('.palette').on('click', '.color-choice', function () {
   let $color = $(this).css('background');
   $('.current-color').css('background', $color);
+  $('.canvas').css('background', $color);
 })
 // determine pixel's color from wheel
-$('.palette').on('mousedown', '#color-wheel', function () {
+$('.palette').on('click', '#color-wheel', function () {
   let $color = $(this).val();
   $('.current-color').css('background', $color);
+  $('.canvas').css('background', $color);
 })
 
 // change pixel's color on click and drag
