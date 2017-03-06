@@ -20,7 +20,7 @@ const gridDrawer = (function() {
 
     function getImageData(){
       const arrayOfImageData = []
-      let cells = document.getElementsByClassName('.cell')
+      const cells = document.getElementsByClassName('.cell')
       console.log(cells)
       return arrayOfImageData
     }
@@ -43,8 +43,17 @@ const gridDrawer = (function() {
 
 ///////Invokes grid to be drawn on //////
   //gridDrawer.addCells(gridDrawer.calculateGridSize())
-gridDrawer.addCells(3000)
+  //window.addEventListener("resize", myFunction);
 
+  function start(){
+    if(screen.width < 900){
+      return gridDrawer.addCells(1000)
+    }
+    else if(screen.width < 600){
+      return gridDrawer.addCells()
+    }
+    return gridDrawer.addCells(2500)
+  }
 
 
 /////// This section controls painting functionality ///////
@@ -74,3 +83,5 @@ $(document).ready(function() {
       return gridDrawer.saveImage()
     })
 })
+
+start()
