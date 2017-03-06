@@ -22,3 +22,9 @@ $(".colors div").on("click", function () {
 $(".main-frame").on("click", 'div', function (e) {
   $(this).css("background-color", paintColor);
 });
+
+$('.below-colors input').change(function () {
+  let newColor = $(this).val();
+  paintColor = newColor;
+  updateCurrentColorBox(newColor);
+});
