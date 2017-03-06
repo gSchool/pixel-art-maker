@@ -1,8 +1,13 @@
 function createCanvas(rowSize, columnSize) {
   let pixelWidth = (100 / rowSize)
-
+  let row = 1;
+  let col = 1
   for (var i = 1; i <= rowSize * columnSize; i++) {
-    $('div.canvas').append(`<div id="px-${i}" class="pixel"></div>`);
+    $('div.canvas').append(`<div id="r${row}c${col++}" class="pixel"></div>`);
+    if (col > rowSize) {
+      col = 1;
+      row++;
+    }
   };
   $('div.pixel').css('width', `${pixelWidth}%`)
 };
@@ -19,7 +24,7 @@ function createPalette(palette) {
 $(document).ready(function () {
   let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'lightgreen', 'white'];
   createPalette(colors);
-  createCanvas(16, 9);
+  createCanvas(64, 36);
 });
 
 // determine pixel's color from preset
