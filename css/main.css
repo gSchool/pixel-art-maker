@@ -1,0 +1,253 @@
+/*****General*****/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+header {
+  width: 100%;
+  color: #6242f4;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1  {
+  margin: 25px auto;
+}
+
+.canvas {
+    display: block;
+    width: 90%;
+    line-height: 0.5px;
+    margin: 0 auto;
+    float: right;
+    padding-right: 40px;
+}
+
+.pixel {
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+}
+
+.colors-vertical {
+  display: inline-block;
+  width: 5%;
+  margin-left: 40px;
+}
+
+.palette-vertical {
+    display: block;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 100%;
+    margin: 3px auto;
+
+}
+
+.colors-horizontal {
+  display: block;
+  width: 80%;
+  margin-left:75px;
+  padding-left: 20px;
+}
+
+.palette-horizontal {
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 100%;
+    margin: 0 auto;
+
+}
+
+.selection {
+  display: block;
+  width: 80%;
+  margin:   30px auto 0;
+  text-align: center;
+
+}
+
+.selected-color-button {
+    display: block;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #808080;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+h3.selection-label {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+.clear-button {
+    display: block;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #808080;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+h3.erase {
+  display: block;
+  margin: 10px auto 0;
+  width: 20%;
+}
+
+/*colors*/
+
+.brown {
+  background-color: #8A3324
+}
+
+.darkred {
+  background-color: #B0171F;
+}
+
+.red {
+    background-color: #DC143C;
+}
+
+.pink {
+  background-color: #FF82AB;
+}
+
+.lightpink {
+  background-color: #FFB6C1;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.hotpink {
+  background-color: #FF1493;
+}
+
+.tan {
+  background-color: 	#FFD39B;
+}
+
+.orange {
+    background-color: #FFA500;
+}
+
+.darkorange {
+  background-color: #FF7F00;
+}
+
+.redorange {
+  background-color: #FF6103;
+}
+
+.lightyellow {
+  background-color: #FFEC8B;
+}
+
+.golden {
+  background-color: #FFD700;
+}
+
+.yellow {
+    background-color: #FFFF00;
+}
+
+.khaki {
+  background-color: #F0E68C;
+}
+
+.yellowgreen {
+  background-color: #CDCD00;
+}
+
+.lightolive {
+  background-color: #CAFF70;
+}
+
+.chartreuse {
+  background-color: #7FFF00;
+}
+
+.green {
+    background-color: #00CD00;
+}
+
+.palegreen {
+  background-color: #98FB98;
+}
+
+.aquamarine {
+  background-color: #7FFFD4;
+}
+
+.cyan {
+  background-color: #00FFFF;
+}
+
+.skyblue {
+  background-color: #00BFFF;
+}
+
+.cornflower {
+  background-color: #4286f4;
+}
+
+.blue {
+    background-color: #0000CD;
+}
+
+.darkpurple {
+    background-color: #551A8B;
+}
+
+.blueviolet {
+  background-color: #8A2BE2;
+}
+
+.violet {
+  background-color: #9400D3;
+}
+
+.lightviolet {
+  background-color: #E066FF;
+}
+
+.purplegray {
+  background-color: #CDB5CD;
+}
+
+.slategray {
+  background-color: #6C7B8B;
+}
+
+.darkgray {
+  background-color: #5B5B5B;
+}
+
+.black {
+  background-color: #000000;
+}
