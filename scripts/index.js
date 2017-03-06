@@ -17,7 +17,6 @@ function createPalette(palette) {
     $('div.palette').append(`<div id="c-${i}" class="color-choice"></div>`);
     $(`#c-${i}`).css('background', palette[i])
   };
-
 };
 
 $(document).ready(function () {
@@ -26,20 +25,21 @@ $(document).ready(function () {
   createCanvas(32, 18);
 });
 
-// determine pixel's color from preset
+
 $('.palette').on('click', '.color-choice', function () {
   let $color = $(this).css('background');
   $('.current-color').css('background', $color);
   $('.canvas').css('background', $color);
 })
-// determine pixel's color from wheel
+
+
 $('.palette').on('change', '#color-wheel', function () {
   let $color = $(this).val();
   $('.current-color').css('background', $color);
   $('.canvas').css('background', $color);
 })
 
-// change pixel's color on click and drag
+
 let isDragging = false;
 $(document).mousedown(function () {
   isDragging = true
@@ -59,13 +59,3 @@ $('.canvas').on('mouseenter', '.pixel', function () {
 }).on('click', '.pixel', function () {
   changeColor(this)
 })
-
-
-
-
-
-
-
-
-
-//
