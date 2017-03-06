@@ -1,28 +1,37 @@
+// this is from stack overflow, because the .css method returns the color in rgb format, but .val requires it to be in hex, and there didn't seem to be any simple way to do the conversion
+$.fn.getHexBackgroundColor = function() {
+  var rgb = $(this).css('background-color');
+  if (!rgb) {
+    return '#FFFFFF'; //default color
+  }
+  var hex_rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+  function hex(x) {return ("0" + parseInt(x).toString(16)).slice(-2);}
+  if (hex_rgb) {
+    return "#" + hex(hex_rgb[1]) + hex(hex_rgb[2]) + hex(hex_rgb[3]);
+  }
+  else {
+    return rgb; //ie8 returns background-color in hex format then it will make                 compatible, you can improve it checking if format is in hexadecimal
+  }
+}
 
 var brushColor = '';
 
 $(function(){
   var canvas = $(".canvas");
 
-  for(var i=0;i<400;i++){
-    canvas.append("<div></div>"); // appends to bottom of what is already there
+  for(var i = 0; i < 400; i++){
+    canvas.append("<div></div>");
   }
-  // $(this).toggleClass
+
   $('.canvas div').on('click', function(e) {
     var currentTarget = $(e.currentTarget);
-    console.log('hey', currentTarget.css('background-color'));
-    console.log('brush', brushColor);
-    if (brushColor === currentTarget.css('background-color')) {
-      console.log('xxxx');
+    if (brushColor === currentTarget.getHexBackgroundColor()) {
       currentTarget.css('background-color', 'white');
     }
     else {
       currentTarget.css('background-color', brushColor); //second param will set
-      console.log(e.currentTarget);
     }
-
   });
-
 });
 
 $(function() {
@@ -34,16 +43,32 @@ for (var i = 0; i < colors.length; i++) {
 
   }
 
+  $("#color-picker").val('#FFFFFF');
+
   $('.standard-colors div').on('click', function(e) {
     var currentTarget = $(e.currentTarget);
-    var selectedColor = currentTarget.css('background-color');
-    // var pickerColor = .custom-color-container.input;
+    var selectedColor = currentTarget.getHexBackgroundColor();
     brushColor = selectedColor;
+    $("#color-picker").val(selectedColor);
+
+
 
     console.log('brushColor', brushColor);
     console.log('selectedColor', selectedColor);
     console.log('brushColor', brushColor);
     console.log('click', currentTarget);
+    console.log($("#color-picker").val());
   });
 
 });
+
+// $(function() {
+//
+//   $('.color-picker').on('click', function(e){
+//
+//     var x = document.getElementById("color-picker").background;
+//     console.log('----------', x);
+//   });
+//
+//
+// });

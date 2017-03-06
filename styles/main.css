@@ -64,6 +64,9 @@ header {
 
 }
 
+
+
+
 /* CUSTOM STUFF HERE */
 
 .container {
@@ -95,6 +98,9 @@ header {
   width: 5%;
   border: solid #E5E5E5 1px;
 }
+.canvas div:hover {
+
+}
 
 .palette {
   display: flex;
@@ -119,23 +125,32 @@ header {
 
 .custom-color-container {
   display: flex;
+  flex-wrap: wrap;
   width: 25%;
   justify-content: center;
+  background: white;
+  border: solid #666666 2px;
 }
 .custom-color-container input {
   width: 50px;
   height:  50px;
-  border: solid black 1px;
+  border: none;
   padding: 0;
+  margin: 0;
+  background: blue;
 }
-
-/*.custom-color-container label {
-  color: #7A7A7A;
-
-}*/
 
 .color-picker {
   margin: 3px 3px;
   width: 60px;
-  background: white;
+  background: blue;
+  border: none;
+}
+
+.color-picker-text {
+  margin: 4px 0;
+  width: 100%;
+  color: #666666;
+  text-align: center;
+  font-weight: bold;
 }
