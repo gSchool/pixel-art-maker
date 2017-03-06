@@ -24,7 +24,32 @@ $('.palette').on('click', '.color-choice', function () {
   let $color = $(this).css('background');
   $('.current-color').css('background', $color);
 })
+
 // change pixel's color on click
+let isDragging = false;
+$(document).mousedown(function () {
+  isDragging = true
+}).mouseup(function () {
+  isDragging = false
+});
+
+$('.canvas').on('mouseenter', '.pixel', function () {
+  if (isDragging) {
+    $(this).css('background', $('.current-color').css('background'))
+  }
+})
 $('.canvas').on('click', '.pixel', function () {
   $(this).css('background', $('.current-color').css('background'))
 })
+
+
+
+
+
+
+
+
+
+
+
+//
