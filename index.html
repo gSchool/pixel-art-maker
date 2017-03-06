@@ -3,9 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all">
   <title>Pixel Art Maker</title>
 </head>
 <body>
-  <script type="text/javascript" src="pixel.js"></script>
+  <header id="topHeading">
+    <h4>Pixel Art Maker</h4>
+  </header>
+  <main>
+    <!-- pixel grid -->
+    <table id="pixelGrid">
+
+    </table>
+  </main>
+
+  <!-- section container that displays color palette and current color chosen -->
+  <section>
+    <div id="palette">
+
+    </div>
+    <h5 id="currentColorText">Current Color > </h5>
+    <!-- section current color indicator -->
+    <mark id="currentColor"></mark>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
