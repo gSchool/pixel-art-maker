@@ -63,6 +63,7 @@ h1  {
 .colors-horizontal {
   display: block;
   width: 80%;
+  height: auto;
   margin-left:75px;
   padding-left: 20px;
 }
@@ -116,6 +117,16 @@ h3.erase {
   display: block;
   margin: 10px auto 0;
   width: 20%;
+}
+
+.pick-color {
+  display: inline-block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #808080;
+  margin-right: 300px;
+
 }
 
 /*colors*/
@@ -197,7 +208,7 @@ h3.erase {
 }
 
 .palegreen {
-  background-color: #98FB98;
+    background-color: #98FB98;
 }
 
 .aquamarine {
