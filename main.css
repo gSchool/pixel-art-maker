@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-frame {
+  margin: 1.5rem;
+  height: 50rem;
+  width: 125rem;
+  /*border: .5rem solid black;*/
+}
+
+.main-frame div {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .01rem solid gray;
+  float: left;
+}
+
+footer {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.color-frame {
+  margin: 2rem;
+
+}
+
+.colors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.color-frame .colors div {
+  height: 5rem;
+  width: 5rem;
+  border: .2rem solid black;
+}
+
+.colors .red {
+  background-color: red;
+}
+
+.colors .blue {
+  background-color: blue;
+}
+
+.colors .green {
+  background-color: green;
+}
+
+.colors .orange {
+  background-color: orange;
+}
+
+.colors .yellow {
+  background-color: yellow;
+}
+
+.colors .purple {
+  background-color: purple;
+}
+
+.colors .brown {
+  background-color: brown;
+}
+
+.colors .gray {
+  background-color: gray;
+}
+
+.colors .white {
+  background-color: white;
+}
+
+.colors .black {
+  background-color: black;
+}
+
+.colors .current {
+}
+
+.below-colors p {
+  font-weight: bold;
+  font-size: 2rem;
+  float: right;
+  margin-right: 1rem;
+}
