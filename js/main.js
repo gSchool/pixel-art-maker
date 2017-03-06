@@ -10,9 +10,7 @@ $('.palette-vertical').on('click', function () {
 $('.palette-horizontal').on('click', function () {
    $('.selected-color-button').css('background-color', $(this).css('background-color'));
    $paintbrush = $(this).css('background-color');
-
 })
-
 
 // Change the pixel color
 $('.canvas').on('click', '.pixel', function () {
@@ -25,18 +23,29 @@ $('.clear-button').on('click', function () {
   $('.selected-color-button').css('background-color', 'white');
 })
 
-for (var j = 0; j < 1000; j++) {
+
+for (var j = 0; j < 1200; j++) {
     $('.canvas').append('<div class="pixel"></div>');
 }
 
-// $('.pixel').mousedown(function () {
-//   $(this).css('background-color', $paintbrush);
-// })
-//
-// $('.pixel').mouseenter(function () {
-//   $(this).css('background-color', $paintbrush);
-// })
-//
-// $('.pixel').mouseup(function () {
-//
-// })
+// to drag and paint (from StackOverflow)
+$('.canvas').ready(function () {
+  // Tracks status of mouse button
+  var isDown = false;
+
+  $('.canvas').mousedown(function () {
+     // When mouse goes down, set isDown to true
+    isDown = true;
+  })
+  .mouseup(function () {
+    // When mouse goes up, set isDown to false
+    isDown = false;
+  });
+
+  $(".pixel").mouseover(function(){
+    if(isDown) {
+       // Only change css if mouse is down
+       $(this).css('background-color', $paintbrush);
+    }
+  });
+});
