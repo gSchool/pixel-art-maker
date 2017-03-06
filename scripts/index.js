@@ -19,13 +19,13 @@ $(document).ready(function () {
   createCanvas(16, 9);
 });
 
-//TBD determine pixel's color
+//determine pixel's color
 $('.palette').on('click', '.color-choice', function () {
   let $color = $(this).css('background');
   $('.current-color').css('background', $color);
 })
 
-// change pixel's color on click
+// change pixel's color on click and drag
 let isDragging = false;
 $(document).mousedown(function () {
   isDragging = true
@@ -33,14 +33,18 @@ $(document).mousedown(function () {
   isDragging = false
 });
 
+function changeColor (selector) {
+  $(selector).css({
+    'background': $('.current-color').css('background'),
+    'border-color': 'rgba(182, 182, 182, 0)',
+  })
+}
+
 $('.canvas').on('mouseenter', '.pixel', function () {
-  if (isDragging) {
-    $(this).css('background', $('.current-color').css('background'))
-  }
-})
-$('.canvas').on('click', '.pixel', function () {
-  $(this).css('background', $('.current-color').css('background'))
-})
+  if (isDragging) changeColor(this)
+  }).on('click', '.pixel', function () {
+    changeColor(this)
+  })
 
 
 

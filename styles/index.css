@@ -16,7 +16,7 @@ div.canvas {
 }
 
 div.pixel {
-  border: .1px solid rgba(182, 182, 182, 0.25);
+  border: 1px solid rgba(182, 182, 182, 0.25);
   padding: .1rem;
   /*background-color: blue*/
 }
