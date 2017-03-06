@@ -26,6 +26,11 @@ h1  {
   margin: 25px auto;
 }
 
+h3 {
+  display: block;
+  margin: 0 auto;
+}
+
 .canvas {
     display: block;
     width: 90%;
@@ -82,13 +87,22 @@ h1  {
 .selection {
   display: block;
   width: 80%;
+  height: 300px;
   margin:   30px auto 0;
   text-align: center;
 
 }
 
+.choice,
+.goodbye,
+.other,
+.goodbye-to-one {
+  width: 25%;
+  float: right;
+}
+
 .selected-color-button {
-    display: block;
+    display: inline-block;
     background-color: #FFFFFF;
     width: 50px;
     height: 50px;
@@ -97,14 +111,14 @@ h1  {
     margin: 0 auto;
 }
 
-h3.selection-label {
+/*h3.selection-label {
   display: block;
   margin: 0 auto;
-  width: 20%;
-}
+
+}*/
 
 .clear-button {
-    display: block;
+    display: inline-block;
     background-color: #FFFFFF;
     width: 50px;
     height: 50px;
@@ -113,19 +127,27 @@ h3.selection-label {
     margin: 0 auto;
 }
 
-h3.erase {
+.eraser-button {
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #808080;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+h3.pick {
   display: block;
-  margin: 10px auto 0;
-  width: 20%;
+  margin: 0 auto;
 }
 
 .pick-color {
   display: inline-block;
-  float: right;
   width: 50px;
   height: 50px;
   border: 1px solid #808080;
-  margin-right: 300px;
+  margin: 0 auto;
 
 }
 

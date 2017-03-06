@@ -24,6 +24,12 @@ $('.clear-button').on('click', function () {
   $('.selected-color-button').css('background-color', 'white');
 })
 
+$('.eraser-button').on('click', function () {
+  $('.canvas').on('click', '.pixel', function () {
+  $paintbrush = $(this).css('background-color','white')
+  })
+  $('.selected-color-button').css('background-color', 'white');
+})
 
 for (var j = 0; j < 1200; j++) {
     $('.canvas').append('<div class="pixel"></div>');
