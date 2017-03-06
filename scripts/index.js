@@ -33,7 +33,7 @@ $('.palette').on('click', '.color-choice', function () {
   $('.canvas').css('background', $color);
 })
 // determine pixel's color from wheel
-$('.palette').on('click', '#color-wheel', function () {
+$('.palette').on('change', '#color-wheel', function () {
   let $color = $(this).val();
   $('.current-color').css('background', $color);
   $('.canvas').css('background', $color);
