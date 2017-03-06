@@ -1,45 +1,52 @@
 * {
-  box-sizing: border-box;
-  color: blue
+    box-sizing: border-box;
+    color: blue
 }
+
 .canvas {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    border: 2px solid black;
 }
 
 div.canvas {
-  flex-wrap: wrap;
-  width: auto;
-  height: auto;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
 }
 
 div.pixel {
-  border: 1px solid rgba(182, 182, 182, 0.25);
-  padding: .1rem;
-  /*background-color: blue*/
+    border: 1px solid rgba(182, 182, 182, 0.25);
+    padding: .1rem;
+    /*background-color: blue*/
 }
+
 
 /* makes divs into responsive squares */
+
 div.pixel:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-section.color-select, .palette {
-  display: flex;
-}
-.current-color, .color-choice {
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: white;
-  border: 2px solid black;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
+section.color-select, .palette {
+    display: flex;
+}
+
+.current-color, .color-choice {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border: 2px solid black;
+}
+
+.color-wheel input {}
+
 .color-choice {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid rgba(100, 100, 100, 0.1);
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid rgba(100, 100, 100, 0.1);
 }
