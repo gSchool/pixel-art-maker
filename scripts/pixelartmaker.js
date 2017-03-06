@@ -46,15 +46,11 @@ $(function() {
     var currentTarget = $(e.currentTarget);
     var selectedColor = currentTarget.getHexBackgroundColor();
     brushColor = selectedColor;
-    console.log('at this point brushColor is ', brushColor);
     $("#color-picker").val(selectedColor);
   });
 
-
   $('#color-picker').change(function(){
-      console.log('brushColor', brushColor);
-      brushColor = $('#color-picker').val();
-      console.log('brushColor', brushColor);
-    });
-
+    brushColor = $('#color-picker').val();
+    console.log('brushColor', brushColor);
+  });
 });

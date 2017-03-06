@@ -60,13 +60,6 @@ html {
   font-size: 18px;
 }
 
-header {
-
-}
-
-
-
-
 /* CUSTOM STUFF HERE */
 
 .container {
@@ -131,6 +124,7 @@ header {
   background: white;
   border: solid #666666 2px;
 }
+
 .custom-color-container input {
   width: 50px;
   height:  50px;
@@ -142,7 +136,6 @@ header {
 .color-picker {
   margin: 3px 3px;
   width: 60px;
-  background: blue;
   border: none;
 }
 
