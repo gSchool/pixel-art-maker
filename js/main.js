@@ -29,9 +29,7 @@ $('.clear-button').on('click', function () {
 })
 
 $('.eraser-button').on('click', function () {
-  $('.canvas').on('click', '.pixel', function () {
-  $paintbrush = $(this).css('background-color','white')
-  })
+  $paintbrush = 'white';
   $('.selected-color-button').css('background-color', 'white');
 })
 
