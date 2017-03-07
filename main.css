@@ -12,7 +12,7 @@ main {
 
 header h1 {
   font-size: 5rem;
-  color: #CB4335;
+  color: black;
   margin-top:-4rem;
   padding-left: 3rem;
   text-transform: uppercase;
@@ -33,11 +33,9 @@ selection {
 }
 
 pixelCanvas {
-  border: 1px solid gray;
+  border: 1px solid #515a5a;
   border-radius:10px;
   padding:20px;
-  /*width:auto;*/
-  /*margin: auto;*/
   display:inline-block;
   background-color: lightgray;
   margin: 3rem 0rem 3rem 3rem;
@@ -53,6 +51,12 @@ paletteCol {
   display:inline-block;
 }
 
+section.top{
+  display:flex;
+  width:100%;
+  justify-content: flex-start;
+}
+
 colorTile {
   width:30px;
   height:30px;
@@ -61,12 +65,6 @@ colorTile {
   margin-bottom:2px;
   border-radius:10px;
   border:1px solid gray;
-}
-
-section.top{
-  display:flex;
-  width:100%;
-  justify-content: flex-start;
 }
 
 buttons {
@@ -81,7 +79,7 @@ saveButton {
   margin: 3rem;
   width:15rem;
   height:5rem;
-  border:2px solid lightgray;
+  border:2px solid #515a5a;
   border-radius: 10px;
   background-color: #d98880;
   padding:1.3rem;
@@ -98,7 +96,7 @@ loadButton {
   margin: 3rem;
   width:15rem;
   height:5rem;
-  border:2px solid lightgray;
+  border:2px solid #515a5a;
   border-radius: 10px;
   background-color: #a9cce3;
   padding:1.3rem;
@@ -106,6 +104,23 @@ loadButton {
   font-size: 2rem;
   font-weight: bold;
   color:#1f618d;
+  text-transform: uppercase;
+}
+
+resetButton {
+  float:right;
+  display:inline-block;
+  margin: 3rem;
+  width:15rem;
+  height:5rem;
+  border:2px solid #515a5a;
+  border-radius: 10px;
+  background-color: #aab7b8;
+  padding:1.3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#515a5a;
   text-transform: uppercase;
 }
 
@@ -120,6 +135,14 @@ currentColor {
 
 .first {
   margin-left:0px;
+}
+
+img {
+  float:left;
+  width: 50px;
+  height: 50px;
+  margin-top: .25rem;
+  margin-left: 3rem;
 }
 
 pixelRow {

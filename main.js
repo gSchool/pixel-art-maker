@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  const pixelDim = 100;
+  const pixelDim = 10;
   let windowWidth = $(document).width();
   let windowHeight = $(document).height();
   let maxCanvasWidth = windowWidth;
   let maxCanvasHeight = windowHeight;
   let pixelsWide = Math.floor((maxCanvasWidth-300)/(pixelDim-1));
   let pixelsHigh = Math.floor((maxCanvasHeight-460)/(pixelDim-1));
+
 
   function saveImage() {
     let canvasArray = [];
@@ -39,11 +40,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  function resetImage() {
+    let pixels = document.getElementsByTagName('pixel');
+    for (let pixel of pixels) {
+      pixel.style.backgroundColor = '#ffffff';
+    }
+  }
+
   let saveButton = document.getElementsByTagName('saveButton')[0];
   saveButton.addEventListener("click",saveImage);
 
   let loadButton = document.getElementsByTagName('loadButton')[0];
   loadButton.addEventListener("click",loadImage);
+
+  let resetButton = document.getElementsByTagName('resetButton')[0];
+  resetButton.addEventListener("click",resetImage);
 
 
   function chooseFromPicker () {
@@ -59,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
   canvas.setAttribute("style", "width:"+canvasWidth);
 
   let mouseDown = false;
-  let pickerColor = '#fbfcfc';
+  let pickerColor = '#17202a';
   colorPicker.value = pickerColor;
   let color = 'color'+pickerColor;
 
@@ -74,20 +85,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  let paint = function() {
+  let paintWhileDown = function() {
     if (mouseDown) {
-      if (pickerColor == color.substring(5)) {
-        event.target.className = color;
-      } else {
+      paint();
+    }
+  }
+
+  let paint = function() {
+      if ($('input[type="checkbox"]').prop("checked") == true) { // check if flood is checked
+        floodFill(event.target, pickerColor);
+      } else { // paint normally
         event.target.style.backgroundColor = pickerColor;
       }
-    }
   }
 
   function setPixelEvents () {
     let pixels = document.getElementsByTagName('pixel');
     for (let i=0;i<pixels.length;i++) {
-      pixels[i].addEventListener("mouseenter",paint);
+      pixels[i].addEventListener("mouseenter",paintWhileDown);
+      pixels[i].addEventListener("click",paint);
       pixels[i].setAttribute("style", "width:"+pixelDim+";height:"+pixelDim);
     }
   }
@@ -115,6 +131,74 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("mouseup",mouseReleased);
   window.addEventListener("mousedown",mouseClicked);
+
+  function floodFill(node, floodColor) {
+    let floodArray = []
+    let originalColor = node.style.backgroundColor;
+
+    let parsedRGB = 'rgb(';
+    parsedRGB += parseInt(floodColor.substring(1, 3), 16) + ', ';
+    parsedRGB += parseInt(floodColor.substring(3, 5), 16) + ', ';
+    parsedRGB += parseInt(floodColor.substring(5, 7), 16) + ')';
+
+    if (originalColor != parsedRGB) {
+      let canvasAsObj = {};
+      let pixelRows = document.getElementsByTagName('pixelRow');
+      for (let i=0; i<pixelRows.length; i++) {
+        let row = pixelRows[i];
+        for (j = 0; j < row.children.length; j++) {
+          pixelObj = {"row":i,"col":j,"node":row.children[j]};
+          canvasAsObj[[i,j]] = pixelObj; // add each pixelObj to canvasAsObj with the row/column as key
+          if (row.children[j] == node) {
+            floodArray.push([i,j]); // add the target pixel to the flood queue
+          }
+        }
+      }
+
+      while (floodArray.length > 0) {
+        let curCoord = floodArray.pop();
+        let curNode = canvasAsObj[curCoord];
+        if (curNode != undefined) {
+          curNode.node.style.backgroundColor = floodColor; //change color
+
+          //check left
+          let pixelObj = canvasAsObj[[curCoord[0],curCoord[1]-1]];
+          if (pixelObj != null) {
+            if (pixelObj.node.style.backgroundColor == originalColor) { // add to flood queue
+              floodArray.push([curCoord[0],curCoord[1]-1]);
+            }
+          }
+
+          //check right
+          pixelObj = canvasAsObj[[curCoord[0],curCoord[1]+1]];
+          if (pixelObj != null) {
+            if (pixelObj.node.style.backgroundColor == originalColor) { // add to flood queue
+              floodArray.push([curCoord[0],curCoord[1]+1]);
+            }
+          }
+
+          //check up
+          pixelObj = canvasAsObj[[curCoord[0]-1,curCoord[1]]];
+          if (pixelObj != null) {
+            if (pixelObj.node.style.backgroundColor == originalColor) { // add to flood queue
+              floodArray.push([curCoord[0]-1,curCoord[1]]);
+            }
+          }
+
+          //check down
+          pixelObj = canvasAsObj[[curCoord[0]+1,curCoord[1]]];
+          if (pixelObj != null) {
+            if (pixelObj.node.style.backgroundColor == originalColor) { // add to flood queue
+              floodArray.push([curCoord[0]+1,curCoord[1]]);
+            }
+          }
+        }
+      }
+    } 
+  }
+
+
+
 
   buildCanvas();
   setPixelEvents();
