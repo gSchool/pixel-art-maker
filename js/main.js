@@ -17,6 +17,10 @@ $('.canvas').on('click', '.pixel', function () {
 $(this).css('background-color', $paintbrush)
 })
 
+$('.pick-color').on('change', function () {
+  $paintbrush = $(this).val();
+  $('.selected-color-button').css('background-color', $paintbrush);
+})
 
 // clear
 $('.clear-button').on('click', function () {
@@ -56,8 +60,3 @@ $('.canvas').ready(function () {
     }
   });
 });
-
-$('.pick-color').on('change', function () {
-  $paintbrush = $(this).val();
-  $('.selected-color-button').css('background-color', $paintbrush);
-})
