@@ -1,27 +1,23 @@
-
 var $paintbrush;
 
 // Generate Loop
 for (var j = 0; j < 700; j++) {
-    $('.canvas').append('<div class="pixel"></div>');
+  $('.canvas').append('<div class="pixel"></div>');
 }
 
 //Grab paintbrush color
 $('.palette').on('click', function () {
-   $('.selected-color').css('background-color', $(this).css('background-color'));
-   $paintbrush = $(this).css('background-color');
-
+  $('.selected-color').css('background-color', $(this).css('background-color'));
+  $paintbrush = $(this).css('background-color');
 })
 
 // Change the pixel color
-
 $('.canvas').on('click', '.pixel', function () {
-$(this).css('background-color', $paintbrush)
+  $(this).css('background-color', $paintbrush)
 })
 
-
+// Mouse Movements
 $('.canvas').ready(function(){
-
   var isDown = false;   // Tracks status of mouse button
 
   $('.canvas').mousedown(function() {
@@ -33,16 +29,15 @@ $('.canvas').ready(function(){
 
   $(".pixel").mouseover(function(){
     if(isDown) {        // Only change css if mouse is down
-       $(this).css('background-color',$paintbrush);
+      $(this).css('background-color',$paintbrush);
     }
   });
 });
 
-// clear the canvas
+// Clear the canvas
 $('.clear-button').on('click', function () {
   $('.pixel').css('background-color', 'white');
 })
-
 
 // Color picker
 $('#full').on('change', function () {
@@ -50,24 +45,23 @@ $('#full').on('change', function () {
   $('.selected-color').css('background-color', $paintbrush);
 })
 
-
-// save image into local storage
+// Save image into local storage
 $('#save').on('click', function(){
- var $colorArray={};
- $('.pixel').each(function(index){
-   $colorArray[index]= $(this).css('background-color');
- })
- var str=''
- str=JSON.stringify($colorArray);
- localStorage.setItem("pixel-art", str );
+  var $colorArray={};
+  $('.pixel').each(function(index){
+    $colorArray[index]= $(this).css('background-color');
+  })
+  var str=''
+  str=JSON.stringify($colorArray);
+  localStorage.setItem("pixel-art", str );
 })
 
-//load image from local storage
+//Load image from local storage
 $('#open').on('click', function(){
-var obj={}
- obj = JSON.parse(localStorage.getItem("pixel-art"));
+  var obj={}
+  obj = JSON.parse(localStorage.getItem("pixel-art"));
 
- $('.pixel').each(function(key){
-   $(this).css('background-color', obj[key]);
+  $('.pixel').each(function(key){
+    $(this).css('background-color', obj[key]);
+  })
 })
- })

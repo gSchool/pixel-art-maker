@@ -1,20 +1,5 @@
 /*****General*****/
 
-* {
-	box-sizing: border-box;
-}
-
-html {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-}
-
-h1 {
-	text-align: center;
-	margin: 40px;
-	font-size: 36px;
-	font-style: italic;
-}
 
 .canvas {
 	display: block;
@@ -38,11 +23,11 @@ h1 {
 .palette {
 	display: inline-block;
 	background-color: white;
-	width: 100px;
-	height: 100px;
+	width: 25px;
+	height: 25px;
 	border: 1px solid green;
 	border-radius: 100%;
-	margin: 30px 55px;
+	margin: 1px
 
 
 }
@@ -53,7 +38,6 @@ h1 {
 	height: 100px;
 	border: 5px solid green;
 	border-radius: 30%;
-	margin: auto;
 
 
 }
@@ -64,7 +48,8 @@ h1 {
 	width: 100px;
 	height: 100px;
 	border: 5px solid green;
-	margin: auto;
+  border-radius: 30%;
+
 
 }
 
@@ -72,6 +57,7 @@ h1 {
 	width: 100px;
 	height: 100px;
 	border: 5px solid green;
+  border-radius: 30%;
 }
 
 /*colors*/
