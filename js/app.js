@@ -2,7 +2,7 @@
 var $paintbrush;
 
 // Generate Loop
-for (var j = 0; j < 600; j++) {
+for (var j = 0; j < 700; j++) {
     $('.canvas').append('<div class="pixel"></div>');
 }
 
