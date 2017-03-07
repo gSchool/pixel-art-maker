@@ -1,0 +1,85 @@
+
+/*******HEADER********/
+header {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  border: 3px solid black;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+
+.color-container header {
+  border:none;
+  display:flex;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+h1,
+h3 {
+  font-family: 'Press Start 2P', cursive;
+  color:rgb(179, 43, 0);
+}
+
+/*******MAIN GRID*********/
+
+.grid-wrap {
+  display:flex;
+  flex-wrap:wrap;
+  width: 1000px;
+  height: 600px;
+  border: 3px solid black;
+}
+
+.grid {
+  width: 20px;
+  height: 20px;
+  border: .5px solid grey;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+/********COLOR BOX*********/
+
+.color-container {
+  display: flex;
+  width: 150px;
+  height: 600px;
+  border: 3px solid black;
+  margin-right: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#color1 {
+  background-color: red;
+}
+
+#color2 {
+  background-color: green;
+}
+
+#color3 {
+  background-color: blue;
+}
+
+#color4 {
+  background-color: black;
+}
+
+#color5 {
+  background-color: yellow  ;
+}
