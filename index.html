@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="pixelstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pixel Art Maker</h1>
+    </header>
+    <main>
+
+        <div class="canvas-color-contain">
+            <div class="canvas">
+                <table></table>
+            </div>
+
+            <div class="color-container">
+                <input id="color-1" class="color-box" type="button">
+                <input id="color-2" class="color-box" type="button">
+                <input id="color-3" class="color-box" type="button">
+                <input id="color-4" class="color-box" type="button">
+                <input id="color-5" class="color-box" type="button">
+                <input id="color-6" class="color-box" type="button">
+                <input id="color-7" class="color-box" type="button">
+                <input id="color-8" class="color-box" type="button">
+                <input id="color-9" class="color-box" type="button">
+                <input id="color-10" class="color-box" type="button">
+                <input id="color-11" class="color-box" type="button">
+                <input id="color-12" class="color-box" type="button">
+                <input id="color-13" class="color-box" type="button">
+                <input id="color-14" class="color-box" type="button">
+                <input id="color-15" class="color-box" type="button">
+                <input id="color-16" class="color-box" type="button">
+                <input id="color-17" class="color-box" type="button">
+                <input id="color-18" class="color-box" type="button">
+                <input id="color-19" class="color-box" type="button">
+                <input id="color-20" class="color-box" type="button">
+            </div>
+
+            <div id="color-selected-contain">
+                <h2>Pick your own : </h2>
+                <input type="color" class="color-box" id="color-picker">
+                <h2>color selected : </h2>
+                <div id="color-selected"></div>
+                <input id="fill-tool" type="button" data-selected="false" value="Fill tool">
+        </div>
+        </div>
+    </main>
+    <script src="pixelfunc.js"></script>
+</body>
+
+</html>
