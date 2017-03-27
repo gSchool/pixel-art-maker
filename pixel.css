@@ -1,0 +1,117 @@
+
+.header {
+  text-align: center;
+  font-size: 50px;
+  font-style: bold;
+  font-weight: 800;
+  margin-top: 25px;
+}
+
+.pixeltable {
+  display: table;
+  border-spacing: 1px;
+  background-color: #cfcfcf;
+  margin-top: 10px;
+  height: 400px;
+  width: 790px;
+  margin: auto;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.pixel {
+  display: table-cell;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+}
+
+/* PALETTE */
+.palette {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30%;
+}
+
+/*COLOR BUTTONS*/
+.blackButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: black;
+}
+.brownButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: brown;
+}
+.greyButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: grey;
+}
+.redButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: red;
+}
+.orangeButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: orange;
+}
+.yellowButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: yellow;
+}
+.greenButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: green;
+}
+.blueButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: blue;
+}
+.purpleButton {
+  border-width: 1px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  background-color: purple;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: row-reverse;;
+  align-items: center;
+  text-align: right;
+  margin-right: 30%;
+}
