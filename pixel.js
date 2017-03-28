@@ -1,20 +1,31 @@
-var colorPick="white";
+// var container = document.querySelector('.container')
+//
+// container.addEventListener('click', function(event) {
+// 	console.log(event.target)
+//   if (event.target.classList.contains('cell')) {
+//   	event.target.classList.toggle('colored')
+//   }
+// })
+//
+// var cellCount = 9
+// for (var i = 1; i <= cellCount; i++) {
+//   var newCell = document.createElement('div')
+//   newCell.classList.add('cell')
+//   newCell.textContent = i
+//   container.appendChild(newCell)
+// }
 
-var red = document.querySelector("paint1")
-paint1.addEventListener("click", function(){
-  colorPick = "red"
-})
+var color = 'black';
+var paintBrush = document.querySelector(".palette");
+paintBrush.addEventListener("click",
+	function(event) {
+		var target = window.getComputedStyle(event.target);
+		color = target.getPropertyValue("background-color")
+	});
 
-var red = document.querySelector("paint2")
-paint2.addEventListener("click", function(){
-  colorPick = "orange"
-})
-
-var red = document.querySelector("paint3")
-paint3.addEventListener("click", function(){
-  colorPick = "magenta"
-})
-var red = document.querySelector("paint4")
-paint4.addEventListener("click", function(){
-  colorPick = "orchid"
-})
+var first = document.querySelector(".canvas-grid")
+first.addEventListener('click',
+function(event) {
+	event.target.style.backgroundColor = color;
+	console.log(event.target)
+});

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+.canvas-grid {
+  display: flex;
+  width: 420px;
+  height: 420px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cell {
+  width: 50%;
+  height: 50%;
+  border: solid 1px black;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.palette {
+  display: flex;
+  width: 420px;
+  height: 420px;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.paint {
+  flex-direction: row;
+  width: 105px;
+  height: 105px;
+ +  border: 2px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.grey {
+  background-color: grey;
+}
