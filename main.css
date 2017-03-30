@@ -1,0 +1,117 @@
+html {
+  color: black;
+  font-family: serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("http://st2.depositphotos.com/5191555/9651/v/950/depositphotos_96513326-stock-illustration-vector-cute-abstract-pixel-art.jpg");
+  background-repeat: round;
+}
+
+
+.title {
+  text-align: center;
+}
+
+.grid {
+  margin: 1rem;
+  border: .15rem;
+
+}
+
+.grid div {
+  cursor: pointer;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: .075rem solid #ccc;
+  float: left;
+}
+
+.available-colors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.available-colors div {
+  cursor: pointer;
+  margin: .25;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.base {
+  background-color: #ccc
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow-green {
+  background-color: rgb(194, 228, 79);
+}
+
+.green {
+  background-color: green;
+}
+
+.green-blue {
+  background-color: rgb(5, 159, 155)
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue-violet {
+  background-color: rgb(59, 44, 177);
+}
+
+.violet {
+  background-color: violet;
+}
+
+.red-violet {
+  background-color: rgb(177, 26, 126);
+}
+
+.red {
+  background-color: red;
+}
+
+.red-orange {
+  background-color: rgb(230, 160, 122);
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange-yellow {
+  background-color: #f8d568;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.current {
+  background-color: rgba(175, 199, 226, 0.2);
+}
+#current {
+  width: 4.5rem;
+  border-radius: 0%;
+}
