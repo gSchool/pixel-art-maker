@@ -29,3 +29,8 @@ td {
     justify-content: center;
 
 }
+
+footer {
+  display: flex;
+  align-self: flex-end;
+}
