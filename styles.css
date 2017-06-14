@@ -1,17 +1,23 @@
 div {
   border: 0px;
   margin: 0 auto;
-  height: 15px;
   box-sizing: border-box;
   cursor: crosshair;
 }
 
 .row {
   width: 100%;
+  height: 15px;
   text-align: center;
 }
 
 .header-row {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.footer-row {
   width: 100%;
   height: 50px;
   text-align: center;

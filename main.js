@@ -2,9 +2,18 @@
 const colorList = ["black", "white", "red", "blue", "green"];
 
 let currentColor = "black";
+let gridSize = [40, 30];
 
-let $pixels = $(".pixel");
-let $colors = $(".color");
+
+function resizePalette(x, y) {
+  gridSize = [x, y];
+
+  savePaletteSize(x, y);
+  $(".palette").empty();
+  initPalette([x, y]);
+  initColors(colorList);
+  initFooter();
+}
 
 function initHeader(x, y) {
   let $headerRow = $("<div>");
@@ -25,12 +34,10 @@ function initHeader(x, y) {
   $goButton.text("Go");
 
   $goButton.click(function() {
-    let xCoord = $("#x-input").val();
-    let yCoord = $("#y-input").val();
+    const xCoord = $("#x-input").val();
+    const yCoord = $("#y-input").val();
 
-    $(".palette").empty();
-    initPalette(xCoord, yCoord);
-    initColors(colorList);
+    resizePalette(xCoord, yCoord);
   });
 
   $headerRow.append($gridLabel);
@@ -43,9 +50,13 @@ function initHeader(x, y) {
   return $headerRow;
 }
 
-function initPalette(x, y) {
+function initPalette(coords) {
   let $mainPalette = $(".palette");
   let $pixel = $("<div>");
+
+  const x = coords[0];
+  const y = coords[1];
+
   $pixel.addClass("pixel");
 
   // Create header-row
@@ -134,24 +145,126 @@ function initColors(colors) {
   });
 }
 
-function paletteToArray(x, y) {
+function initFooter() {
+  let $mainPalette = $(".palette");
+  let $footerRow = $("<div>");
+  $footerRow.addClass("footer-row");
+
+  let $saveButton = $("<button>");
+  $saveButton.text("Save");
+  let $loadButton = $("<button>");
+  $loadButton.text("Load");
+
+  $saveButton.click(function() {
+    let xCoord = gridSize[0];
+    let yCoord = gridSize[1];
+
+    result = paletteToArray(xCoord, yCoord);
+  });
+
+  $loadButton.click(function() {
+    loadData();
+  });
+
+  $footerRow.append($saveButton);
+  $footerRow.append($loadButton);
+
+  $mainPalette.append($footerRow);
+}
+
+function initArray(x, y) {
   let result = [];
+
+  for (let i = 0; i < x; i++) {
+    result[i] = [];
+    for (let j = 0; j < y; j++) {
+      result[i][j] = 0;
+    }
+  }
+
+  return result;
+}
+
+function paletteToArray(x, y) {
+  let xCoord = 0;
+  let yCoord = 0;
+
+  let result = initArray(x, y);
+  $rows = $(".row");
+
+  for (const row of $rows) {
+    for (const pixel of row.children) {
+      result[xCoord][yCoord] = $(pixel).css("background-color");
+      xCoord++;
+    }
+    yCoord++;
+    xCoord = 0;
+  }
+
+  saveData(result);
+  return result;
+}
+
+function arrayToPalette(artArray) {
+  let xCoord = 0;
+  let yCoord = 0;
 
   $rows = $(".row");
 
   for (const row of $rows) {
     for (const pixel of row.children) {
-      // result[y][x] = $(pixel).css("background-color");
-      result[y][x] = "";
-      x++;
-      // console.log($(pixel).css("background-color"));
+      $(pixel).css("background-color", artArray[xCoord][yCoord]);
+      xCoord++;
     }
-    y++;
+    yCoord++;
+    xCoord = 0;
   }
-
-  console.log(result);
 }
 
-initPalette(40, 30);
+function saveData(pixelArray) {
+  const drawData = JSON.stringify(pixelArray);
+  const paletteData = JSON.stringify(gridSize);
+
+  localStorage.setItem("saved-palette-size", paletteData);
+  localStorage.setItem("drawing", drawData);
+}
+
+function loadData() {
+  const drawData = localStorage.getItem("drawing");
+  const paletteData = localStorage.getItem("saved-palette-size");
+
+  if (drawData) {
+    const result = JSON.parse(drawData);
+    gridSize = JSON.parse(paletteData);
+    resizePalette(gridSize[0], gridSize[1]);
+    arrayToPalette(result);
+  }
+}
+
+function loadPaletteSize() {
+  const data = localStorage.getItem("palette-size");
+  let result;
+
+  if (data) {
+    result = JSON.parse(data);
+  }
+  else {
+    result = [40, 30];
+  }
+
+  gridSize = result;
+}
+
+function savePaletteSize(x, y) {
+  let data = [];
+
+  data.push(x, y);
+
+  data = JSON.stringify(data);
+  localStorage.setItem("palette-size", data);
+}
+
+loadPaletteSize();
+initPalette(gridSize);
 initColors(colorList);
-paletteToArray(40, 30);
+initFooter();
