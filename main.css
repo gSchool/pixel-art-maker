@@ -29,6 +29,35 @@ td {
     justify-content: center;
 
 }
+.palette {
+  display: flex;
+  margin: 5em auto;
+
+
+}
+
+.color_dot {
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 50%;
+
+}
+
+#red{
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+#blue {
+  background-color: blue;
+}
+#yellow {
+  background-color: yellow;
+}
 
 footer {
   display: flex;
