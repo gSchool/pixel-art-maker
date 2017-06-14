@@ -1,13 +1,31 @@
 .pixel {
   height: 20px;
   width: 20px;
-  background-color: blue;
-  border: 1px solid grey;
+  border: 2px solid grey;
   display: inline-block;
   margin: -2px;
-
 }
+
 
 table {
   border-collapse: collapse;
+
+}
+
+/*tr {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+td {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}*/
+
+.flex-box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
