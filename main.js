@@ -170,6 +170,10 @@ function initFooter() {
   $footerRow.append($loadButton);
 
   $mainPalette.append($footerRow);
+
+  const $errorRow = $("<div>").addClass("error-row");
+  $errorRow.append($("<p id=\"error-msg\">"));
+  $mainPalette.append($errorRow);
 }
 
 function initArray(x, y) {
@@ -239,6 +243,16 @@ function loadData() {
     resizePalette(gridSize[0], gridSize[1]);
     arrayToPalette(result);
   }
+  else {
+    const $error = $("#error-msg");
+
+    $error.text("Error loading save data");
+    $error.fadeIn(1000, function() {
+      setTimeout(function() {
+        $error.fadeOut(1000);
+      }, 4000);
+    });
+  }
 }
 
 function loadPaletteSize() {
@@ -262,6 +276,10 @@ function savePaletteSize(x, y) {
 
   data = JSON.stringify(data);
   localStorage.setItem("palette-size", data);
+}
+
+function fillArea() {
+
 }
 
 loadPaletteSize();

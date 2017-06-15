@@ -62,6 +62,14 @@ div {
   border-width: 3px;
 }
 
+.error-row {
+  text-align: center;
+}
+
+#error-msg {
+  display: none;
+}
+
 #color-picker {
   display: none;
 }
