@@ -1,9 +1,10 @@
 .pixel {
   height: 20px;
   width: 20px;
-  border: 2px solid grey;
+  border: 1px solid grey;
   display: inline-block;
   margin: -2px;
+  background-color: white;
 }
 
 
@@ -21,7 +22,7 @@ td {
   padding: 0px 0px 0px 0px;
 }*/
 
-.flex-box {
+#flex_box {
     display: -webkit-flex;
     display: -moz-flex;
     display: flex;
