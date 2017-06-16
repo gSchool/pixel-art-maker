@@ -1,0 +1,147 @@
+div {
+  border: 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.flex-container, html, body {
+  background-color: #efefef;
+}
+
+.flex-container {
+  width: 100%;
+  background-color: #efefef;
+  display: flex;
+  margin-top: 20px;
+}
+
+.palette {
+  padding: 30px;
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+  background-color: #ddd;
+  min-width: 600px;
+}
+
+.row {
+  width: 100%;
+  height: 10px;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.header-row {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.footer-row {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+
+.color-row {
+  width: 100%;
+  text-align: center;
+}
+
+.tool-row {
+  width: 100%;
+  text-align: center;
+}
+
+.tool {
+  margin: 10px;
+}
+
+.selected-tool {
+  border: 3px solid black;
+}
+
+.pixel {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  /*border-bottom: 1px dotted lightgrey;*/
+  /*border-right: 1px dotted lightgrey;*/
+  z-index: 10;
+  pointer-events: visibleFill;
+}
+
+.pixel-border {
+  border-bottom: 1px dotted lightgrey;
+  border-right: 1px dotted lightgrey;
+}
+
+.row .pixel-border:first-of-type {
+  border-left: 1px dotted lightgrey;
+}
+
+.palette div:nth-child(2) .pixel-border{
+  border-top: 1px dotted lightgrey;
+}
+
+.color, .custom-color {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid grey;
+  margin: 5px;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.current-color {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.sub-color-row {
+  display: inline-block;
+}
+
+.error-row {
+  text-align: center;
+  min-height: 50px;
+}
+
+#error-msg {
+  display: none;
+  margin-top: 15px;
+  color: red;
+}
+
+img {
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#color-picker {
+  display: none;
+}
+
+#x-input, #y-input {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#go-button {
+  margin-right: 20px;
+}
+
+p, label {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin-right: 10px;
+  display: inline-block;
+}
