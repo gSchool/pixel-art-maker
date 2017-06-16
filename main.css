@@ -6,35 +6,27 @@
   margin: -2px;
   background-color: white;
 }
+.flex_box {
 
-
-table {
-  border-collapse: collapse;
-
-}
-
-/*tr {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
-td {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}*/
-
-#flex_box {
-    display: -webkit-flex;
-    display: -moz-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    margin: auto;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.flex_row {
+  align-self: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
 .palette {
   display: flex;
   margin: 5em auto;
-
-
 }
 
 .color_dot {
@@ -63,4 +55,5 @@ td {
 footer {
   display: flex;
   align-self: flex-end;
+  justify-content: center;
 }

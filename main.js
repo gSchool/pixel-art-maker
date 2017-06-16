@@ -1,54 +1,60 @@
-let pixels = document.getElementsByClassName("pixel");
-let colorDot = document.getElementsByClassName("color_dot");
-
 let chosenColor = ""
 
 // flex-box details
+let boxSize = {x: 30, y: 30};
 let flexBox = document.querySelector("#flex_box");
-let boxSize = {x: 25, y: 25};
-
-let flexRow = document.createElement("div");
-flexRow.setAttribute("class","flex_row");
-
-let madeRow = document.getElementById("#flex_row")
-
-console.log(flexRow)
-console.log(flexBox);
-
-
+flexBox.addEventListener("click", paint);
 let pixel = document.createElement("div");
 pixel.setAttribute("class","pixel");
-console.log(pixel)
+
+// palette details
+let colors = ["red", "blue", "green", "yellow", "white"]
+let palette = document.querySelector(".palette");
+palette.addEventListener("click", colorChoice);
 
 // sets the flex-box size
 for (let i = 0; i < boxSize.y; i++) {
+  let flexRow = document.createElement("div");
+  flexRow.setAttribute("class","flex_row");
   flexBox.appendChild(flexRow);
-  console.log("hey");
+
   for (let j = 0; j < boxSize.x; j++) {
     let pixel = document.createElement("div");
     pixel.setAttribute("class","pixel");
     flexRow.appendChild(pixel);
-    console.log("wha");
   }
 }
 
+for (let k = 0; k < colors.length; k++ ){
+  let colorDot = document.createElement("div");
+  colorDot.setAttribute("class", "color_dot")
+  let color = colors[k];
+  colorDot.style.backgroundColor = colors[k];
+  colorDot.id = colors[k];
+  palette.appendChild(colorDot);
+}
+
+
+
+
 
 // adds event listener to the pixels
-for (let i = 0; i < pixels.length; i++) {
-  pixels[i].addEventListener("click", paint);
-}
+// for (let i = 0; i < pixels.length; i++) {
+//   pixels[i].addEventListener("click", paint);
+// }
 // adds event listener to the color pickers
-for (let i = 0; i < pixels.length; i++) {
-  colorDot[i].addEventListener("click", colorChoice);
-}
+// for (let i = 0; i < pixels.length; i++) {
+//   colorDot[i].addEventListener("click", colorChoice);
+// }
 
 // keeps a record of the color chosen
 function colorChoice(event){
   chosenColor = event.target.id;
-  // console.log(chosenColor);
+  console.log(chosenColor);
 }
 
 // paints the pixel
 function paint(event){
   event.target.style.backgroundColor = chosenColor;
+  console.log(event);
 }
