@@ -1,14 +1,15 @@
 /*jshint esversion: 6 */
+const colorList = ["black", "white", "red", "blue", "green", "orange", "yellow", "purple", "brown", "crimson"];
 
-//Fix custom color codes - sometimes returns hex.
-//Sanitize custom palette input;
+const DEFAULT_GRID_X = 100;
+const DEFAULT_GRID_Y = 50;
 
-const colorList = ["black", "white", "red", "blue", "green", "orange", "yellow", "purple"];
+const COLORS_PER_ROW = 10;
 
 let currentColor;
-let gridSize = [40, 30];
 let currentTool;
-
+let gridSize = [DEFAULT_GRID_X, DEFAULT_GRID_Y];
+let gridEnabled = false;
 
 function resizePalette(x, y) {
   gridSize = [x, y];
@@ -19,6 +20,7 @@ function resizePalette(x, y) {
   initColors(colorList);
   initTools();
   initFooter();
+  initGrid();
 }
 
 function initTools() {
@@ -92,12 +94,41 @@ function initHeader(x, y) {
   let $goButton = $("<button type='button'>");
 
   $goButton.text("Go");
+  $goButton.attr("id", "go-button");
 
   $goButton.click(function() {
     const xCoord = $("#x-input").val();
     const yCoord = $("#y-input").val();
 
-    resizePalette(xCoord, yCoord);
+    if (xCoord > 0 && xCoord <= 100 && yCoord > 0 && yCoord <= 100) {
+      resizePalette(xCoord, yCoord);
+    }
+    else {
+      alert ("Palette size must be between 100 and 1.");
+      $("#x-input").val(gridSize[0]);
+      $("#y-input").val(gridSize[1]);
+    }
+  });
+
+  let $checkBox = $("<input type=\"checkbox\" id=\"grid-checkbox\">");
+  let $checkBoxLabel = $("<label>");
+  $checkBoxLabel.text("Grid lines");
+
+  $checkBoxLabel.click(function() {
+    $checkBox.trigger("click");
+  });
+
+  $checkBox.change(function() {
+    if (this.checked) {
+      gridEnabled = true;
+       $(".pixel").addClass("pixel-border");
+    }
+    else {
+      gridEnabled = false;
+      $(".pixel").removeClass("pixel-border");
+    }
+
+    saveGridState();
   });
 
   $headerRow.append($gridLabel);
@@ -106,6 +137,8 @@ function initHeader(x, y) {
   $headerRow.append($yLabel);
   $headerRow.append($yInput);
   $headerRow.append($goButton);
+  $headerRow.append($checkBox);
+  $headerRow.append($checkBoxLabel);
 
   return $headerRow;
 }
@@ -151,6 +184,9 @@ function initPalette(coords) {
 
         fillArea(pixelX, pixelY, currentColor);
       }
+      else if (currentTool === "brush") {
+
+      }
     }
   });
 
@@ -162,13 +198,6 @@ function initPalette(coords) {
     }
   });
 
-  // $pixels.mouseover(function(event) {
-  //   if (currentTool === "pencil") {
-  //     if (event.buttons) {
-  //       $(this).css("background-color", currentColor);
-  //     }
-  //   }
-  // });
   $mainPalette.mouseover(function(event) {
     if ($(event.target).hasClass("pixel")) {
       if (currentTool === "pencil") {
@@ -180,9 +209,21 @@ function initPalette(coords) {
   });
 }
 
-function initColors(colors) {
-  const COLORS_PER_ROW = 10;
+function initGrid() {
+  loadGridState();
+  let $gridCheckBox = $("#grid-checkbox");
 
+  if (gridEnabled) {
+    $gridCheckBox.prop("checked", true);
+    $(".pixel").addClass("pixel-border");
+  }
+  else {
+    $gridCheckBox.prop("checked", false);
+    $(".pixel").removeClass("pixel-border");
+  }
+}
+
+function initColors(colors) {
   let $row = $("<div>");
   $row.addClass("color-row");
 
@@ -362,7 +403,7 @@ function loadPaletteSize() {
     result = JSON.parse(data);
   }
   else {
-    result = [40, 30];
+    result = [DEFAULT_GRID_X, DEFAULT_GRID_Y];
   }
 
   gridSize = result;
@@ -445,8 +486,30 @@ function matchColor(startColor, pixel) {
   return false;
 }
 
+function saveGridState() {
+  const gridData = JSON.stringify(gridEnabled);
+
+  localStorage.setItem("grid-status", gridEnabled);
+}
+
+function loadGridState() {
+  const gridData = localStorage.getItem("grid-status");
+
+  let result;
+
+  if (gridData) {
+    result = JSON.parse(gridData);
+  }
+  else {
+    result = false;
+  }
+
+  gridEnabled = result;
+}
+
 loadPaletteSize();
 initPalette(gridSize);
 initColors(colorList);
 initTools();
 initFooter();
+initGrid();

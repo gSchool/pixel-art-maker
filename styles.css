@@ -2,7 +2,7 @@ div {
   border: 0px;
   margin: 0 auto;
   box-sizing: border-box;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 .flex-container, html, body {
@@ -11,22 +11,25 @@ div {
 
 .flex-container {
   width: 100%;
-  /*border: 1px solid black;*/
   background-color: #efefef;
   display: flex;
+  margin-top: 20px;
 }
 
 .palette {
-  padding: 20px;
+  padding: 30px;
   /*border: 1px solid black;*/
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ddd;
+  min-width: 600px;
 }
 
 .row {
   width: 100%;
-  height: 15px;
+  height: 10px;
   text-align: center;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .header-row {
@@ -61,20 +64,25 @@ div {
 
 .pixel {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-color: grey;
-  border-style: solid;
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
+  width: 10px;
+  height: 10px;
+  /*border-bottom: 1px dotted lightgrey;*/
+  /*border-right: 1px dotted lightgrey;*/
+  z-index: 10;
+  pointer-events: visibleFill;
 }
 
-.row .pixel:first-of-type {
-  border-left: 1px solid grey;
+.pixel-border {
+  border-bottom: 1px dotted lightgrey;
+  border-right: 1px dotted lightgrey;
 }
 
-.palette div:nth-child(2) .pixel{
-  border-top: 1px solid grey;
+.row .pixel-border:first-of-type {
+  border-left: 1px dotted lightgrey;
+}
+
+.palette div:nth-child(2) .pixel-border{
+  border-top: 1px dotted lightgrey;
 }
 
 .color, .custom-color {
@@ -102,18 +110,35 @@ div {
 
 .error-row {
   text-align: center;
+  min-height: 50px;
 }
 
 #error-msg {
   display: none;
+  margin-top: 15px;
+  color: red;
+}
+
+img {
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #color-picker {
   display: none;
 }
 
-input {
+#x-input, #y-input {
   width: 30px;
+  margin-right: 10px;
+}
+
+#go-button {
+  margin-right: 20px;
+}
+
+p, label {
+  font-family: "Roboto", sans-serif;
 }
 
 p {
