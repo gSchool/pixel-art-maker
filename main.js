@@ -1,8 +1,13 @@
 /*jshint esversion: 6 */
-const colorList = ["black", "white", "red", "blue", "green"];
 
-let currentColor = "black";
+//Fix custom color codes - sometimes returns hex.
+//Sanitize custom palette input;
+
+const colorList = ["black", "white", "red", "blue", "green", "orange", "yellow", "purple"];
+
+let currentColor;
 let gridSize = [40, 30];
+let currentTool;
 
 
 function resizePalette(x, y) {
@@ -12,7 +17,62 @@ function resizePalette(x, y) {
   $(".palette").empty();
   initPalette([x, y]);
   initColors(colorList);
+  initTools();
   initFooter();
+}
+
+function initTools() {
+  currentTool = "pencil";
+
+  let $row = $("<div>");
+  $row.addClass("tool-row");
+
+  let $pencilTool = $("<img>");
+  $pencilTool.attr("src", "images/pencil-tool.png");
+  $pencilTool.attr("width", "40px");
+  $pencilTool.attr("id", "pencil");
+  $pencilTool.addClass("selected-tool");
+  $pencilTool.addClass("tool");
+
+  let $fillTool = $("<img>");
+  $fillTool.attr("src", "images/fill-tool.png");
+  $fillTool.attr("width", "40px");
+  $fillTool.attr("id", "fill");
+  $fillTool.addClass("tool");
+
+  let $colorTool = $("<img>");
+  $colorTool.attr("src", "images/color-selector.png");
+  $colorTool.attr("width", "40px");
+  $colorTool.attr("id", "color-selector");
+  $colorTool.addClass("tool");
+
+  $row.click(function(event) {
+    switch(event.target.id) {
+      case "pencil":
+        currentTool = "pencil";
+        changeToolClass(event.target);
+        break;
+      case "fill":
+        currentTool = "fill";
+        changeToolClass(event.target);
+        break;
+      case "color-selector":
+        $("#color-picker").trigger("click");
+        break;
+    }
+  });
+
+  $row.append($pencilTool);
+  $row.append($fillTool);
+  $row.append($colorTool);
+
+  let $mainPalette = $(".palette");
+  $mainPalette.append($row);
+}
+
+function changeToolClass(tool) {
+  $(".selected-tool").removeClass("selected-tool");
+  $(tool).addClass("selected-tool");
 }
 
 function initHeader(x, y) {
@@ -57,8 +117,6 @@ function initPalette(coords) {
   const x = coords[0];
   const y = coords[1];
 
-  $pixel.addClass("pixel");
-
   // Create header-row
   const $headerRow = initHeader(x, y);
 
@@ -71,6 +129,8 @@ function initPalette(coords) {
     for (let j = 0; j < x; j++) {
       $pixel = $("<div>");
       $pixel.addClass("pixel");
+      $pixel.css("background-color", "rgb(255, 255, 255)");
+      $pixel.attr("id", `pixel-${j}-${i}`);
 
       $row.append($pixel);
     }
@@ -81,38 +141,82 @@ function initPalette(coords) {
   let $pixels = $(".pixel");
 
   $mainPalette.click(function(event) {
-    if ($(event.target).attr("class") === "pixel") {
-      $(event.target).css("background-color", currentColor);
+    if ($(event.target).hasClass("pixel")) {
+      if (currentTool === "pencil") {
+        $(event.target).css("background-color", currentColor);
+      }
+      else if (currentTool === "fill") {
+        let pixelX = Number(event.target.id.split("-")[1]);
+        let pixelY = Number(event.target.id.split("-")[2]);
+
+        fillArea(pixelX, pixelY, currentColor);
+      }
     }
   });
 
-  $pixels.mouseover(function(event) {
-    if (event.buttons) {
-      $(this).css("background-color", currentColor);
+  $mainPalette.mousedown(function(event) {
+    if (currentTool === "pencil") {
+      if ($(event.target).hasClass("pixel")) {
+        $(event.target).css("background-color", currentColor);
+      }
+    }
+  });
+
+  // $pixels.mouseover(function(event) {
+  //   if (currentTool === "pencil") {
+  //     if (event.buttons) {
+  //       $(this).css("background-color", currentColor);
+  //     }
+  //   }
+  // });
+  $mainPalette.mouseover(function(event) {
+    if ($(event.target).hasClass("pixel")) {
+      if (currentTool === "pencil") {
+        if (event.buttons) {
+          $(event.target).css("background-color", currentColor);
+        }
+      }
     }
   });
 }
 
 function initColors(colors) {
+  const COLORS_PER_ROW = 10;
+
   let $row = $("<div>");
   $row.addClass("color-row");
 
+  let $currentColorElement = $("<div>");
+  $currentColorElement.addClass("current-color");
+
+  $row.append($currentColorElement);
+
+  let i = 0;
+  let $subColorRow;
+
   for (let color of colors) {
+    if (i % COLORS_PER_ROW === 0) {
+      if ($subColorRow) {
+        $row.append($subColorRow);
+        $row.append($("<br>"));
+      }
+      $subColorRow = $("<div>");
+      $subColorRow.addClass("sub-color-row");
+    }
+
     let $color = $("<div>");
+
     $color.addClass("color");
     $color.css("background-color", color);
 
-    if (color === "black") {
-      $color.addClass("selected-color");
-    }
+    $subColorRow.append($color);
 
-    $row.append($color);
+    i++;
   }
 
-  // Add color picker to the end of the color list
-  let $colorPickerDiv = $("<div>");
-  $colorPickerDiv.addClass("custom-color");
-  $colorPickerDiv.text("C");
+  if (i % COLORS_PER_ROW !== 0 || COLORS_PER_ROW >= colors.length) {
+    $row.append($subColorRow);
+  }
 
   let $colorPicker = $("<input type='color' value='#FFFFFF'>");
 
@@ -120,17 +224,10 @@ function initColors(colors) {
 
   $colorPicker.change(function() {
     let $colorPicker = $("input");
-    $(".custom-color").css("background-color", $(this).val());
+    $(".current-color").css("background-color", $(this).val());
     currentColor = $(this).val();
   });
 
-  $colorPickerDiv.click(function() {
-    $("#color-picker").trigger("click");
-    $(".selected-color").removeClass("selected-color");
-    $(this).addClass("selected-color");
-  });
-
-  $row.append($colorPickerDiv);
   $row.append($colorPicker);
 
   let $mainPalette = $(".palette");
@@ -138,10 +235,13 @@ function initColors(colors) {
 
   let $colors = $(".color");
 
+  currentColor = $($colors[0]).css("background-color");
+  $currentColorElement.css("background-color", currentColor);
+
   $colors.click(function() {
     currentColor = $(this).css("background-color");
-    $(".selected-color").removeClass("selected-color");
-    $(this).addClass("selected-color");
+    let $currentColor = $(".current-color");
+    $currentColor.css("background-color", currentColor);
   });
 }
 
@@ -160,6 +260,7 @@ function initFooter() {
     let yCoord = gridSize[1];
 
     result = paletteToArray(xCoord, yCoord);
+    saveData(result);
   });
 
   $loadButton.click(function() {
@@ -204,8 +305,6 @@ function paletteToArray(x, y) {
     yCoord++;
     xCoord = 0;
   }
-
-  saveData(result);
   return result;
 }
 
@@ -278,11 +377,76 @@ function savePaletteSize(x, y) {
   localStorage.setItem("palette-size", data);
 }
 
-function fillArea() {
+function fillArea(originX, originY, fillColor) {
+  let pixels = paletteToArray(gridSize[0], gridSize[1]);
+  let pixelStack = [[originX, originY]];
 
+  let x;
+  let y;
+
+  let checkLeft = false;
+  let checkRight = false;
+
+  let startColor = pixels[originX][originY];
+
+  if (startColor === fillColor) {
+    return;
+  }
+
+  while (pixelStack.length) {
+    let coords = pixelStack.pop();
+
+    x = coords[0];
+    y = coords[1];
+    checkLeft = false;
+    checkRight = false;
+
+    while (y >= 0 && matchColor(startColor, pixels[x][y])) {
+      y--;
+    }
+    y++;
+
+    while (y <= gridSize[1] - 1/*maxgridsize*/ && matchColor(startColor, pixels[x][y])) {
+      if (x - 1 >= 0) {
+        if (matchColor(startColor, pixels[x-1][y])) {
+          if (checkLeft === false) {
+            checkLeft = true;
+            pixelStack.push([x-1,y]);
+          }
+        }
+        else if (checkLeft === true) {
+          checkLeft = false;
+        }
+      }
+
+      if (x + 1 <= gridSize[0] - 1 /*maxgridsize*/) {
+        if (matchColor(startColor, pixels[x+1][y])) {
+          if (checkRight === false) {
+            checkRight = true;
+            pixelStack.push([x+1,y]);
+          }
+        }
+        else if (checkRight === true) {
+          checkRight = false;
+        }
+      }
+      pixels[x][y] = fillColor;
+      y++;
+    }
+  }
+
+  arrayToPalette(pixels);
+}
+
+function matchColor(startColor, pixel) {
+  if (startColor === pixel) {
+    return true;
+  }
+  return false;
 }
 
 loadPaletteSize();
 initPalette(gridSize);
 initColors(colorList);
+initTools();
 initFooter();
