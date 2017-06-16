@@ -1,0 +1,51 @@
+/***************grid********************/
+.wrapper {
+  width: 80px;
+}
+
+.row {
+
+}
+
+.pixels {
+  border: 2px solid grey;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 2px;
+  float: left;
+}
+
+/*.pixels:nth-child(2n) {
+  border: none;
+}*/
+
+/***************palette********************/
+.palette {
+  margin-top: 20px;
+}
+
+.color {
+  margin: 3px;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+/*********************clearfix******************/
+.clear-fix {
+  clear: both
+}
