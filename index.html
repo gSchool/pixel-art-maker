@@ -4,88 +4,15 @@
     <meta charset="utf-8">
     <title>Pixelart Maker</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
+    <script type="text/javascript" src="pixel.js" defer></script>  </head>
   <body>
-    <!-- grid -->
     <div class="wrapper">
-      <div class="row">
+      <div class="grid">
+      </div>
 
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
-        <div class="pixels">
-
-        </div>
+      <div class="palette">
       </div>
     </div>
 
-    <div class="clear-fix">
-
-    </div>
-    <!-- palette -->
-    <div class="palette">
-      <div class="color" id="red">
-
-      </div>
-      <div class="color" id="blue">
-
-      </div>
-      <div class="color" id="green">
-
-      </div>
-
-
-    </div>
-
-    <script>
-      let brushColor = "red";
-
-      const grid = document.querySelector('.wrapper');
-      const palette = document.querySelector('.palette');
-
-// change color of pixels
-      function addColor(event) {
-        event.target.style = `background-color: ${brushColor}`;
-        // event.target.classList.remove(currentColor);
-      }
-
-      grid.addEventListener('click', addColor);
-
-// change brush color
-      function changeBrushColor(event) {
-        console.log(`brush color changed to <${event.target.id}>`);
-        brushColor = event.target.id;
-      }
-
-      palette.addEventListener('click', changeBrushColor);
-
-
-
-
-
-    </script>
   </body>
 </html>
-<!--
-<big div for the big box // div with a background color & rounded corners // div for squares...put all in parent float...// div for palette -->
