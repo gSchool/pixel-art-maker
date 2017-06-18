@@ -1,0 +1,81 @@
+
+
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* <------  that guy to control      */
+  flex-direction: column;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: solid slategrey;
+  border-radius: 40px 40px 0 0;
+  border-width: 47px 43px 0;
+  position: relative;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  border: 10px solid lightslategrey;
+  border-radius: 10px;
+  margin: -5px;
+}
+
+.lowerdiv {
+  /*display: inherit;
+  justify-content: center;    <----- problem 
+  align-items: center;*/
+  background-color: white;
+  border: solid slategrey;
+  border-radius: 0 0 40px 40px;
+  border-width: 47px 43px 130px;
+  position: inherit;
+  overflow: visible;
+}
+
+.column {
+  display: run-in;
+  box-sizing: border-box;
+  border: 1px solid silver;
+  width: 15px;
+  height: 17.3px;
+}
+
+.bluemed {
+  color: mediumblue;
+}
+
+.redbrick {
+  color: firebrick;
+}
+
+
+
+/*body {
+  background: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 160px;
+  height: 160px;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  float: left;
+  box-shadow: 0px 0px 1px #fff;
+}*/

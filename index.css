@@ -1,0 +1,95 @@
+
+
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* <------  that guy to control      */
+  flex-direction: column;
+  background-color: darkgrey;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: solid lightgrey;
+  border-radius: 40px 40px 0 0;
+  border-width: 47px 43px 0;
+  position: relative;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  border: 10px solid darkgrey;
+  border-radius: 10px;
+  margin: -5px;
+}
+
+
+.column {
+  box-sizing: border-box;
+  border: 1px solid silver;
+  width: 12px;
+  height: 12px;
+  flex-direction: row;
+}
+
+.lowerdiv {
+  display: flex;
+  /*justify-content: none;    /*<----- problem*/
+  /*align-items: center;*/
+  background-color: white;
+  border: solid lightgrey;
+  border-radius: 0 0 40px 40px;
+  border-width: 47px 43px 130px;
+}
+
+.palette {
+  display: flex;
+  background-color: lightgrey;
+  position: absolute;
+  /*flex-direction: row;*/
+}
+
+.space {
+  /*box-sizing: padding-box;*/
+  /*width: 10px;*/
+  /*height: 18px;*/
+  /*display: block;*/
+}
+
+.colors {
+  display: inline-flex;
+  border: 2px solid grey;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-left: 18px;
+  float: left;
+}
+
+/*body {
+  background: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 160px;
+  height: 160px;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  float: left;
+  box-shadow: 0px 0px 1px #fff;
+}*/
