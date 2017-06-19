@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+  font-family: Optima;
+}
+
+.grid {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.row {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 15px;
+}
+
+.row:first-of-type .pixel {
+  border-top: 1px solid black;
+}
+
+.row .pixel:first-child {
+  border-left: 1px solid black;
+}
+
+.pixel {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: crosshair;
+}
+
+.palette {
+  margin: auto;
+  width: 250px;
+}
+
+.paletteColor {
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  cursor: crosshair;
+}
+
+input {
+  margin: auto;
+  align-content: center;
+  cursor: crosshair;
+  display: block;
+}
