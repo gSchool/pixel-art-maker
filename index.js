@@ -2,11 +2,12 @@ console.log("start js");
 
 const swatchContainer = document.querySelector(".swatchContainer");
 const canvasContainer = document.querySelector(".canvasContainer");
+const selectColorBorder = "#A2A2A2";
 
 var paletteSelectedSwatch = document.querySelector(".paletteSwatch, .paletteSwatchColor1");
 console.log(paletteSelectedSwatch)
 
-paletteSelectedSwatch.classList.add("paletteSelectedSwatchStyle");
+paletteSelectedSwatch.parentElement.style.borderColor = selectColorBorder;
 
 //build the pixel grid
 var rows=32;
@@ -24,10 +25,10 @@ for(var i=0; i<rows; i++) {
 }
 
 function cbPaletteContainer(event) {
-  if(event.target != swatchContainer) {
-    paletteSelectedSwatch.classList.remove("paletteSelectedSwatchStyle");
+  if(event.target.classList[0] === "paletteSwatch") {
+    paletteSelectedSwatch.parentElement.style.borderColor = "white";
     paletteSelectedSwatch = event.target;
-    paletteSelectedSwatch.classList.add("paletteSelectedSwatchStyle");
+    paletteSelectedSwatch.parentElement.style.borderColor = selectColorBorder;
   }
 }
 
