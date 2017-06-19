@@ -1,4 +1,7 @@
 var color = null;
+var fillColorToReplace = null;
+
+//used for constructing the palette with base colors
 const paletteArray = ['red', 'orangered', 'yellow', 'yellowgreen', 'green', 'blue', 'darkblue', 'indigo', 'darkmagenta', 'violet', 'white', 'grey', 'black'];
 
 const palette = document.getElementById('palette');
@@ -24,7 +27,7 @@ clear.addEventListener('click', clearDrawing);
 //fill function
 function fill(center) {
   let box = document.getElementById(center);
-  if (box.style.backgroundColor === 'white') {
+  if (box.style.backgroundColor === fillColorToReplace) {
     box.style.backgroundColor = color;
     center = parseInt(center);
     //use fill on box 1 left
@@ -96,6 +99,8 @@ function turnMouseEnterListenerOff (event) {
 function paint (event) {
   //checks target is a box so clicking nearby wont trigger it
   if (event.shiftKey) {
+    fillColorToReplace = event.target.style.backgroundColor;
+    console.log('heard' + fillColorToReplace);
     fill(event.target.id);
   } else {
     if (event.target.className === 'box') {
