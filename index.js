@@ -18,7 +18,7 @@ function createGrid(width, height) {
   }
 }
 
-createGrid(50, 40);
+createGrid(40,30);
 
 
 const colorsArray = ['red', 'orange', 'yellow', 'green', 'blue',
