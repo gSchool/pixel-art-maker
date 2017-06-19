@@ -1,0 +1,121 @@
+h1 {
+  top: 30px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 40pt;
+  margin: 0px;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+h4 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.parent {
+  background: url('rainbow-spiral.jpeg') no-repeat fixed center;
+  background-size: 100%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2px;
+  border-width: 1px;
+  height: 900px;
+}
+/*The grid contians the toolbar and pixels*/
+.grid {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #C8C8C8;
+  border-style: solid;
+  border-color: black;
+  border-radius: 4px;
+  border-width: .5px;
+  height: 60%;
+  width: 998px;
+}
+#toolbar {
+  float: left;
+  margin-top: 80px;
+  margin-left: 20px;
+  display: inline-block;
+  height: 400px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #005b5b;
+}
+#customColor {
+  margin-left: 48px;
+}
+.loadSave {
+  margin-left: auto;
+  margin-right: auto;
+}
+#save, #load, #clear {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  height: 20px;
+  width: 80px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+/*this is the pixel grid*/
+#row {
+  float: left;
+  position: relative;
+  display: inline-block;
+  top: 25px;
+}
+.column {
+  clear: both;
+  display: inline-block;
+  width: 22px;
+  position: relative;
+  margin: -1px;
+}
+.box {
+  position: relative;
+  margin: -2px;
+  display: inline-block;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+/*This begins the section containing all styling for palette & children*/
+#palette {
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+  width: 998px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background: white;
+}
+#current {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+}
+.color {
+  margin: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  height: 47px;
+  width: 47px;
+  border-radius: 24px;
+}
