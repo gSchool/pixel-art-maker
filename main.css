@@ -2,14 +2,11 @@
   height: 20px;
   width: 20px;
   border: 1px solid grey;
-  display: inline-block;
   margin: -2px;
   background-color: white;
 }
 .flex_box {
-
-    display: flex;
-    margin: auto;
+    /*margin: auto;*/
 }
 
 main {
@@ -18,7 +15,7 @@ main {
 }
 
 .flex_row {
-  align-self: center;
+  /*align-self: center;*/
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -29,6 +26,20 @@ main {
   margin: 5em auto;
 }
 
+#color_picker {
+  height: 0px;
+  width: 0px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 50%;
+  background-color: grey;
+  padding: 20px;
+  /*border: none;*/
+  /*background: none;*/
+}
+
+
 .color_dot {
   height: 20px;
   width: 20px;
@@ -36,7 +47,6 @@ main {
   display: inline-block;
   margin: 3px;
   border-radius: 50%;
-
 }
 
 #red{
@@ -50,6 +60,12 @@ main {
 }
 #yellow {
   background-color: yellow;
+}
+button {
+  height: 30px;
+  border-radius: 15% 15% 15% 15%;
+  margin: 3px;
+  display: flex;
 }
 
 footer {
