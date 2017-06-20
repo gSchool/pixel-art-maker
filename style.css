@@ -4,10 +4,11 @@
 }
 
 .wrapper {
-  width: 400px;
+  width: 650px;
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 20px;
   padding: 10px;
   background-color: grey;
   border: 1px solid DarkTurquoise;
@@ -21,6 +22,7 @@
   border-left: 0.5px solid LightGrey;
   border-top: 0.5px solid LightGrey;
   margin: auto;
+  margin-top: 10px;
   pointer-events: none;
 
 }
@@ -37,38 +39,40 @@
 .pixel {
   border-right: 0.5px solid LightGrey;
   border-bottom: 0.5px solid LightGrey;
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   align-self: stretch;
   pointer-events: painted;
 }
 
 /***************palette********************/
 .palette {
-  width: 300px;
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
   top: 10px;
   background-color: white;
   border-radius: 10px;
   margin: auto;
-  margin-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
 }
 
 .color {
   margin: 3px;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: 0.5px solid grey;
 }
 
-.current {
+.current, .clearButton {
   background-color: white;
   border: 2px solid grey;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 3px;
   margin-right: 14px;
-  width: 25px;
-  height: 15px;
+  width: 40px;
+  height: 25px;
 }
