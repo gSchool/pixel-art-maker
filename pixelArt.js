@@ -21,23 +21,41 @@ $('.pbox').click(function(){
   $('.activeColor').css('background-color', currentColor)
 })
 
-// Paint a color
-$('.abox').click(function(){
-  $(this).css('background-color', currentColor)
-  // Reinstate this for full coloring
-  // $(this).css('border-color', currentColor)
-})
-
-// Drag for color
-
-// $('.abox').dblclick(function(){
+// // Paint a color
+// $('.abox').click(function(){
 //   $(this).css('background-color', currentColor)
+//   // Reinstate this for full coloring
+//   // $(this).css('border-color', currentColor)
 // })
 
+// Drag for color
+// $('.abox').dblclick(function dragPaint(){
+//     $(this).css('background-color', currentColor)
+//         $('.abox').mouseenter(function(){
+//             $(this).css('background-color', currentColor)
+//           })
+//         })
 
-
-
-
-
-
+$('.abox').mousedown(function() {
+    $(".abox").bind('mouseover',function(){
+        $(this).css("background-color", currentColor);
+    });
 })
+.mouseup(function() {
+  $(".abox").unbind('mouseover');
+});
+
+$('.abox').mousedown(function() {
+  $(this).css("background-color", currentColor);
+});
+
+
+
+
+
+
+
+
+
+
+  });

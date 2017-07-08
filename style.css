@@ -1,7 +1,7 @@
 #artContainer {
   background: gray;
   height: 550px;
-  width: 80%;
+  width: 82%;
   padding: 10px;
   border: 2px solid;
   border-color: black;
@@ -37,7 +37,7 @@
   float: left;
   border: 1px solid;
   border-color: gray;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .prow {
