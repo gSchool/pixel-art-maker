@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Paint by Pixels</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="board">
+      <div class="palette">
+        <div class="colors">
+          <div class="color-circle paint darkred"></div><div class="color-circle paint red"></div><div class="color-circle paint red-orange"></div>
+          <div class="color-circle paint yellow"></div><div class="color-circle paint yellow-orange"></div><div class="color-circle paint orange"></div>
+          <div class="color-circle paint yellow-green"></div><div class="color-circle paint lime"></div><div class="color-circle paint green"></div>
+          <div class="color-circle paint blue"></div><div class="color-circle paint lightblue"></div><div class="color-circle paint turquoise"></div>
+          <div class="color-circle paint darkblue"></div><div class="color-circle paint darkpurple"></div><div class="color-circle paint purple"></div>
+          <div class="color-circle paint magenta"></div><div class="color-circle paint pink"></div><div class="color-circle paint lavender"></div>
+          <div class="color-circle paint beige"></div><div class="color-circle paint tan"></div><div class="color-circle paint brown"></div>
+          <div class="color-circle paint white"></div><div class="color-circle paint gray"></div><div class="color-circle paint black"></div>
+          <div class="action-buttons">
+            <div class="color-picker">
+              <div class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+              <input type="text" id="colorInput" placeholder="Enter color">
+              <button id="click">Set</button>
+            </div>
+            <div class="color-circle icon eyedrop"><i class="fa fa-eyedropper" aria-hidden="true"></i></div>
+            <div class="color-circle icon erase"><i class="fa fa-eraser" aria-hidden="true"></i></div>
+            <div class="color-circle icon delete"><i class="fa fa-trash" aria-hidden="true"></i></div>
+          </div>
+
+        </div>
+        <div class="current-color">
+          <div class="current-color-box"></div>
+        </div>
+      </div>
+
+      <div class="artboard">
+        <div class="grid">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
