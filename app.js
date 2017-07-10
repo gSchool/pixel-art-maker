@@ -1,7 +1,12 @@
 // create grid
-for (var i = 0; i < 2024; i++) {
-  $('.grid').append('<div class="pixel"></div>')
+function createGrid() {
+  for (var i = 0; i < 2024; i++) {
+    $('.grid').append('<div class="pixel"></div>')
+  }
 }
+
+createGrid()
+
 
 // paint colors
 $('.paint').click(function() {

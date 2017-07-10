@@ -51,13 +51,6 @@
       transition: all .4s;
     }
 
-  .action-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 5px;
-    position: relative;
-  }
-
     .colors i {
       font-size: 1.5em;
       color: gray;
