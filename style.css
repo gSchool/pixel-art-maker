@@ -1,6 +1,6 @@
 #artContainer {
   background: gray;
-  height: 550px;
+  height: 540px;
   width: 82%;
   padding: 10px;
   border: 2px solid;
@@ -12,7 +12,7 @@
 
 #pContainer {
   background: black;
-  height: 150px;
+  height: 100px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -27,6 +27,7 @@
   width: 98%;
   //border: 2px solid;
   //border-color: black;
+
 }
 
 .abox {
@@ -37,33 +38,48 @@
   float: left;
   border: 1px solid;
   border-color: gray;
-  /*display: inline-block;*/
 }
 
 .prow {
   height: 100px;
   margin-left:auto;
   margin-right:auto;
-  width: 50%;
+  width: 100%;
   //border: 2px solid;
   //border-color: black;
 }
 
 .pbox {
-  width: 20%;
-  height: 78%;
+  width: 94px;
+  height: 76px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-left: 7px;
   float: left;
   border: 1px solid;
   border-color: black;
   border-radius: 50%;
+  display: inline-block;
 }
 #eraser {
   background-color: lightgrey;
 }
-.activeColor {
+#brushColor {
   background-color: gray;
+  color: brown;
+}
+#reset {
+  background-color: snow;
+  width: 94px;
+  height: 76px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 7px;
+  float: left;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .pbox1 {
@@ -71,5 +87,29 @@
 }
 
 .pbox2 {
-  background: blue;
+  background: orange;
+}
+
+.pbox3 {
+  background-color: yellow;
+}
+
+.pbox4 {
+  background-color: green;
+}
+
+.pbox5 {
+  background-color: blue;
+}
+
+.pbox6 {
+  background-color: indigo;
+}
+
+.pbox7 {
+  background-color: violet;
+}
+.pbox8 {
+  background-color: black;
+  border-color: white;
 }
