@@ -35,6 +35,12 @@ $('.abox').mousedown(function() {
   $(this).css("background-color", currentColor);
 });
 
+// Fill in color
+
+// $('.abox').dblclick(function(){
+//   $(this).css({Flood_fill: currentColor})
+// })x
+
 //Clear the canvas
 
 $('#reset').click(function(){
