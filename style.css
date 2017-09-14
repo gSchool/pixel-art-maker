@@ -1,0 +1,41 @@
+body {
+ text-align: center
+}
+
+div {
+  border: 1px pink solid;
+}
+
+.row {
+  width : 100%;
+  height: 5rem;
+  border: 1px yellow solid;
+  display: flex;
+}
+
+.pixel {
+  border: 1px pink solid;
+  width: 5%;
+  height: 100%;
+}
+
+.color {
+  width: 25%;
+  height: 100%;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.pink {
+  background: pink;
+}
+
+.yellow {
+  background: yellow;
+}
