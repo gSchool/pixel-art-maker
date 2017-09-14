@@ -2,34 +2,54 @@ body {
  text-align: center
 }
 
-div {
-  border: 1px pink solid;
-}
-
 .row {
   width : 100%;
-  height: 5rem;
-  border: 1px yellow solid;
+  height: 1rem;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .pixel {
-  border: 1px pink solid;
-  width: 5%;
+  border: .5px gray solid;
+  width: 1%;
   height: 100%;
 }
 
 .color {
-  width: 25%;
-  height: 100%;
+  width: 10%;
+  height: 6rem;
 }
 
-.blue {
-  background: blue;
+.black {
+  background: black;
+  color: white;
 }
 
-.green {
-  background: green;
+.midnight-blue {
+  background: midnightBlue;
+}
+
+.gray {
+  background: gray;
+}
+
+.dark-orchid {
+  background: darkOrchid;
+}
+
+.chocolate {
+  background: chocolate;
+}
+
+.forestGreen {
+  background: forestGreen;
+}
+.medium-spring-green {
+  background: mediumSpringGreen
+}
+
+.green-yellow {
+  background: greenYellow;
 }
 
 .pink {
