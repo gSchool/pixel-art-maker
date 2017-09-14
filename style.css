@@ -1,16 +1,24 @@
 body {
- text-align: center
+   text-align: center;
+   font-family: Poppins;
+   background: #F5F5F5;
+}
+
+h1 {
+    background:mediumSpringGreen;
+    display: inline;
+    border-radius: 6%;
+    padding: 1px;
 }
 
 .row {
   width : 100%;
   height: 1rem;
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .pixel {
-  border: .5px gray solid;
+  border: .2px #F5F5F5 solid;
   width: 1%;
   height: 100%;
 }
@@ -18,6 +26,7 @@ body {
 .color {
   width: 10%;
   height: 6rem;
+  border-radius: 15%;
 }
 
 .black {
@@ -45,7 +54,7 @@ body {
   background: forestGreen;
 }
 .medium-spring-green {
-  background: mediumSpringGreen
+  background: mediumSpringGreen;
 }
 
 .green-yellow {
@@ -58,4 +67,12 @@ body {
 
 .yellow {
   background: yellow;
+}
+
+.white {
+  background: white;
+}
+
+.azure {
+  background: azure;
 }
