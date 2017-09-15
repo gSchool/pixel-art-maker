@@ -38,15 +38,32 @@ main {
 }
 
 .paint {
+    float: left;
     width: 20px;
     height: 20px;
     border-radius: 100%;
+    margin: 4px 4px;
+    box-shadow: 1px 1px 2px #969697;
+}
+
+.break {
+    clear: both;
+}
+
+.mixtitle {
+    color: #969697;
+    font-size: .8rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #E2E2E2;
 }
 
 .mixer {
+    float: left;
     width: 40px;
     height: 20px;
+    margin: 4px 0 0 46px;
     background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px #969697;
 }
 
 .p1 {
@@ -113,66 +130,66 @@ main {
     background-color: #5A48B0;
 }
 
-.p18 {
+.p17 {
     background-color: #8068FC;
 }
 
-.p19 {
+.p18 {
     background-color: #B19EFD;
 }
 
-.p20 {
+.p19 {
     background-color: #714298;
 }
 
-.p21 {
+.p20 {
     background-color: #BD6FFD;
 }
 
-.p22 {
+.p21 {
     background-color: #D5A1FE;
 }
 
-.p23 {
+.p22 {
     background-color: #000000;
 }
 
-.p24 {
+.p23 {
     background-color: #323232;
 }
 
-.p25 {
+.p24 {
     background-color: #666666;
 }
 
-.p26 {
+.p25 {
     background-color: #999999;
 }
 
-.p27 {
+.p26 {
     background-color: #CCCCCC;
 }
 
-.p28 {
+.p27 {
     background-color: #FFFFFF;
 }
 
-.p29 {
+.p28 {
     background-color: #38231B;
 }
 
-.p30 {
+.p29 {
     background-color: #4D3126;
 }
 
-.p31 {
+.p30 {
     background-color: #6F4637;
 }
 
-.p32 {
+.p31 {
     background-color: #8B6A5D;
 }
 
-.p33 {
+.p32 {
     background-color: #A88E85;
 }
