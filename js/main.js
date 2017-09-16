@@ -1,33 +1,39 @@
 let grid = document.querySelectorAll(".pixel");
 let palette = document.querySelectorAll(".paint");
-let currentColor = "p22";
+let currentColor = "p22"; //set starting color black
 let showColor = document.querySelector(".mixer");
-let draw = false;
+let draw = false; //keep track of whether continuous draw mode is on
 
-// Listen for mouseup on document
+// Listen for Mouseup on Document to Cancel Drawing Mode
 document.addEventListener("mouseover", function() {
     draw = false;
 })
 
-// Listen for Pixel Click (Paint) or Right Click (Erase)
+// Listen for Pixel Click (Paint) or Double Click (Erase)
 for (let i = 0; i < grid.length; i++) {
     let pixel = grid[i];
-    pixel.addEventListener("mousedown", function () {
+
+    // Continuous Drawing Mode
+    pixel.addEventListener("mousedown", function() {
         draw = true;
     })
-    pixel.addEventListener("mouseup", function () {
+    pixel.addEventListener("mouseup", function() {
         draw = false;
     })
     pixel.addEventListener("mouseover", function(event) {
-        event.stopPropagation();
-        if (draw) event.target.className = `pixel ${currentColor} pixelnoborder`;
+        event.stopPropagation(); //stop event from passing to document
+        if (draw) event.target.className = `pixel ${currentColor} pixeldelborder`;
     })
-    pixel.addEventListener("click", function(event) {
-        event.target.className = `pixel ${currentColor} pixelnoborder`;
-    })
-    // pixel.addEventListener("contextmenu", function () { //right click
 
-    // })
+    // Single Pixel Drawing Mode
+    pixel.addEventListener("click", function(event) {
+        event.target.className = `pixel ${currentColor} pixeldelborder`;
+    })
+
+    // Erase Single Pixel
+    pixel.addEventListener("dblclick", function() {
+        event.target.className = `pixel p27 pixeladdborder`;
+    })
 }
 
 // Listen for Paint Click

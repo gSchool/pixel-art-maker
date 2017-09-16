@@ -37,7 +37,7 @@ main {
     background-color: #FFFFFF;
 }
 
-.pixelnoborder {
+.pixeldelborder {
     border: none;
 }
 
@@ -83,6 +83,7 @@ main {
     width: 40px;
     height: 20px;
     margin: 4px 0 0 46px;
+    border-radius: 3px;
     box-shadow: 1px 1px 2px #969697;
 }
 
