@@ -37,6 +37,18 @@ main {
     background-color: #FFFFFF;
 }
 
+.pixelnoborder {
+    border: none;
+}
+
+.pixeladdborder {
+    border: 1px solid #E5E5E5;
+}
+
+.pixel:hover {
+    border: 1px solid black;
+}
+
 .paint {
     float: left;
     width: 20px;
@@ -44,6 +56,15 @@ main {
     border-radius: 100%;
     margin: 4px 4px;
     box-shadow: 1px 1px 2px #969697;
+}
+
+.paint:hover {
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px black;
+}
+
+.paint:active {
+    filter: brightness(85%);
 }
 
 .break {
@@ -62,7 +83,6 @@ main {
     width: 40px;
     height: 20px;
     margin: 4px 0 0 46px;
-    background-color: #FFFFFF;
     box-shadow: 1px 1px 2px #969697;
 }
 
