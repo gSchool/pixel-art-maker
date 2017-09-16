@@ -4,7 +4,7 @@ let currentColor = "p22"; //set starting color black
 let showColor = document.querySelector(".mixer");
 let draw = false; //keep track of whether continuous draw mode is on
 
-// Listen for Mouseup on Document to Cancel Drawing Mode
+// Cancel Drawing Mode if mouse passes out of drawing area
 document.addEventListener("mouseover", function() {
     draw = false;
 })
