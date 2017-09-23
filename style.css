@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+}
+#bigDiv {
+  /*if changing width also alter javascript for loop width*/
+  width: 640px;
+  margin: 0 auto;
+}
+.cell {
+  margin-bottom: -4px;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  outline: 1px solid black;
+}
+
+#colors {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid black;
+}
