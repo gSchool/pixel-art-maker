@@ -140,4 +140,28 @@ README.md               pixel-art-maker-alt.png [1m[36mscript[39;49m[0m     
 README.md               pixel-art-maker-alt.png [1m[36mscript[39;49m[0m                  typescript
 [1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
 [1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:42:48] 
-[1m[31m$ [00m[K[?1h=[?2004hggit s
+[1m[31m$ [00m[K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   index.html[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mCNAME[m
+	[31mscript/[m
+	[31mstyle.css[m
+	[31mtypescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:42:52] 
+[1m[31m$ [00m[K[?1h=[?2004hggit add -A[?1l>[?2004l
+]2;git add -A]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:42:57] 
+[1m[31m$ [00m[K[?1h=[?2004hggit som   commit -m "added fikl    files and folders,  , and code       code, and totally forgot to use git   commits..."
