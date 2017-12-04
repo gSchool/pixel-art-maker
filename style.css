@@ -1,0 +1,6 @@
+.pixel{
+  width: 10px;
+  height: 10px;
+  border: solid black 1px;
+  background-color: white;
+}

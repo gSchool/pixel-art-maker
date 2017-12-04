@@ -1,13 +1,14 @@
-f(){
-  let width=0;
-  let height=0;
+document.addEventListener('DOMContentLoaded', function () {
+  let width=60;
+  let height=30;
   let color ="";
   //get the body for the palette
-  var palette = document.getElementById("color_section");
+  var palette = document.querySelector(".palette");
   //get the body for the easel
-  var canvas = document.getElementById("grid_container");
+  var canvas = document.querySelector(".canvas");
   //draw the easel
-  makeCanvas(height, width);
+  palette.innerHTML = makePalette(width);
+  canvas.innerHTML= makeCanvas(height, width);
   //draw the pallete
   let arrayOfHexcodes= [];
   arrayOfHexcodes.forEach(x=>{
@@ -35,7 +36,7 @@ already did the research for drag and drop.
 
   function selectColor(event)
   {
-    color = event.target.style.backgroundColor;]
+    color = event.target.style.backgroundColor;
     //also update the color selected section.
   }
 
@@ -47,18 +48,29 @@ already did the research for drag and drop.
   //do I want to pass in the canvas div or just fetch it?
   function makeCanvas(height, width)
   {
-    for(let int i=0;i<height;i++)
+    let strOut ="";
+    for(let i=0;i<height;i++)
     {
-      //make a row
-      for(let int i1=0;i1<width;i1++)
+      strOut +="<div style='display: flex;'>";
+      for(let i1=0;i1<width;i1++)
       {
-        //make a cell
+        strOut += "<div class='pixel'></div>";
       }
+      strOut += "</div>";
     }
+    return strOut;
   }
 
-  function makePalette()
+  function makePalette(colNum)
   {
     //thing to make the pallete
+    let strOut="";
+    strOut +="<div style='display: flex;'>";
+    for(let i=0;i<colNum;i++)
+    {
+      strOut +="<div style=' width: 10px; height: 10px; border: solid black 1px; background-color: " + randomColor() + ";'></div>";
+    }
+    strOut += "</div>";
+    return strOut;
   }
-}
+})
