@@ -29,12 +29,14 @@ already did the research for drag and drop.
 */
   function drawOnMe(event)
   {
-    event.target.style.backgroundColor
+    event.target.style.backgroundColor = color;
+    event.stopPropagation();
   }
 
   function selectColor(event)
   {
-    color = event.target.
+    color = event.target.style.backgroundColor;]
+    //also update the color selected section.
   }
 
   function randomColor()
@@ -53,5 +55,10 @@ already did the research for drag and drop.
         //make a cell
       }
     }
+  }
+
+  function makePalette()
+  {
+    //thing to make the pallete
   }
 }
