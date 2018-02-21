@@ -1,0 +1,41 @@
+
+
+body {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+  background-color: gray;
+
+}
+
+
+/*.top-left, .top-right, .bottom-left, .bottom-right{*/
+.box {
+  border: 1px solid white;
+  width: 900px;
+  height: 450px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.cell {
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+footer div{
+  border: 1px solid white;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+
+}
+/*.red, .blue {
+  border: 1px solid gray;
+  height: 100px;
+  width: 350px;
+  display: inline-block;
+}*/
