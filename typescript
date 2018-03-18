@@ -1,167 +1,765 @@
-Script started on Fri Sep 22 11:36:25 2017
+Script started on Sun Sep 24 09:54:41 2017
 ]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:26] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsCNAME                   index.html              pixel-art-maker.png     style.css
-README.md               pixel-art-maker-alt.png [1m[36mscript[39;49m[0m                  typescript
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:31] 
-[1m[31m$ [00m[K[?1h=[?2004hsscript/[?1l>[?2004l
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:42] 
+[1m[31m$ [00m[K[?1h=[?2004hscript/[?1l>[?2004l
 ]2;script/]1;script/[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:37] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;ls[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:40] 
-[1m[31m$ [00m[K[?1h=[?2004h....  ttouch main.js[?1l>[?2004l
-]2;touch main.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:56] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:49] 
 [1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
 ]2;ls -G]1;lsmain.js
 [1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:57] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:51] 
+[1m[31m$ [00m[K[?1h=[?2004haatom main.js[?1l>[?2004l
+]2;atom main.js]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:57] 
 [1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
 ]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:36:59] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsCNAME                   index.html              pixel-art-maker.png     style.css
-README.md               pixel-art-maker-alt.png [1m[36mscript[39;49m[0m                  typescript
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[11:37:01] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:54:30] 
 [1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
 ]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..33/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint[00m [37m[7:54:00] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint[00m [37m[10:54:31] 
 [1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
 ]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit33]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33[00m [37m[7:54:02] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33[00m [37m[10:54:32] 
 [1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
 ]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[7:54:03] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;ls[1m[36mSchool[39;49m[0m           [1m[36mpractice[39;49m[0m         [1m[36munit20[39;49m[0m           [1m[36munit26[39;49m[0m           [1m[36munit29[39;49m[0m           [1m[36munit33[39;49m[0m           [1m[36munit36[39;49m[0m
-[1m[36mmyPage[39;49m[0m           [1m[36munit18checkPoint[39;49m[0m [1m[36munit24[39;49m[0m           [1m[36munit28[39;49m[0m           [1m[36munit32[39;49m[0m           [1m[36munit35[39;49m[0m           [1m[36munit37[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[7:54:04] 
-[1m[31m$ [00m[K[?1h=[?2004hmmkdir unit22[?1l>[?2004l
-]2;mkdir unit22]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[7:54:24] 
-[1m[31m$ [00m[K[?1h=[?2004huunit22[?1l>[?2004l
-]2;unit22]1;unit22[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[7:54:27] 
-[1m[31m$ [00m[K[?1h=[?2004httouch m fake.js[?1l>[?2004l
-]2;touch fake.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[7:54:37] 
-[1m[31m$ [00m[K[?1h=[?2004haatom fake.js[1m [0m[0m [?1l>[?2004l
-]2;atom fake.js]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[7:54:43] 
-[1m[31m$ [00m[K[?1h=[?2004hnnode fake.js[?1l>[?2004l
-]2;node fake.js]1;nodecc
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[7:58:40] 
-[1m[31m$ [00m[K[?1h=[?2004hnode fake.js[?1l>[?2004l
-]2;node fake.js]1;nodeaabbcc
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[7:58:50] 
-[1m[31m$ [00m[K[?1h=[?2004hnode fake.js[?1l>[?2004l
-]2;node fake.js]1;node[ 'word', 'word', 'word' ]
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[8:00:28] 
-[1m[31m$ [00m[K[?1h=[?2004hnode fake.js[?1l>[?2004l
-]2;node fake.js]1;node[ 'word', 'word', 'word', 'word', 'word' ]
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit22]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit22[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit22[00m [37m[8:01:13] 
-[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
-]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[8:03:45] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:54:32] 
 [1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
 ]2;ls -G]1;ls[1m[36mSchool[39;49m[0m           [1m[36mpractice[39;49m[0m         [1m[36munit20[39;49m[0m           [1m[36munit24[39;49m[0m           [1m[36munit28[39;49m[0m           [1m[36munit32[39;49m[0m           [1m[36munit35[39;49m[0m           [1m[36munit37[39;49m[0m
 [1m[36mmyPage[39;49m[0m           [1m[36munit18checkPoint[39;49m[0m [1m[36munit22[39;49m[0m           [1m[36munit26[39;49m[0m           [1m[36munit29[39;49m[0m           [1m[36munit33[39;49m[0m           [1m[36munit36[39;49m[0m
 [1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[8:16:35] 
-[1m[31m$ [00m[K[?1h=[?2004huunit32[?1l>[?2004l
-]2;unit32]1;unit32[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit32]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32[00m [37m[8:16:40] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m [1m[36mlesson02[39;49m[0m   [1m[36mlesson3[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit32]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32[00m [37m[8:16:41] 
-[1m[31m$ [00m[K[?1h=[?2004hccheck[?1l>[?2004l
-]2;check]1;checkzsh: command not found: check
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit32]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32[00m [37m[8:16:45] C:[31m127[00m
-[1m[31m$ [00m[K[?1h=[?2004h      cchecp kpoint[1m/[0m[0m [?1l>[?2004l
-]2;checkpoint]1;checkpoint[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..32/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32/checkpoint[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32/checkpoint[00m [37m[8:16:50] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsindex.html main.js
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..32/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32/checkpoint[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32/checkpoint[00m [37m[8:16:51] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:54:36] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir unit34[?1l>[?2004l
+]2;mkdir unit34]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:54:42] 
+[1m[31m$ [00m[K[?1h=[?2004huunit34[?1l>[?2004l
+]2;unit34]1;unit34[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit34]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34[00m [37m[10:54:44] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir checkpoint[?1l>[?2004l
+]2;mkdir checkpoint]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit34]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34[00m [37m[10:54:52] 
+[1m[31m$ [00m[K[?1h=[?2004hccheckpoint[1m/[0m[0m [?1l>[?2004l
+]2;checkpoint]1;checkpoint[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..34/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34/checkpoint[00m [37m[10:54:55] 
+[1m[31m$ [00m[K[?1h=[?2004httouch index.html main.js[?1l>[?2004l
+]2;touch index.html main.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..34/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34/checkpoint[00m [37m[10:55:12] 
 [1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
-]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..32/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32/checkpoint[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32/checkpoint[00m [37m[8:16:56] 
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..34/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34/checkpoint[00m [37m[10:55:20] 
 [1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
-]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit32]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit32[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit32[00m [37m[8:49:27] 
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit34]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34[00m [37m[10:59:26] 
 [1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
 ]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[8:49:37] 
-[1m[31m$ [00m[K[?1h=[?2004huunit33[?1l>[?2004l
-]2;unit33]1;unit33[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit33]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33[00m [37m[8:49:39] 
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:59:26] 
+[1m[31m$ [00m[K[?1h=[?2004hl[?1l>[?2004l
+]2;ls -G -lah]1;ltotal 24
+drwxr-xr-x  19 justin  staff   646B Sep 24 10:54 [1m[36m.[39;49m[0m
+drwx------@  6 justin  staff   204B Sep 19 12:56 [1m[36m..[39;49m[0m
+-rw-r--r--@  1 justin  staff   8.0K Sep 14 12:41 .DS_Store
+drwxr-xr-x   7 justin  staff   238B Aug 28 12:57 [1m[36mSchool[39;49m[0m
+drwxr-xr-x   7 justin  staff   238B Sep 15 10:09 [1m[36mmyPage[39;49m[0m
+drwxr-xr-x  11 justin  staff   374B Sep 20 10:28 [1m[36mpractice[39;49m[0m
+drwxr-xr-x   5 justin  staff   170B Aug 29 19:27 [1m[36munit18checkPoint[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep  1 11:10 [1m[36munit20[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 23 07:54 [1m[36munit22[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep  3 11:16 [1m[36munit24[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep  6 15:37 [1m[36munit26[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep 13 08:58 [1m[36munit28[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 14 08:36 [1m[36munit29[39;49m[0m
+drwxr-xr-x   5 justin  staff   170B Sep 21 10:41 [1m[36munit32[39;49m[0m
+drwxr-xr-x   5 justin  staff   170B Sep 22 11:32 [1m[36munit33[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 24 10:54 [1m[36munit34[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 20 13:18 [1m[36munit35[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep 21 11:36 [1m[36munit36[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 21 09:55 [1m[36munit37[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:59:29] 
+[1m[31m$ [00m[K[?1h=[?2004huunit36[?1l>[?2004l
+]2;unit36]1;unit36[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[10:59:33] 
 [1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m [1m[36mlesson1[39;49m[0m    [1m[36mlesson3[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit33]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33[00m [37m[8:49:40] 
-[1m[31m$ [00m[K[?1h=[?2004hccheck
-[J[0mcheckgid     [Jchecknr      [J[1;31mcheckpoint[0m/[J[A[0m[27m[24m[2Ccheck[Kgid
-[J[7mcheckgid   [0m  [Jchecknr      [J[1;31mcheckpoint[0m/[J[A[0m[27m[24m[2Ccheckgid[K
-[7mcheckgid   [0m  [7mcheckgid   [0m  [A[0m[27m[24m[2Ccheckgid[Knr 
-[13C[7mchecknr    [0m  checkgid     [A[0m[27m[24m[2Cchecknr[Kpoint[1m/[0m
-[26C[7mcheckpoint/[0m[13Cchecknr      [A[0m[27m[24m[2Ccheckpoint[1m/[0m[K
-[J[A[13C[0m [?1l>[?2004l
-[J]2;checkpoint]1;checkpoint[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..33/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint[00m [37m[8:49:56] 
+]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m   [1m[36mpracticeTime[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[10:59:34] 
+[1m[31m$ [00m[K[?1h=[?2004hppracticeTime[1m/[0m[0m [?1l>[?2004l
+]2;practiceTime]1;practiceTime[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;../practiceTime]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime[00m [37m[10:59:37] 
 [1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;ls[1m[36mpixel-art-maker[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..33/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint[00m [37m[8:49:58] 
-[1m[31m$ [00m[K[?1h=[?2004hppixel-art-maker[1m/[0m[0m [?1l>[?2004l
-]2;pixel-art-maker]1;pixel-art-maker[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[8:50:02] 
+]2;ls -G]1;ls[1m[36mlocalstorage-exercise-1[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;../practiceTime]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime[00m [37m[10:59:38] 
+[1m[31m$ [00m[K[?1h=[?2004hlloc
+[0mlocal                     localedef                 [1;31mlocalstorage-exercise-1[0m/  lockstat                                                                  
+[Jlocale                    [Jlocalemanager             [Jlocate                    [J                                                                        [A[A[0m[27m[24m[2Cloc[Kal
+[7mlocal                   [0m  localedef                 [1;31mlocalstorage-exercise-1[0m/  lockstat                                                                  [K
+[Jlocale                    [Jlocalemanager             [Jlocate                    [J                                                                        [A[A[0m[27m[24m[2Clocal[K
+[7mlocal                   [0m  [7mlocal                   [0m  [A[0m[27m[24m[2Clocal[Ke
+[0mlocal                     [1B[7mlocale                  [0m  [A[A[0m[27m[24m[2Clocale[Kdef
+[26C[7mlocaledef               [0m  [1Blocale                    [A[A[0m[27m[24m[2Clocaledef[Kmanager
+[26C[0mlocaledef                 [1B[26C[7mlocalemanager           [0m  [A[A[0m[27m[24m[2Clocalemanager[K[8Dstor[3C-exercise-1[1m/[0m
+[52C[7mlocalstorage-exercise-1/[0m  [1B[26Clocalemanager             [A[A[0m[27m[24m[2Clocalstorage-exercise-1[1m/[0m[K
+[J[A[26C[0m [?1l>[?2004l
+[J]2;localstorage-exercise-1]1;localstorage-exercise-1[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ge-exercise-1]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:59:43] 
 [1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsCNAME                   index.html              pixel-art-maker.png     style.css
-README.md               pixel-art-maker-alt.png [1m[36mscript[39;49m[0m                  typescript
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[8:50:04] 
+]2;ls -G]1;lsindex.html [1m[36mscripts[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ge-exercise-1]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:59:45] 
 [1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
-]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[8:50:09] 
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ge-exercise-1]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:59:50] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;../practiceTime]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime[00m [37m[11:08:35] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:08:37] 
 [1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsCNAME                   index.html              pixel-art-maker.png     style.css
-README.md               pixel-art-maker-alt.png [1m[36mscript[39;49m[0m                  typescript
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:42:48] 
-[1m[31m$ [00m[K[?1h=[?2004hggit status[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m   [1m[36mpracticeTime[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:08:38] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir lesson2[?1l>[?2004l
+]2;mkdir lesson2]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:08:48] 
+[1m[31m$ [00m[K[?1h=[?2004hllesson2[?1l>[?2004l
+]2;lesson2]1;lesson2[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:08:50] 
+[1m[31m$ [00m[K[?1h=[?2004httouch indek x.html main.js style.css[?1l>[?2004l
+]2;touch index.html main.js style.css]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:09:18] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsindex.html main.js    style.css
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:09:22] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:09:25] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:14:41] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m   [1m[36mlesson2[39;49m[0m      [1m[36mpracticeTime[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:14:42] 
+[1m[31m$ [00m[K[?1h=[?2004hccheck[?1l>[?2004l
+]2;check]1;checkzsh: command not found: check
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:14:45] C:[31m127[00m
+[1m[31m$ [00m[K[?1h=[?2004h      ccheckpoint[1m/[0m[0m [?1l>[?2004l
+]2;checkpoint]1;checkpoint[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..36/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint[00m [37m[11:14:48] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mlocalstorage-exercise[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..36/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint[00m [37m[11:14:49] 
+[1m[31m$ [00m[K[?1h=[?2004h      lloca
+[J[0mlocal                   [Jlocale                  [Jlocaledef               [Jlocalemanager           [J[1;31mlocalstorage-exercise[0m/  [Jlocate                [J[A[0m[27m[24m[2Cloca[Kl
+[J[7mlocal                 [0m  [Jlocale                  [Jlocaledef               [Jlocalemanager           [J[1;31mlocalstorage-exercise[0m/  [Jlocate                [J[A[0m[27m[24m[2Clocal[K
+[7mlocal                 [0m  [7mlocal                 [0m  [A[0m[27m[24m[2Clocal[Ke
+[24C[7mlocale                [0m  local                   [A[0m[27m[24m[2Clocale[Kdef
+[48C[7mlocaledef             [0m  [24Clocale                  [A[0m[27m[24m[2Clocaledef[Kmanager
+[72C[7mlocalemanager         [0m  [48Clocaledef               [A[0m[27m[24m[2Clocalemanager[K[8Dstor[3C-exercise[1m/[0m
+[96C[7mlocalstorage-exercise/[0m  [72Clocalemanager           [A[0m[27m[24m[2Clocalstorage-exercise[1m/[0m[K
+[J[A[24C[0m [?1l>[?2004l
+[J]2;localstorage-exercise]1;localstorage-exercise[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..rage-exercise]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[00m [37mon[00m git:[36mmaster [32mo[00m [37m[11:14:54] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           index.html          index.js            jquery-2.2.4.min.js
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..rage-exercise]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[00m [37mon[00m git:[36mmaster [32mo[00m [37m[11:14:55] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..rage-exercise]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[00m [37mon[00m git:[36mmaster [32mo[00m [37m[11:15:00] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..36/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint[00m [37m[14:49:58] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[14:49:59] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[14:50:00] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mSchool[39;49m[0m           [1m[36mpractice[39;49m[0m         [1m[36munit20[39;49m[0m           [1m[36munit24[39;49m[0m           [1m[36munit28[39;49m[0m           [1m[36munit32[39;49m[0m           [1m[36munit34[39;49m[0m           [1m[36munit36[39;49m[0m
+[1m[36mmyPage[39;49m[0m           [1m[36munit18checkPoint[39;49m[0m [1m[36munit22[39;49m[0m           [1m[36munit26[39;49m[0m           [1m[36munit29[39;49m[0m           [1m[36munit33[39;49m[0m           [1m[36munit35[39;49m[0m           [1m[36munit37[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[14:50:01] 
+[1m[31m$ [00m[K[?1h=[?2004huunit37[?1l>[?2004l
+]2;unit37]1;unit37[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit37]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37[00m [37m[14:50:04] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mbrowser-calculator[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit37]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37[00m [37m[14:50:06] 
+[1m[31m$ [00m[K[?1h=[?2004hbbrowser-calculator[1m/[0m[0m [?1l>[?2004l
+]2;browser-calculator]1;browser-calculator[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..er-calculator]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37/browser-calculator[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37/browser-calculator[00m [37mon[00m git:[36mmaster [32mo[00m [37m[14:50:09] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md   [1m[36mcss[39;49m[0m         index.html  [1m[36mjs[39;49m[0m          [1m[36mscreenshots[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..er-calculator]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37/browser-calculator[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37/browser-calculator[00m [37mon[00m git:[36mmaster [32mo[00m [37m[14:50:10] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..er-calculator]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37/browser-calculator[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37/browser-calculator[00m [37mon[00m git:[36mmaster [32mo[00m [37m[14:50:15] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit37]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37[00m [37m[15:50:28] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[15:50:29] 
+[1m[31m$ [00m[K[?1h=[?2004hppractice[1m/[0m[0m [?1l>[?2004l
+]2;practice]1;practice[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nize/practice]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice[00m [37m[15:50:31] 
+[1m[31m$ [00m[K[?1h=[?2004h--lah[1m/[0m[0m [?1l>[?2004l
+]2;-lah]1;[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..practice/-lah]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice/-lah[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice/-lah[00m [37m[15:50:35] 
+[1m[31m$ [00m[K[?1h=[?2004hnnode fake.js[1m [0m[0m [?1l>[?2004l
+]2;node fake.js]1;node[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..practice/-lah]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice/-lah[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice/-lah[00m [37m[15:50:39] 
+[1m[31m$ [00m[K[?1h=[?2004hnode fake.js[?1l>[?2004l
+]2;node fake.js]1;nodeBORK
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..practice/-lah]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice/-lah[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice/-lah[00m [37m[15:51:03] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nize/practice]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice[00m [37m[18:10:33] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[18:10:34] 
+[1m[31m$ [00m[K[?1h=[?2004huunu  mmkdir unit47[?1l>[?2004l
+]2;mkdir unit47]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[18:10:47] 
+[1m[31m$ [00m[K[?1h=[?2004huunit47[?1l>[?2004l
+]2;unit47]1;unit47[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:10:50] 
+[1m[31m$ [00m[K[?1h=[?2004httouch project-proposal- .md[?1l>[?2004l
+]2;touch project-proposal.md]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:11:26] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:11:30] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsproject-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:30:26] 
+[1m[31m$ [00m[K[?1h=[?2004heech e  ggitin   init[?1l>[?2004l
+]2;git init]1;gitInitialized empty Git repository in /Users/justin/Desktop/galvanize/unit47/.git/
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:30:46] 
+[1m[31m$ [00m[K[?1h=[?2004hggit add project-proposal.md[1m [0m[0m [?1l>[?2004l
+]2;git add project-proposal.md]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:31:01] 
+[1m[31m$ [00m[K[?1h=[?2004hggit commit -m "First commit"[?1l>[?2004l
+]2;git commit -m "First commit"]1;git[master (root-commit) bc36f82] First commit
+ 1 file changed, 17 insertions(+)
+ create mode 100644 project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:13] 
+[1m[31m$ [00m[K[?1h=[?2004hggit add remote          remote add origin [7mhttps://github.com/just-hey/frontend-projects-ideas.git[27m[55D[27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27mg[27mi[27mt[27mh[27mu[27mb[27m.[27mc[27mo[27mm[27m/[27mj[27mu[27ms[27mt[27m-[27mh[27me[27my[27m/[27mf[27mr[27mo[27mn[27mt[27me[27mn[27md[27m-[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m-[27mi[27md[27me[27ma[27ms[27m.[27mg[27mi[27mt[?1l>[?2004l
+]2;git remote add origin https://github.com/just-hey/frontend-projects-ideas.git]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:33] 
+[1m[31m$ [00m[K[?1h=[?2004hggit push -u origin master[?1l>[?2004l
+]2;git push -u origin master]1;gitCounting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 772 bytes | 772.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+git st	To https://github.com/just-hey/frontend-projects-ideas.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+^R
+git st[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:46] 
+[1m[31m$ [00m[K[?1h=[?2004hggit stats us[?1l>[?2004l
 ]2;git status]1;gitOn branch master
 Your branch is up-to-date with 'origin/master'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   index.html[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31mCNAME[m
-	[31mscript/[m
-	[31mstyle.css[m
-	[31mtypescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:42:52] 
+nothing to commit, working tree clean
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:50] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsproject-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:55:14] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir js[?1l>[?2004l
+]2;mkdir js]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:55:41] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir css[?1l>[?2004l
+]2;mkdir css]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:55:44] 
+[1m[31m$ [00m[K[?1h=[?2004httouch README.md index.html[?1l>[?2004l
+]2;touch README.md index.html]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:05] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:07] 
+[1m[31m$ [00m[K[?1h=[?2004hccss/[?1l>[?2004l
+]2;css/]1;css/[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ze/unit47/css]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/css[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/css[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:11] 
+[1m[31m$ [00m[K[?1h=[?2004httouch style.css[?1l>[?2004l
+]2;touch style.css]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ze/unit47/css]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/css[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/css[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:21] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:23] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:24] 
+[1m[31m$ [00m[K[?1h=[?2004hjjs[?1l>[?2004l
+]2;js]1;js[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ize/unit47/js]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/js[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/js[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:26] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ize/unit47/js]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/js[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/js[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:27] 
+[1m[31m$ [00m[K[?1h=[?2004httouch main.js[?1l>[?2004l
+]2;touch main.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ize/unit47/js]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/js[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/js[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:31] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:39] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:42] 
 [1m[31m$ [00m[K[?1h=[?2004hggit add -A[?1l>[?2004l
-]2;git add -A]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
-[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:42:57] 
-[1m[31m$ [00m[K[?1h=[?2004hggit som   commit -m "added fikl    files and folders,  , and code       code, and totally forgot to use git   commits..."
+]2;git add -A]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:49] 
+[1m[31m$ [00m[K[?1h=[?2004hggit commit -m "created                  g  aatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:57:05] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:16:42] 
+[1m[31m$ [00m[K[?1h=[?2004httouch CNAME[?1l>[?2004l
+]2;touch CNAME]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:16:47] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsCNAME               README.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:35:14] 
+[1m[31m$ [00m[K[?1h=[?2004httouch question1.html[?1l>[?2004l
+]2;touch question1.html]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:35:32] 
+[1m[31m$ [00m[K[?1h=[?2004hllive-server[?1l>[?2004l
+]2;live-server]1;live-server[32mServing "/Users/justin/Desktop/galvanize/unit47" at http://127.0.0.1:8080[39m
+[36mReady for changes[39m
+[0mGET /%E2%80%9Dhttps://www.youtube.com/watch?v=EefNiVvWAB0;%3C/iframe [33m404 [0m5.859 ms - 76[0m
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[0mGET /%E2%80%9Dhttps://www.youtube.com/watch?v=EefNiVvWAB0;%3C/iframe [33m404 [0m1.084 ms - 76[0m
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/index.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             sscript[?1l>[?2004l
+]2;script]1;scriptScript started, output file is typescript
+]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:42] 
+[1m[31m$ [00m[K[?1h=[?2004hscript/[?1l>[?2004l
+]2;script/]1;script/[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:49] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsmain.js
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:51] 
+[1m[31m$ [00m[K[?1h=[?2004haatom main.js[?1l>[?2004l
+]2;atom main.js]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..-maker/script]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker/script[00m [37mon[00m git:[36mmaster [31mx[00m [37m[9:54:57] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..xel-art-maker]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint/pixel-art-maker[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:54:30] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..33/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33/checkpoint[00m [37m[10:54:31] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit33]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit33[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit33[00m [37m[10:54:32] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:54:32] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mSchool[39;49m[0m           [1m[36mpractice[39;49m[0m         [1m[36munit20[39;49m[0m           [1m[36munit24[39;49m[0m           [1m[36munit28[39;49m[0m           [1m[36munit32[39;49m[0m           [1m[36munit35[39;49m[0m           [1m[36munit37[39;49m[0m
+[1m[36mmyPage[39;49m[0m           [1m[36munit18checkPoint[39;49m[0m [1m[36munit22[39;49m[0m           [1m[36munit26[39;49m[0m           [1m[36munit29[39;49m[0m           [1m[36munit33[39;49m[0m           [1m[36munit36[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:54:36] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir unit34[?1l>[?2004l
+]2;mkdir unit34]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:54:42] 
+[1m[31m$ [00m[K[?1h=[?2004huunit34[?1l>[?2004l
+]2;unit34]1;unit34[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit34]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34[00m [37m[10:54:44] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir checkpoint[?1l>[?2004l
+]2;mkdir checkpoint]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit34]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34[00m [37m[10:54:52] 
+[1m[31m$ [00m[K[?1h=[?2004hccheckpoint[1m/[0m[0m [?1l>[?2004l
+]2;checkpoint]1;checkpoint[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..34/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34/checkpoint[00m [37m[10:54:55] 
+[1m[31m$ [00m[K[?1h=[?2004httouch index.html main.js[?1l>[?2004l
+]2;touch index.html main.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..34/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34/checkpoint[00m [37m[10:55:12] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..34/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34/checkpoint[00m [37m[10:55:20] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit34]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit34[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit34[00m [37m[10:59:26] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:59:26] 
+[1m[31m$ [00m[K[?1h=[?2004hl[?1l>[?2004l
+]2;ls -G -lah]1;ltotal 24
+drwxr-xr-x  19 justin  staff   646B Sep 24 10:54 [1m[36m.[39;49m[0m
+drwx------@  6 justin  staff   204B Sep 19 12:56 [1m[36m..[39;49m[0m
+-rw-r--r--@  1 justin  staff   8.0K Sep 14 12:41 .DS_Store
+drwxr-xr-x   7 justin  staff   238B Aug 28 12:57 [1m[36mSchool[39;49m[0m
+drwxr-xr-x   7 justin  staff   238B Sep 15 10:09 [1m[36mmyPage[39;49m[0m
+drwxr-xr-x  11 justin  staff   374B Sep 20 10:28 [1m[36mpractice[39;49m[0m
+drwxr-xr-x   5 justin  staff   170B Aug 29 19:27 [1m[36munit18checkPoint[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep  1 11:10 [1m[36munit20[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 23 07:54 [1m[36munit22[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep  3 11:16 [1m[36munit24[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep  6 15:37 [1m[36munit26[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep 13 08:58 [1m[36munit28[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 14 08:36 [1m[36munit29[39;49m[0m
+drwxr-xr-x   5 justin  staff   170B Sep 21 10:41 [1m[36munit32[39;49m[0m
+drwxr-xr-x   5 justin  staff   170B Sep 22 11:32 [1m[36munit33[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 24 10:54 [1m[36munit34[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 20 13:18 [1m[36munit35[39;49m[0m
+drwxr-xr-x   4 justin  staff   136B Sep 21 11:36 [1m[36munit36[39;49m[0m
+drwxr-xr-x   3 justin  staff   102B Sep 21 09:55 [1m[36munit37[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[10:59:29] 
+[1m[31m$ [00m[K[?1h=[?2004huunit36[?1l>[?2004l
+]2;unit36]1;unit36[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[10:59:33] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m   [1m[36mpracticeTime[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[10:59:34] 
+[1m[31m$ [00m[K[?1h=[?2004hppracticeTime[1m/[0m[0m [?1l>[?2004l
+]2;practiceTime]1;practiceTime[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;../practiceTime]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime[00m [37m[10:59:37] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mlocalstorage-exercise-1[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;../practiceTime]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime[00m [37m[10:59:38] 
+[1m[31m$ [00m[K[?1h=[?2004hlloc
+[0mlocal                     localedef                 [1;31mlocalstorage-exercise-1[0m/  lockstat                                                                  
+[Jlocale                    [Jlocalemanager             [Jlocate                    [J                                                                        [A[A[0m[27m[24m[2Cloc[Kal
+[7mlocal                   [0m  localedef                 [1;31mlocalstorage-exercise-1[0m/  lockstat                                                                  [K
+[Jlocale                    [Jlocalemanager             [Jlocate                    [J                                                                        [A[A[0m[27m[24m[2Clocal[K
+[7mlocal                   [0m  [7mlocal                   [0m  [A[0m[27m[24m[2Clocal[Ke
+[0mlocal                     [1B[7mlocale                  [0m  [A[A[0m[27m[24m[2Clocale[Kdef
+[26C[7mlocaledef               [0m  [1Blocale                    [A[A[0m[27m[24m[2Clocaledef[Kmanager
+[26C[0mlocaledef                 [1B[26C[7mlocalemanager           [0m  [A[A[0m[27m[24m[2Clocalemanager[K[8Dstor[3C-exercise-1[1m/[0m
+[52C[7mlocalstorage-exercise-1/[0m  [1B[26Clocalemanager             [A[A[0m[27m[24m[2Clocalstorage-exercise-1[1m/[0m[K
+[J[A[26C[0m [?1l>[?2004l
+[J]2;localstorage-exercise-1]1;localstorage-exercise-1[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ge-exercise-1]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:59:43] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsindex.html [1m[36mscripts[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ge-exercise-1]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:59:45] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ge-exercise-1]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime/localstorage-exercise-1[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:59:50] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;../practiceTime]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/practiceTime[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/practiceTime[00m [37m[11:08:35] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:08:37] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m   [1m[36mpracticeTime[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:08:38] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir lesson2[?1l>[?2004l
+]2;mkdir lesson2]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:08:48] 
+[1m[31m$ [00m[K[?1h=[?2004hllesson2[?1l>[?2004l
+]2;lesson2]1;lesson2[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:08:50] 
+[1m[31m$ [00m[K[?1h=[?2004httouch indek x.html main.js style.css[?1l>[?2004l
+]2;touch index.html main.js style.css]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:09:18] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsindex.html main.js    style.css
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:09:22] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nit36/lesson2]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/lesson2[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/lesson2[00m [37m[11:09:25] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:14:41] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcheckpoint[39;49m[0m   [1m[36mlesson2[39;49m[0m      [1m[36mpracticeTime[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:14:42] 
+[1m[31m$ [00m[K[?1h=[?2004hccheck[?1l>[?2004l
+]2;check]1;checkzsh: command not found: check
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[11:14:45] C:[31m127[00m
+[1m[31m$ [00m[K[?1h=[?2004h      ccheckpoint[1m/[0m[0m [?1l>[?2004l
+]2;checkpoint]1;checkpoint[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..36/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint[00m [37m[11:14:48] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mlocalstorage-exercise[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..36/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint[00m [37m[11:14:49] 
+[1m[31m$ [00m[K[?1h=[?2004h      lloca
+[J[0mlocal                   [Jlocale                  [Jlocaledef               [Jlocalemanager           [J[1;31mlocalstorage-exercise[0m/  [Jlocate                [J[A[0m[27m[24m[2Cloca[Kl
+[J[7mlocal                 [0m  [Jlocale                  [Jlocaledef               [Jlocalemanager           [J[1;31mlocalstorage-exercise[0m/  [Jlocate                [J[A[0m[27m[24m[2Clocal[K
+[7mlocal                 [0m  [7mlocal                 [0m  [A[0m[27m[24m[2Clocal[Ke
+[24C[7mlocale                [0m  local                   [A[0m[27m[24m[2Clocale[Kdef
+[48C[7mlocaledef             [0m  [24Clocale                  [A[0m[27m[24m[2Clocaledef[Kmanager
+[72C[7mlocalemanager         [0m  [48Clocaledef               [A[0m[27m[24m[2Clocalemanager[K[8Dstor[3C-exercise[1m/[0m
+[96C[7mlocalstorage-exercise/[0m  [72Clocalemanager           [A[0m[27m[24m[2Clocalstorage-exercise[1m/[0m[K
+[J[A[24C[0m [?1l>[?2004l
+[J]2;localstorage-exercise]1;localstorage-exercise[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..rage-exercise]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[00m [37mon[00m git:[36mmaster [32mo[00m [37m[11:14:54] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           index.html          index.js            jquery-2.2.4.min.js
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..rage-exercise]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[00m [37mon[00m git:[36mmaster [32mo[00m [37m[11:14:55] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..rage-exercise]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint/localstorage-exercise[00m [37mon[00m git:[36mmaster [32mo[00m [37m[11:15:00] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..36/checkpoint]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36/checkpoint[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36/checkpoint[00m [37m[14:49:58] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit36]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit36[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit36[00m [37m[14:49:59] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[14:50:00] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mSchool[39;49m[0m           [1m[36mpractice[39;49m[0m         [1m[36munit20[39;49m[0m           [1m[36munit24[39;49m[0m           [1m[36munit28[39;49m[0m           [1m[36munit32[39;49m[0m           [1m[36munit34[39;49m[0m           [1m[36munit36[39;49m[0m
+[1m[36mmyPage[39;49m[0m           [1m[36munit18checkPoint[39;49m[0m [1m[36munit22[39;49m[0m           [1m[36munit26[39;49m[0m           [1m[36munit29[39;49m[0m           [1m[36munit33[39;49m[0m           [1m[36munit35[39;49m[0m           [1m[36munit37[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[14:50:01] 
+[1m[31m$ [00m[K[?1h=[?2004huunit37[?1l>[?2004l
+]2;unit37]1;unit37[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit37]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37[00m [37m[14:50:04] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mbrowser-calculator[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit37]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37[00m [37m[14:50:06] 
+[1m[31m$ [00m[K[?1h=[?2004hbbrowser-calculator[1m/[0m[0m [?1l>[?2004l
+]2;browser-calculator]1;browser-calculator[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..er-calculator]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37/browser-calculator[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37/browser-calculator[00m [37mon[00m git:[36mmaster [32mo[00m [37m[14:50:09] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md   [1m[36mcss[39;49m[0m         index.html  [1m[36mjs[39;49m[0m          [1m[36mscreenshots[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..er-calculator]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37/browser-calculator[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37/browser-calculator[00m [37mon[00m git:[36mmaster [32mo[00m [37m[14:50:10] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..er-calculator]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37/browser-calculator[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37/browser-calculator[00m [37mon[00m git:[36mmaster [32mo[00m [37m[14:50:15] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit37]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit37[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit37[00m [37m[15:50:28] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[15:50:29] 
+[1m[31m$ [00m[K[?1h=[?2004hppractice[1m/[0m[0m [?1l>[?2004l
+]2;practice]1;practice[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nize/practice]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice[00m [37m[15:50:31] 
+[1m[31m$ [00m[K[?1h=[?2004h--lah[1m/[0m[0m [?1l>[?2004l
+]2;-lah]1;[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..practice/-lah]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice/-lah[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice/-lah[00m [37m[15:50:35] 
+[1m[31m$ [00m[K[?1h=[?2004hnnode fake.js[1m [0m[0m [?1l>[?2004l
+]2;node fake.js]1;node[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..practice/-lah]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice/-lah[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice/-lah[00m [37m[15:50:39] 
+[1m[31m$ [00m[K[?1h=[?2004hnode fake.js[?1l>[?2004l
+]2;node fake.js]1;nodeBORK
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..practice/-lah]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice/-lah[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice/-lah[00m [37m[15:51:03] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..nize/practice]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/practice[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/practice[00m [37m[18:10:33] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[18:10:34] 
+[1m[31m$ [00m[K[?1h=[?2004huunu  mmkdir unit47[?1l>[?2004l
+]2;mkdir unit47]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..top/galvanize]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize[00m [37m[18:10:47] 
+[1m[31m$ [00m[K[?1h=[?2004huunit47[?1l>[?2004l
+]2;unit47]1;unit47[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:10:50] 
+[1m[31m$ [00m[K[?1h=[?2004httouch project-proposal- .md[?1l>[?2004l
+]2;touch project-proposal.md]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:11:26] 
+[1m[31m$ [00m[K[?1h=[?2004haatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:11:30] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsproject-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37m[18:30:26] 
+[1m[31m$ [00m[K[?1h=[?2004heech e  ggitin   init[?1l>[?2004l
+]2;git init]1;gitInitialized empty Git repository in /Users/justin/Desktop/galvanize/unit47/.git/
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:30:46] 
+[1m[31m$ [00m[K[?1h=[?2004hggit add project-proposal.md[1m [0m[0m [?1l>[?2004l
+]2;git add project-proposal.md]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:31:01] 
+[1m[31m$ [00m[K[?1h=[?2004hggit commit -m "First commit"[?1l>[?2004l
+]2;git commit -m "First commit"]1;git[master (root-commit) bc36f82] First commit
+ 1 file changed, 17 insertions(+)
+ create mode 100644 project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:13] 
+[1m[31m$ [00m[K[?1h=[?2004hggit add remote          remote add origin [7mhttps://github.com/just-hey/frontend-projects-ideas.git[27m[55D[27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27mg[27mi[27mt[27mh[27mu[27mb[27m.[27mc[27mo[27mm[27m/[27mj[27mu[27ms[27mt[27m-[27mh[27me[27my[27m/[27mf[27mr[27mo[27mn[27mt[27me[27mn[27md[27m-[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m-[27mi[27md[27me[27ma[27ms[27m.[27mg[27mi[27mt[?1l>[?2004l
+]2;git remote add origin https://github.com/just-hey/frontend-projects-ideas.git]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:33] 
+[1m[31m$ [00m[K[?1h=[?2004hggit push -u origin master[?1l>[?2004l
+]2;git push -u origin master]1;gitCounting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 772 bytes | 772.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+git st	To https://github.com/just-hey/frontend-projects-ideas.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+^R
+git st[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:46] 
+[1m[31m$ [00m[K[?1h=[?2004hggit stats us[?1l>[?2004l
+]2;git status]1;gitOn branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:31:50] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsproject-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:55:14] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir js[?1l>[?2004l
+]2;mkdir js]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:55:41] 
+[1m[31m$ [00m[K[?1h=[?2004hmmkdir css[?1l>[?2004l
+]2;mkdir css]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [32mo[00m [37m[18:55:44] 
+[1m[31m$ [00m[K[?1h=[?2004httouch README.md index.html[?1l>[?2004l
+]2;touch README.md index.html]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:05] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:07] 
+[1m[31m$ [00m[K[?1h=[?2004hccss/[?1l>[?2004l
+]2;css/]1;css/[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ze/unit47/css]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/css[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/css[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:11] 
+[1m[31m$ [00m[K[?1h=[?2004httouch style.css[?1l>[?2004l
+]2;touch style.css]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ze/unit47/css]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/css[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/css[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:21] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:23] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:24] 
+[1m[31m$ [00m[K[?1h=[?2004hjjs[?1l>[?2004l
+]2;js]1;js[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ize/unit47/js]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/js[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/js[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:26] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ize/unit47/js]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/js[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/js[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:27] 
+[1m[31m$ [00m[K[?1h=[?2004httouch main.js[?1l>[?2004l
+]2;touch main.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..ize/unit47/js]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47/js[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47/js[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:31] 
+[1m[31m$ [00m[K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:39] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:42] 
+[1m[31m$ [00m[K[?1h=[?2004hggit add -A[?1l>[?2004l
+]2;git add -A]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:56:49] 
+[1m[31m$ [00m[K[?1h=[?2004hggit commit -m "created                  g  aatom .[?1l>[?2004l
+]2;atom .]1;atom[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[18:57:05] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:16:42] 
+[1m[31m$ [00m[K[?1h=[?2004httouch CNAME[?1l>[?2004l
+]2;touch CNAME]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:16:47] 
+[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsCNAME               README.md           [1m[36mcss[39;49m[0m                 index.html          [1m[36mjs[39;49m[0m                  project-proposal.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:35:14] 
+[1m[31m$ [00m[K[?1h=[?2004httouch question1.html[?1l>[?2004l
+]2;touch question1.html]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;justin@Justins-MacBook-Air]1;..vanize/unit47]7;file://Justins-MacBook-Air.local/Users/justin/Desktop/galvanize/unit47[0m[27m[24m[J
+[1m[34m#[00m [36mjustin [37m@ [32mJustins-MacBook-Air [37min [1m[33m~/Desktop/galvanize/unit47[00m [37mon[00m git:[36mmaster [31mx[00m [37m[10:35:32] 
+[1m[31m$ [00m[K[?1h=[?2004hllive-server[?1l>[?2004l
+]2;live-server]1;live-server[32mServing "/Users/justin/Desktop/galvanize/unit47" at http://127.0.0.1:8080[39m
+[36mReady for changes[39m
+[0mGET /%E2%80%9Dhttps://www.youtube.com/watch?v=EefNiVvWAB0;%3C/iframe [33m404 [0m5.859 ms - 76[0m
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[0mGET /%E2%80%9Dhttps://www.youtube.com/watch?v=EefNiVvWAB0;%3C/iframe [33m404 [0m1.084 ms - 76[0m
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/index.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
+[36mChange detected[39m /Users/justin/Desktop/galvanize/unit47/question1.html
