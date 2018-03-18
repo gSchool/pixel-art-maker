@@ -16,13 +16,13 @@ document.getElementById('bigDiv').innerHTML = grid
 
 var chart = ''
 
-for (var i = 0; i < 10; i++) {
+var colorArr = ['#4286f4', '#58259e', '#c409bb', '#db0f19','#fafafa', '#000', '#e87a30', '#ffe100', '#96d811', '#048e14', '#08e0c7']
+
+for (var i = 0; i < colorArr.length; i++) {
   chart += '<div class="circle" ' + [i] + '">'
   chart += '</div>'
 }
 document.getElementById('colors').innerHTML = chart
-
-var colorArr = ['#4286f4', '#58259e', '#c409bb', '#db0f19', '#e87a30', '#ffe100', '#96d811', '#048e14', '#08e0c7', '#15191c']
 
 for (var i = 0; i < colorArr.length; i++) {
   document.getElementsByClassName('circle')[i].style.backgroundColor = colorArr[i]
@@ -36,10 +36,8 @@ for (var i = 0; i < allCircles.length; i++) {
   })
 }
 
-
 //write nested for loops again? need to getElementById of "cell[j]by[i]"
 var cellArray = document.getElementsByClassName('cell')
-
 
 for (var i = 0; i < cellArray.length; i++) {
   cellArray[i].addEventListener('click', function () {
