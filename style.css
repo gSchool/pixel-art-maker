@@ -1,0 +1,24 @@
+#canvas{
+}
+#red {
+  background-color: #ea5d5d;
+}
+.pixel {
+  height: 300px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.text-color {
+  color: black;
+}
+#blue {
+  background-color: #4b5ed8;
+}
+
+.red {
+  background-color: #ea5d5d;
+}
+.blue {
+  background-color: #4b5ed8;
+}
