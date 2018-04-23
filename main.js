@@ -19,10 +19,16 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
+  ////////////////Populate Canvas///////////////////////
+  let canvas = document.getElementById("canvas")
+  for (let i =0; i<5032 ; i++){
+    let pixel = document.createElement("div")
+    pixel.classList.add("pixel")
+    canvas.appendChild(pixel)
+  }
   //event listener and elements/////
   let color = document.createElement("div")
-  let pixel = document.getElementById("canvas").querySelectorAll(".pixel")
-  let canvas = document.getElementById("canvas")
+  // let pixel = document.getElementById("canvas").querySelectorAll(".pixel")
   let button = document.getElementsByTagName("button")
   console.log(button)
 
