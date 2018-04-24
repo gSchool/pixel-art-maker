@@ -20,17 +20,17 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   ////////////////Populate Canvas///////////////////////
-  let canvas = document.getElementById("canvas")
-  for (let i =0; i<5032 ; i++){
+  let canvas = document.getElementById("row")
+  for (let i =0; i<2200 ; i++){
     let pixel = document.createElement("div")
     pixel.classList.add("pixel")
-    canvas.appendChild(pixel)
+    row.appendChild(pixel)
   }
+  console.log("here is canvas", canvas)
   //event listener and elements/////
   let color = document.createElement("div")
   // let pixel = document.getElementById("canvas").querySelectorAll(".pixel")
   let button = document.getElementsByTagName("button")
-  console.log(button)
 
   //will need the eventListener on button to store
   let newColor = function() {
@@ -41,12 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   ///Will need event listener on canvas color to use on
   let pixelColor = function() {
+    event.target.removeAttribute("id")
     event.target.setAttribute("id", color.id)
   }
   ///////////////EVENTS!!!!!!!!!!!///////////
   for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", newColor)
-    console.log(button)
+    // console.log(button)
   }
   canvas.addEventListener("click", pixelColor)
 })

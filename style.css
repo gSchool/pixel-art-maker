@@ -1,20 +1,27 @@
 #canvas{
+  height: 500px;
+  width: 500px
+
+}
+# row{
+
 }
 #red {
   background-color: #ea5d5d;
 }
+#blue {
+  background-color: #4b5ed8;
+}
+
 .pixel {
   height: 10px;
   width: 10px;
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
-  border-width: 1px;
+  border-width: thin; */
 }
 .text-color {
   color: black;
-}
-#blue {
-  background-color: #4b5ed8;
 }
 
 .red {
@@ -24,7 +31,19 @@
   background-color: #4b5ed8;
 }
 .row-border {
+  margin-right: 11px;
+  border-right-width: 0px;
   border-style: solid;
   border-color: #090151;
   border-width: thin;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
