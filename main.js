@@ -21,7 +21,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   ////////////////Populate Canvas///////////////////////
   let canvas = document.getElementById("row")
-  for (let i =0; i<3358 ; i++){
+  for (let i =0; i<3388 ; i++){
     let pixel = document.createElement("div")
     pixel.classList.add("pixel")
     row.appendChild(pixel)
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   ///Will need event listener on canvas color to use on
   let pixelColor = function() {
-    event.target.removeAttribute("id")
+    if (event.target !== canvas)
     event.target.setAttribute("id", color.id)
   }
   ///////////////EVENTS!!!!!!!!!!!///////////
