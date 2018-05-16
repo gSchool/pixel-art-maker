@@ -1,0 +1,71 @@
+#canvas{
+  height: 500px;
+  width: 500px
+
+}
+# row{
+
+}
+#red {
+  background-color: crimson;
+}
+#orange {
+  background-color: coral;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: lightgreen;
+}
+#blue {
+  background-color: #4b5ed8;
+}
+#indigo {
+  background-color: darkslateblue;
+}
+#violet {
+  background-color: darkviolet;
+}
+#black {
+  background-color: black;
+}
+#white {
+  background-color: white;
+}
+
+.pixel {
+  height: 11px;
+  width: 11px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+.text-color {
+  color: black;
+}
+
+.red {
+  background-color: #ea5d5d;
+}
+.blue {
+  background-color: #4b5ed8;
+}
+.row-border {
+  margin-right: 11px;
+  margin-left: 9px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: #090151;
+  border-width: thin;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
