@@ -21,7 +21,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   ////////////////Populate Canvas///////////////////////
   let canvas = document.getElementById("row")
-  for (let i =0; i<3388 ; i++){
+  for (let i =0; i<75 ; i++){
     let pixel = document.createElement("div")
     pixel.classList.add("pixel")
     row.appendChild(pixel)
