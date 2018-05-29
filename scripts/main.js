@@ -27,7 +27,7 @@ pixels.forEach(el => {
   }
   el.addEventListener('click', clicked)
 })
-//
+
 //color selections
 let palletteItems = Array.from(document.querySelectorAll('.color'));
 palletteItems.forEach(palletteItem => {
