@@ -3,6 +3,9 @@ const HEIGHT = 24;
 
 // State
 let brushColor = '';
+let mouseDown = false;
+document.body.addEventListener('mouseup', () => mouseDown = false);
+document.body.addEventListener('mouseenter', () => mouseDown = false);
 
 // Container
 const container = document.createElement('div');
@@ -12,13 +15,16 @@ container.style.width = `${WIDTH * 16}px`;
 // Canvas
 const canvas = document.createElement('div');
 canvas.className = 'canvas';
+canvas.addEventListener('mousedown', () => mouseDown = true);
 for(let y = 0; y < HEIGHT; y++) {
     const row = document.createElement('div');
     row.className = 'row';
     for(let x = 0; x < WIDTH; x++) {
         const pixel = document.createElement('div');
         pixel.className = 'pixel';
-        pixel.addEventListener('click', () => {
+        pixel.addEventListener('click', () => pixel.style.backgroundColor = brushColor);
+        pixel.addEventListener('mouseover', () => {
+            if(!mouseDown) return;
             pixel.style.backgroundColor = brushColor;
         });
         row.appendChild(pixel);
