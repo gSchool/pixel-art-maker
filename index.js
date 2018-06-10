@@ -1,5 +1,5 @@
-const WIDTH = 4; //64;
-const HEIGHT = 4; //32;
+const WIDTH = 48;
+const HEIGHT = 24;
 
 // State
 let brushColor = '';
