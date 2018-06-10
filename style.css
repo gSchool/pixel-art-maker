@@ -12,3 +12,15 @@ body {
     height: 14px;
     border: 1px solid rgb(229, 229, 229);
 }
+
+.palette {
+    display: flex;
+}
+
+.swatch {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    margin: 2px;
+}
