@@ -1,6 +1,9 @@
 const WIDTH = 4; //64;
 const HEIGHT = 4; //32;
 
+// State
+let brushColor = '';
+
 // Canvas
 const canvas = document.createElement('div');
 canvas.className = 'canvas';
@@ -11,7 +14,7 @@ for(let y = 0; y < HEIGHT; y++) {
         const pixel = document.createElement('div');
         pixel.className = 'pixel';
         pixel.addEventListener('click', () => {
-            pixel.style.backgroundColor = 'red';
+            pixel.style.backgroundColor = brushColor;
         });
         row.appendChild(pixel);
     }
@@ -27,6 +30,9 @@ for(let color of colors) {
     const swatch = document.createElement('div');
     swatch.className = 'swatch';
     swatch.style.backgroundColor = color;
+    swatch.addEventListener('click', () => {
+        brushColor = color;
+    });
     palette.appendChild(swatch);
 }
 document.body.appendChild(palette);
