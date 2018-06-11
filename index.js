@@ -20,3 +20,14 @@ for(let i=0;i<20;i++) {
         rowDiv.appendChild(div);
     }
 }
+let palette = document.createElement('div');
+palette.className = 'Pal';
+document.body.appendChild(palette);
+for(let i=0;i<2;i++) {
+    const color = document.createElement('div');
+    color.className = 'palColor'+i;
+    palette.appendChild(color);
+    // div.addEventListener("click",(e)=>{
+    //      e.target.
+    // })
+}
