@@ -2,28 +2,23 @@
     display: flex;
     flex-direction: column;
 }
-.rowDivContainer0{
+.rowDivContainer{
     display: flex;
     border: 1px solid green;
-    width: 50px;
 
-    justify-content: space-around;
-}
-.rowDivContainer1{
-    display: flex;
-    border: 1px solid green;
-    width: 50px;
+    width:  500px;
+
     justify-content: space-around;
 }
 
 .divElem{
     height: 30px;
     width: 30px;
-
-    /*border: solid green;*/
+    border: 1px solid green;
 }
 .colorChange{
     background-color: red;
+    border: 1px solid green;
     height: 30px;
     width: 30px;
 }
