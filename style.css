@@ -1,0 +1,29 @@
+.divContainer{
+    display: flex;
+    flex-direction: column;
+}
+.rowDivContainer0{
+    display: flex;
+    border: 1px solid green;
+    width: 50px;
+
+    justify-content: space-around;
+}
+.rowDivContainer1{
+    display: flex;
+    border: 1px solid green;
+    width: 50px;
+    justify-content: space-around;
+}
+
+.divElem{
+    height: 30px;
+    width: 30px;
+
+    /*border: solid green;*/
+}
+.colorChange{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+}
