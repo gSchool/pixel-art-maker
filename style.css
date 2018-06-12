@@ -4,40 +4,250 @@
 }
 .rowDivContainer{
     display: flex;
-    border: 1px solid green;
+    border: 1px solid grey;
 
     width:  500px;
 
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .divElem{
-    height: 30px;
-    width: 30px;
-    border: 1px solid green;
+    height: 13px;
+    width: 13px;
+    border: 1px solid grey;
 }
 .colorChange{
     background-color: red;
-    border: 1px solid green;
-    height: 30px;
-    width: 30px;
+    border: 1px solid grey;
+    height: 13px;
+    width: 13px;
 }
 
 .Pal{
     display: flex;
+    flex-flow: wrap;
+    width: 500px;
 }
 .palColor0{
     display: flex;
-    height: 30px;
-    width: 30px;
+    height: 13px;
+    width: 13px;
     border: 1px solid black;
     background-color: red;
+    border-radius: 50%;
 }
 
 .palColor1{
     display: flex;
-    height: 30px;
-    width: 30px;
+    height: 13px;
+    width: 13px;
     border: 1px solid black;
     background-color: blue;
+    border-radius: 50%;
+}
+
+.palColor2{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 50%;
+}
+.palColor3{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+}
+.palColor4{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: purple;
+    border-radius: 50%;
+}
+.palColor5{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 50%;
+}
+.palColor6{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: pink;
+    border-radius: 50%;
+}
+.palColor7{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: lightcoral;
+    border-radius: 50%;
+}
+.palColor8 {
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.palColor9{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.palColor10{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.palColor11{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: olivedrab;
+    border-radius: 50%;
+}
+.palColor12{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+}
+.palColor13{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: darkorange;
+    border-radius: 50%;
+}
+.palColor14{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.palColor15{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: plum;
+    border-radius: 50%;
+}
+.palColor16{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+.palColor17{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: paleturquoise;
+    border-radius: 50%;
+}
+.palColor18{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+.palColor19{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: turquoise;
+    border-radius: 50%;
+}
+
+.palColor20{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: peachpuff;
+    border-radius: 50%;
+}
+.palColor21{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: silver;
+    border-radius: 50%;
+}
+.palColor22{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: lightseagreen;
+    border-radius: 50%;
+}
+.palColor23{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: slateblue;
+    border-radius: 50%;
+}
+.palColor24{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: lavender;
+    border-radius: 50%;
+}
+.palColor25{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+.palColor26{
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    background-color: rebeccapurple;
+    border-radius: 50%;
 }
