@@ -16,7 +16,9 @@ container.style.width = `${WIDTH * 16}px`;
 const canvas = document.createElement('div');
 canvas.className = 'canvas';
 canvas.addEventListener('mousedown', () => mouseDown = true);
+const pixels = [];
 for(let y = 0; y < HEIGHT; y++) {
+    const pxRow = [];
     const row = document.createElement('div');
     row.className = 'row';
     for(let x = 0; x < WIDTH; x++) {
@@ -28,8 +30,10 @@ for(let y = 0; y < HEIGHT; y++) {
             pixel.style.backgroundColor = brushColor;
         });
         row.appendChild(pixel);
+        pxRow.push(pixel);
     }
     canvas.appendChild(row);
+    pixels.push(pxRow);
 }
 container.appendChild(canvas);
 
@@ -52,4 +56,52 @@ title.innerText = 'BRUSH COLOR';
 palette.appendChild(title);
 container.appendChild(palette);
 
+// File reader
+/*
+<input type='file' id='fileinput'>
+<input type='button' id='btnLoad' value='Load' onclick='loadFile();'>
+ */
+const fileDiv = document.createElement('div');
+const fileInput = document.createElement('input');
+fileInput.setAttribute('type', 'file');
+fileDiv.appendChild(fileInput);
+const btnLoad = document.createElement('input');
+btnLoad.setAttribute('type', 'button');
+btnLoad.setAttribute('value', 'Load');
+btnLoad.addEventListener('click', () => {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+        const img = new Image();
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.setAttribute('visibility', 'hidden');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            document.body.appendChild(canvas);
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, img.width, img.height);
+            for(let y = 0; y < img.height / 16; y++) {
+                for(let x = 0; x < img.width / 16; x++) {
+                    const p = ctx.getImageData(x * 16 + 8, y * 16 + 8, 1, 1).data;
+                    const hex = "#" + ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
+                    if(y >= pixels.length) continue;
+                    if(x >= pixels[y].length) continue;
+                    pixels[y][x].style.backgroundColor = hex;
+                }
+            }
+            document.body.removeChild(canvas);
+        };
+        img.src = reader.result;
+    }, false);
+    reader.readAsDataURL(fileInput.files[0]);
+});
+fileDiv.appendChild(btnLoad);
+
+function rgbToHex(r, g, b) {
+    if (r > 255 || g > 255 || b > 255)
+        throw "Invalid color component";
+    return ((r << 16) | (g << 8) | b).toString(16);
+}
+
 document.body.appendChild(container);
+document.body.appendChild(fileDiv);
