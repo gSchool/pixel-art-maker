@@ -43,6 +43,15 @@ Research [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage
 
 Create a fill tool that will [flood fill](https://en.wikipedia.org/wiki/Flood_fill) boundaries with a chosen paint color. 
 
+### Bonus 5
+
+Load a PNG file directly onto the canvas using these resources:
+
+- [FileReader.readAsDataUrl](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL)
+- [Canvas.drawImage](https://stackoverflow.com/questions/8751020/how-to-get-a-pixels-x-y-coordinate-color-from-an-image?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+- [Image.onload](https://stackoverflow.com/questions/12354865/image-onload-event-and-browser-cache?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+- [FileReader example](https://stackoverflow.com/questions/3146483/html5-file-api-read-as-text-and-binary?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+- [Get pixel color from Canvas](https://stackoverflow.com/questions/6735470/get-pixel-color-from-canvas-on-mouseover?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 
 ### Deployment
 
