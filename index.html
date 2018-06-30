@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Michelles Pixel Art Maker</title>
+    <style>
+
+  * {
+    font-family: sans-serif;
+    color: darkslategrey;
+  }
+
+  h1 {
+    margin-left: 10px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .cell {
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    }
+
+  .paint {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .test {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+  }
+
+    .colorDefault {background-color: white;}
+    .colorOne {background-color: black;}
+    .colorTwo {background-color: crimson;}
+    .colorThree {background-color: firebrick;}
+    .colorFour {background-color: lightsalmon;}
+    .colorFive {background-color: hotpink;}
+    .colorSix {background-color: Coral;}
+    .colorSeven {background-color: orangered;}
+    .colorEight {background-color: yellow;}
+    .colorNine {background-color: gold;}
+    .colorTen {background-color: green;}
+    .colorEleven {background-color: olive;}
+    .colorTwelve {background-color: darkseagreen;}
+    .colorThirteen {background-color: lightseagreen;}
+    .colorFourteen {background-color: deepskyblue;}
+    .colorFifteen {background-color: Aquamarine;}
+    .colorSixteen {background-color: darkcyan;}
+    .colorSeventeen {background-color: purple;}
+    .colorEighteen {background-color: thistle;}
+    .colorNineteen {background-color: tan;}
+    .colorTwenty {background-color: lightslategrey;}
+
+    </style>
+  </head>
+  <body>
+    <h1> Pick a swatch: </h1>
+    <div class= "paint">
+      <div class="test colorDefault"></div>
+      <div class="test colorOne"></div>
+      <div class="test colorTwo"></div>
+      <div class="test colorThree"></div>
+      <div class="test colorFour"></div>
+      <div class="test colorFive"></div>
+      <div class="test colorSix"></div>
+      <div class="test colorSeven"></div>
+      <div class="test colorEight"></div>
+      <div class="test colorNine"></div>
+      <div class="test colorTen"></div>
+      <div class="test colorEleven"></div>
+      <div class="test colorTwelve"></div>
+      <div class="test colorThirteen"></div>
+      <div class="test colorFourteen"></div>
+      <div class="test colorFifteen"></div>
+      <div class="test colorSixteen"></div>
+      <div class="test colorSeventeen"></div>
+      <div class="test colorEighteen"></div>
+      <div class="test colorNineteen"></div>
+      <div class="test colorTwenty"></div>
+    </div>
+    <h1 class="center"> COLOR HERE </h1>
+      <div class="container">
+        <!-- Where the rendered boxes will go! -->
+      </div>
+
+    <script>
+
+    var paintSwatch = "#aeaeae";
+    /*Adds listener to paint colors */
+    var paint = document.querySelector('.paint')
+    paint.addEventListener('click', function(event) {
+      var targetStyle = window.getComputedStyle(event.target)
+      var color = targetStyle.getPropertyValue("background-color")
+      paintSwatch = color
+      console.log("current color")
+      console.log(color)
+      console.log("swatch saved")
+      console.log(paintSwatch)
+      console.log("CLICKED")
+    })
+
+
+    var cellcount = prompt("How big do you want your canvas?");
+    /* sets the box size (cellcount x cell count)*/
+
+    /*Adds listener to container for the canvas/grid*/
+    var container = document.querySelector('.container')
+    container.style.width=(cellcount*17) + "px"
+    container.addEventListener('click', function(event) {
+      if (event.target.classList.contains('cell')) {
+        event.target.style.backgroundColor = paintSwatch;
+      }
+    })
+
+    /*Adds new boxes*/
+
+    for (var i = 0; i < (cellcount * cellcount); i++) {
+      var newCell = document.createElement('div')
+      newCell.classList.add('cell')
+      container.appendChild(newCell)
+    }
+
+
+  </script>
+  </body>
+</html>
