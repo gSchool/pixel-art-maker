@@ -1,0 +1,148 @@
+* KAY KREWSON g48_Seattle */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* STANDARD STUFF HERE */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #42454C;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/* CUSTOM STUFF HERE */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+.workspace {
+  padding: 20px 0;
+  background: #E5E5E5;
+  height: 740px;
+  width: 600px;
+  border-radius: 24px;
+}
+
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 540px;
+  margin: 12px auto;
+}
+
+.canvas div {
+  background: white;
+  height: 5%;
+  width: 5%;
+  border: solid #E5E5E5 1px;
+}
+.canvas div:hover {
+
+}
+
+.palette {
+  display: flex;
+  margin: 6px 30px;
+}
+
+.standard-colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  background: #E5E5E5;
+  width: 75%;
+}
+
+.standard-colors div {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 3px 3px;
+}
+
+.custom-color-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+  justify-content: center;
+  background: white;
+  border: solid #666666 2px;
+}
+
+.custom-color-container input {
+  width: 50px;
+  height:  50px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.color-picker {
+  margin: 3px 3px;
+  width: 60px;
+  border: none;
+}
+
+.color-picker-text {
+  margin: 4px 0;
+  width: 100%;
+  color: #666666;
+  text-align: center;
+  font-weight: bold;
+}
