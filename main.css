@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.square {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+.palette {
+  display: flex;
+  width: 600px;
+  height: 150px;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.palette-color {
+  flex-direction: row;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
