@@ -1,0 +1,78 @@
+body {
+   text-align: center;
+   font-family: Poppins;
+   background: #F5F5F5;
+}
+
+h1 {
+    background:mediumSpringGreen;
+    display: inline;
+    border-radius: 6%;
+    padding: 1px;
+}
+
+.row {
+  width : 100%;
+  height: 1rem;
+  display: flex;
+}
+
+.pixel {
+  border: .2px #F5F5F5 solid;
+  width: 1%;
+  height: 100%;
+}
+
+.color {
+  width: 10%;
+  height: 6rem;
+  border-radius: 15%;
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+.midnight-blue {
+  background: midnightBlue;
+}
+
+.gray {
+  background: gray;
+}
+
+.dark-orchid {
+  background: darkOrchid;
+}
+
+.chocolate {
+  background: chocolate;
+}
+
+.forestGreen {
+  background: forestGreen;
+}
+.medium-spring-green {
+  background: mediumSpringGreen;
+}
+
+.green-yellow {
+  background: greenYellow;
+}
+
+.pink {
+  background: pink;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.white {
+  background: white;
+}
+
+.azure {
+  background: azure;
+}
