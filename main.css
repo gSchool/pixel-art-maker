@@ -1,0 +1,301 @@
+.row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row5{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row6{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row7{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row8{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row9{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row10{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row11{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row12{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row13{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row14{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row15{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row16{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row17{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row18{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row19{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row20{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row21{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row22{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row23{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row24{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row1 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row2 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row3 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row4 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row5 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row6 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row7 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row8 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row9 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row10 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row11 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row12 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row13 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row14 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row15 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row16 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row17 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row18 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row19 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row20 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row21 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row22 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row23 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.row24 div{
+  height:15px;
+  width:15px;
+  border: 2px solid black;
+  margin:0.02px;
+  background-color: #faebd7;
+}
+.colorKey{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.colorKey li{
+  height:50px;
+  width:50px;
+  background-color: #bdbdbd;
+  margin:3px;
+  border:2px solid black;
+  list-style: none;
+}
