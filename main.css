@@ -1,0 +1,174 @@
+html {
+    background-color: black;
+    background-image: url('bobross.jpg');
+    background-repeat: no-repeat;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    margin-left: 50px;
+}
+
+
+/* Grid Space */
+
+#container {
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 550px;
+    height: 420px;
+    width: 240px;
+}
+
+.cell {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    float: left;
+}
+
+
+/* Color Pickers */
+
+.color-palette {
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 350px;
+    height: 280px;
+    width: 180px;
+}
+
+.sap-green {
+    display: block;
+    position: absolute;
+    margin-left: 80px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #0A3410;
+}
+
+.alizarin-crimson {
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 215px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #4E1500;
+}
+
+.van-dyke-brown {
+    display: block;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 245px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #221B15;
+}
+
+.dark-sienna {
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #5F2E1F;
+}
+
+.midnight-black {
+    display: block;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 38px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.prussian-blue {
+    display: block;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: 100px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #021E44;
+}
+
+.phthalo-blue {
+    display: block;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 75px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #0C0040;
+}
+
+.phthalo-green {
+    display: block;
+    position: absolute;
+    margin-left: 165px;
+    margin-top: 140px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #102E3C;
+}
+
+.cadmium-yellow {
+    display: block;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 180px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #FFEC00;
+}
+
+.bright-red {
+    display: block;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 255px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #DB0000;
+}
+
+.titanium-white {
+    display: block;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 200px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
