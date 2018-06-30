@@ -1,0 +1,165 @@
+html {
+    width: 100%;
+    font-size: 16px;
+    font-family: "arial", sans-serif;
+}
+
+header {
+    height: 3rem;
+    background-color: #5F9EA0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.canvas-color-contain {
+    width: 60rem;
+    height: 50rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: .1rem;
+}
+
+.canvas-color-contain > * {
+  margin: 3rem auto 0 auto;
+  width: 55rem;
+}
+
+.canvas {
+    width: 55rem;
+    height: 35rem;
+    background-color: white;
+    border: 1px solid black;
+    padding-bottom: .08rem;
+    box-sizing: content-box;
+    border-radius: 5px;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table-cell {
+    width: 1rem;
+    height: 1rem;
+    border: .5px solid lightgrey;
+    box-sizing: border-box;
+}
+
+
+.color-container {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    width: 55rem;
+
+}
+
+.color-box {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: none;
+    border: .25px solid lightgrey;
+
+}
+
+#color-1 {
+    background-color: #1568de;
+}
+
+#color-2 {
+    background-color: #c6c416;
+}
+
+#color-3 {
+    background-color: #064d1f;
+}
+
+#color-4 {
+    background-color: #a6787b;
+}
+
+#color-5 {
+    background-color: #36b851;
+}
+
+#color-6 {
+    background-color: #0dffc5;
+}
+
+#color-7 {
+    background-color: #78d547;
+}
+
+#color-8 {
+    background-color: #883168;
+}
+
+#color-9 {
+    background-color: #44e47e;
+}
+
+#color-10 {
+    background-color: #2aacc1;
+}
+
+#color-11 {
+    background-color: #032e30;
+}
+
+#color-12 {
+    background-color: #f9241e;
+}
+
+#color-13 {
+    background-color: #9a1b4e;
+}
+
+#color-14 {
+    background-color: #FFFF00;
+}
+
+#color-15 {
+    background-color: #000000;
+}
+
+#color-16 {
+    background-color: #666666;
+}
+
+#color-17 {
+    background-color: #6A575E;
+}
+
+#color-18 {
+    background-color: #585F54;
+}
+
+#color-19 {
+    background-color: #B1387F;
+}
+
+#color-20 {
+    background-color: #FFFFFF;
+}
+
+#color-selected {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: .25px solid lightgrey;
+    background-color: #ffffff;
+}
+
+#color-selected-contain {
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+}
