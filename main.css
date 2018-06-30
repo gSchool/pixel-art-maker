@@ -1,0 +1,26 @@
+
+.container {
+  background: dodgerblue;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: solid 1px Black;
+  height: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  flex-wrap: nowrap;
+  border: solid 1px Black;
+  width: =20px;
+}
+
+.colored {
+  background: green;
+  color: white;
+}
