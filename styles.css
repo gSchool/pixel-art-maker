@@ -1,0 +1,101 @@
+.purpleBox {
+    background-color: purple;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: gray;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.yellowBox {
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.redBox {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.blueBox {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.orangeBox {
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.greenBox {
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.pinkBox {
+    background-color: pink;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.whiteBox {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.blackBox  {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+.colorPalette {
+    background-color: lightgray;
+    justify-content: center;
+    height: 50px;
+    width: 450px;
+    top: 580px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#container {
+  /*height: 500px;*/
+  width: 500px;
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
