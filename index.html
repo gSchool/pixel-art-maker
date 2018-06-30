@@ -1,0 +1,49 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>My First Paint</title>
+</head>
+<body>
+  <div class="leftBar">
+    <p class="pSelect">Selected Color</p>
+    <div class="colorSelect"></div>
+    <div class="palette">
+      <div class='colorBlock'style="background-color:#ffffff"></div>
+      <div class='colorBlock'style="background-color:#000000"></div>
+      <div class='colorBlock'style="background-color:#afafaf"></div>
+      <div class='colorBlock'style="background-color:#424242"></div>
+      <div class='colorBlock'style="background-color:#49cbe2"></div>
+      <div class='colorBlock'style="background-color:#2462ab"></div>
+      <div class='colorBlock'style="background-color:#7b2eeb"></div>
+      <div class='colorBlock'style="background-color:#b620e3"></div>
+      <div class='colorBlock'style="background-color:#de25b0"></div>
+      <div class='colorBlock'style="background-color:#e32020"></div>
+      <div class='colorBlock'style="background-color:#fc7200"></div>
+      <div class='colorBlock'style="background-color:#e8ac26"></div>
+      <div class='colorBlock'style="background-color:#e8ec1f"></div>
+      <div class='colorBlock'style="background-color:#b7df43"></div>
+      <div class='colorBlock'style="background-color:#29a615"></div>
+      <div class='colorBlock'style="background-color:#41f197"></div>
+    </div>
+  </div>
+  <div class="centerPage">
+    <div class="canvasBox"></div>
+  </div>
+  <div class="rightBar">
+    <p class="pSelect">Resize grid</p>
+    <section>
+      <p class="inputText"># of Rows:</p>
+      <input class="inputGrid" id="inputRow"/>
+      <p class="inputText"># of Columns:</p>
+      <input class="inputGrid" id="inputColumn"/>
+      <button class="buttonSide" id="buttonResize">click to resize</button>
+    </section>
+    <p class="pSelect">paintbrush</p>
+    <section>
+      <p class="inputText" id="textPaint">Paintbrush: off</p>
+      <button class="buttonSide" id="buttonPaint">Toggle Paintbrush</button>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

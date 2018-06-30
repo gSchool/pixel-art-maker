@@ -1,0 +1,91 @@
+body{
+  display:flex;
+
+}
+div{
+  boxing-size: content-box;
+  backgroud-color: white;
+  border: 1px solid black;
+  height:100px;
+  width:100px;
+}
+section{
+  boxing-size:content-box;
+  width:99%;
+  border: 1px solid black;
+}
+
+.centerPage{
+  display:flex;
+  height:100vh;
+  width:80%;
+  justify-content:center;
+  align-items:center;
+}
+
+.leftBar{
+  margin-right:5px;
+  height:100vh;
+  width:10%;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
+.rightBar{
+  display:flex;
+  margin-left:5px;
+  height:100vh;
+  width:10%;
+  flex-wrap:wrap;
+  flex-direction:column;
+}
+.canvasBox {
+  height:204px;
+  width:204px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.palette{
+  margin-top:20px;
+  width:54px;
+  height:216px;
+  flex-wrap: wrap;
+  display:flex;
+
+}
+.colorBlock{
+  width:25px;
+  height:25px;
+}
+.colorSelect{
+  margin-top:0px;
+  width:52px;
+  height:52px;
+}
+.inputGrid{
+  width:80%;
+  height:20px;
+}
+.buttonSide{
+  width:98%;
+  border-radius:15px;;
+  height:20px;
+  margin:2px;
+}
+.buttonSide:hover{
+  background-color:blue;
+  color:white;
+  cursor: pointer;
+}
+.inputText{
+  margin-bottom:0px;
+  margin-top:5px;
+}
+.pSelect{
+  font-size:14px;
+  text-align:center;
+  margin-bottom:0px;
+}
