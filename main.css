@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: flex;
+  width: 540px;
+  height: 540px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+}
+
+.square {
+  border: 1px solid LightGrey;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 500px;
+  margin-top: 25px;
+}
+
+.swatch {
+  height: 75px;
+  width: 75px;
+  margin-right: 10px;
+}
+
+.rose {
+  background-color: MistyRose;
+}
+
+.blue {
+  background-color: LightCyan;
+}
+
+.green {
+  background-color: Aquamarine;
+}
+
+.yellow {
+  background-color: LemonChiffon;
+}
+
+.lavender {
+  background-color: Lavender;
+}
+
+.grey {
+  background-color: LightGrey;
+}
+
+.indicate {
+  font-family: cursive;
+}
