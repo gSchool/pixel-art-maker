@@ -1,0 +1,201 @@
+
+
+body {
+  background-color: #8b8378;
+  box-sizing: border-box;
+  font-family: "Futura PT", "Futura", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cell {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #8b8378;
+  background-color: #6f696a;
+  color: #8b8378;
+  text-align: center;
+}
+
+.grid {
+  margin-top: 30px;
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+button {
+
+
+  text-decoration: none;
+
+  display: flex;
+
+  color: #6f696a;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  min-width: 50px;
+
+  position: relative;
+  margin: 0 auto;
+  background-color: #8b8378;
+  border: 2px solid #6f696a;
+}
+/*grid maker*/
+.gridInputs {
+  display: flex;
+  flex-direction: row;
+}
+/*pallete boxes*/
+.palette {
+  display: flex;
+  flex-direction: column;
+  align-items: : center;
+}
+
+.palette h2 {
+  text-align: center;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#buttonRed {
+  background-color: #FF0000;
+}
+
+#buttonBlue {
+  background-color: #0000FF;
+}
+
+#buttonYellow {
+  background-color: #FFFF00;
+}
+
+#buttonPurple {
+  background-color: #800080;
+}
+
+#buttonOrange {
+  background-color: #ffa500;
+}
+
+#buttonGreen {
+  background-color: #008000;
+}
+
+#buttonWhite {
+  background-color: #fff;
+}
+
+#buttonBlack {
+  background-color: #000;
+  color: #8b8378;
+}
+/*color grid squares*/
+.colorRed {
+  background-color: #FF0000;
+}
+
+.colorBlue {
+  background-color: #0000FF;
+}
+
+.colorYellow {
+  background-color: #FFFF00;
+}
+
+.colorPurple {
+  background-color: #800080;
+}
+
+.colorOrange {
+  background-color: #ffa500;
+}
+
+.colorGreen {
+  background-color: #008000;
+}
+
+.colorWhite {
+  background-color: #fff;
+}
+
+.colorBlack {
+  background-color: #000;
+}
+
+.colorEraser {
+  background-color: #6f696a;
+}
+
+
+@media (min-width: 800px) {
+
+  main {
+    flex-direction: row;
+  }
+
+  .grid {
+    padding-right: 200px;
+  }
+
+  aside {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 264px;
+  }
+
+  .colors button {
+    box-sizing: border-box;
+    height: 88px;
+    width: 88px;
+  }
+
+  .gridInputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type=text] {
+    background-color: #8b8378;
+    border: 2px solid #6f696a;
+  }
+
+  #button {
+    width: 100%
+  }
+
+  .palette h4 {
+    text-align: center;
+  }
+
+  #customColor {
+    width: 258px;
+  }
+
+  #colorButton {
+    height: 50px;
+    width: 264px;
+    margin-right: 0px;
+  }

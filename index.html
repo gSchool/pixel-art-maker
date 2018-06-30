@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class='grid'>
+      </section>
+      <aside class="controlPanel">
+        <div class="gridSizeSelector">
+          <section class='gridInputs'>
+            <div class="xValue">
+              <p>BOXES ACROSS</p>
+              <input type="text" id="gridWidth" value="16">
+            </div>
+            <div class="yValue">
+              <p>PIXEL SIZE</p>
+              <input type="text" id="pixelSize" value="28">
+            </div>
+          </section>
+          <button id="button" type="submit">Customize Grid Size</button>
+        </div>
+
+        <div class="palette">
+          <h4>Color Palette: Click to Select</h4>
+          <div class="colors">
+            <button id="buttonRed" type="submit">Red</button>
+            <button id="buttonBlue" type="submit">Blue</button>
+            <button id="buttonYellow" type="submit">Yellow</button>
+            <button id="buttonPurple" type="submit">Purple</button>
+            <button id="buttonGreen" type="submit">Green</button>
+            <button id="buttonOrange" type="submit">Orange</button>
+            <button id="buttonWhite" type="submit">White</button>
+            <button id="buttonBlack" type="submit">Black</button>
+            <button id="buttonEraser" type="submit"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331813/eraser.png" /></button>
+          </div>
+        </div>
+        <input type="text" id="customColor" value="">
+        <button id="colorButton" type="submit">Add Custom Color</button>
+      </aside>
+    </main>
+    <script type="text/javascript" src="main.js">
+
+    </script>
+  </body>
+</html>
