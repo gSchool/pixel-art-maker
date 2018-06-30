@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pixal Art Maker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!--navbar  -->
+  <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#grid">Grid</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#colors">Colors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#save">Save</a>
+        </li>
+      </ul>
+      <a class="navbar-brand pull-sm-right m-r-0 hidden-xs-down" href="https://erottman.github.io/pixel-art-maker/">Presented by Erica Rottman</a>
+    </div>
+  </nav>
+
+  <!--/navbar  -->
+
+  <!--jumbotron  -->
+  <div class="jumbotron jumbotron-fluid bg-info">
+    <div class="container text-sm-center p-t-3">
+      <h1 class="display-4">Erica's Pixel Maker</h1>
+      <p class="lead">A Rainbow of Colors</p>
+
+      <div class="btn-group m-t-2" role="group" aria-label="Basic example">
+        <a class="btn btn-primary btn-lg" href="">Gitbub</a>
+      </div>
+    </div>
+  </div>
+  <!--/jumbotron  -->
+
+  <!--container-->
+
+  <div class="container p-t-2 text-lg-center">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h4 class="m-b-2">Color Palettes</h4>
+        <div class="colors">
+          <div class="palette red"></div>
+          <div class="palette orange"></div>
+          <div class="palette green"></div>
+          <div class="palette yellow"></div>
+          <div class="palette blue"></div>
+          <div class="palette purple"></div>
+        </div>
+
+        <!-- <div class="selected-color"></div> -->
+        <div class="current-color">
+          <h4 class="p-t-2">Selected Color</h4>
+          <button class="selected-color" type="button" ></button>
+        </div>
+
+
+        <div class="choose-color">
+          <h4 class="p-t-2">Pick A Color</h4>
+          <input id="full" type='color' value='#00FF00' name="Choose">
+        </div>
+
+        <div class="erase">
+          <h4 class="p-t-2">Erase</h4>
+          <button class="clear-button" type="button"></button>
+        </div>
+
+        <div class="save-image">
+          <h4 class="p-t-2">Save Image</h4>
+          <button id='save'  type="button">Save</button>
+          <button id='open' type="button">Open</button>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <h3 class="m-b-2">The Grid</h3>
+        <div class="canvas"></div>
+      </div>
+    </div>
+  </div>
+    <!--/container-->
+
+  <!-- callout -->
+  <button type="button" class="btn btn-info-outline btn-lg center-block m-y-3">Github
+    <a class="navbar-brand pull-sm-right m-r-0 hidden-xs-down" href="https://erottman.github.io/pixel-art-maker/"></a></button>
+  <!-- /callout -->
+
+
+  <!--/container  -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script defer src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
