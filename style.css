@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.screen{
+  display: flex;
+  flex-direction: column;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 5px solid;
+
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+ section div {
+
+  flex-wrap: nowrap;
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  border: 0px solid;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.colorBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*flex-wrap: nowrap;*/
+}
+
+.colorBar div {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.white {
+  background-color: white;
+}
