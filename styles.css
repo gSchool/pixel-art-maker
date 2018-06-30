@@ -1,0 +1,201 @@
+
+html {
+
+}
+header {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: steelblue;
+  text-shadow: darkgray 2px 5px;
+  display: inline-block;
+}
+header img{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.screen {
+  border-style: groove;
+  width: 900px;
+  margin: 30px auto;
+  padding: 5px;
+  border-radius: 5%;
+  background-color: gainsboro;
+}
+.canvas {
+  width: 870px;
+  line-height: 0;
+  margin: auto;
+}
+
+.pixel {
+  display: inline-block;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border: 1px solid lightgray;
+  cursor: url("paintbrush.cur"), url("paintbrush.png"), auto;
+}
+
+.palette {
+  display: inline-block;
+  margin: 10px;
+}
+
+.palette div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  margin: 0;
+}
+
+.lightpink {
+  background-color: lightpink;
+}
+
+.hotpink {
+  background-color: hotpink;
+}
+
+.deeppink {
+  background-color: deeppink;
+}
+
+.mediumpurple {
+  background-color: mediumpurple;
+}
+
+.darkviolet {
+  background-color: darkviolet;
+}
+.purple {
+  background-color: purple;
+}
+.skyblue {
+  background-color: skyblue;
+}
+.dodgerblue {
+  background-color: dodgerblue;
+}
+.blue {
+  background-color: blue;
+}
+.aqua {
+  background-color: aqua;
+}
+.turquoise{
+  background-color: turquoise;
+}
+.springgreen {
+  background-color: springgreen;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.limegreen {
+  background-color: limegreen;
+}
+.darkgreen {
+  background-color: darkgreen;
+}
+.darksalmon {
+  background-color: darksalmon;
+}
+.coral {
+  background-color: coral;
+}
+.firebrick {
+  background-color: firebrick;
+}
+.darkred {
+  background-color: darkred;
+}
+.saddlebrown {
+  background-color: saddlebrown;
+}
+.sienna {
+  background-color: sienna;
+}
+.peru {
+  background-color: peru;
+}
+.yellow {
+  background-color: yellow;
+}
+.gold {
+  background-color: gold;
+}
+.orange {
+  background-color: orange;
+}
+.bisque {
+  background-color: bisque;
+}
+.wheat {
+  background-color: wheat;
+}
+.slategray {
+  background-color: slategray;
+}
+.darkslategray {
+  background-color: darkslategray;
+}
+.silver {
+  background-color: silver;
+}
+.gray {
+  background-color: gray;
+}
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools div {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.tools img {
+  height: 30px;
+  width: 30px;
+}
+
+.selected-color {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 5%;
+}
+
+#color-pick {
+  width: 60px;
+  height: 30px;
+  border-radius: 10%;
+}
+
+#eraser {
+  border-radius: 10%;
+  width: 70px;
+  height: 30px;
+}
+
+.button {
+  width: 60px;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 10%;
+}
