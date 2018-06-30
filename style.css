@@ -1,0 +1,170 @@
+.container-fluid {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.container-fluid h1{
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.grid {
+    margin: auto;
+}
+
+.cell {
+    border: 1px solid #222222;
+    padding: 5px;
+}
+
+.colors {
+    background-color: antiquewhite;
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.palette > div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+    .black {
+        background-color: black;
+    }
+
+    .blue {
+        background-color: #241e34;
+    }
+
+    .purple {
+        background-color: #4B233B;
+    }
+
+    .brown {
+        background-color: #6D352D;
+    }
+
+    .palebrown {
+        background-color: #985234;
+    }
+
+    .orange {
+        background-color: #EF6800;
+    }
+
+    .lightorange {
+        background-color: #E29F5E;
+    }
+
+    .apricot {
+        background-color: #F5C396;
+    }
+
+    .yellow {
+        background-color: #F7F914;
+    }
+
+    .lime {
+        background-color: #71F04F;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .darkgreen {
+        background-color: #3D6E2F;
+    }
+
+    .forestgreen {
+        background-color: #524D21;
+    }
+
+    .indigo {
+        background-color: #2F3D39;
+    }
+
+    .violet {
+        background-color: #443875;
+    }
+
+    .blueyum {
+        background-color: #215F84;
+    }
+
+    .cauliflower {
+        background-color: #655EE4;
+    }
+
+    .coolblue {
+        background-color: #6092FF;
+    }
+
+    .turquoise {
+        background-color: turquoise;
+    }
+
+    .paleblue {
+        background-color: paleturquoise;
+    }
+
+    .white {
+        background-color: white;
+        border: #222222 1px solid;
+    }
+
+    .gray {
+        background-color: lightslategray;
+    }
+
+    .mauve {
+        background-color: mediumpurple;
+    }
+
+    .gray {
+        background-color: gray;
+    }
+
+    .darkgray {
+        background-color: darkgray;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .crimson {
+        background-color: mediumvioletred;
+    }
+
+    .pink {
+        background-color: lightpink;
+    }
+
+    .yummygreen {
+        background-color: palegreen;
+    }
+
+    .myfav {
+        background-color: aqua;
+    }
