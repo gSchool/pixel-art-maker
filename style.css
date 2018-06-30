@@ -1,0 +1,40 @@
+header, main, section, #palette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+table, tr, td {
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+tr, td {
+  height: 6px;
+  width: 6px;
+}
+
+td {
+  border: 0.01px solid #edeaea;
+}
+
+mark {
+  margin: 23px 10px 20px;
+  background-color: black;
+}
+
+mark, .addPaletteColor {
+  border: 1px solid black;
+  height: 12px;
+  width: 12px;
+  border-radius: 60%;
+}
+
+.addPaletteColor {
+  margin: 12px 6px 12px;
+}
+
+#palette {
+  width: 100%;
+}
