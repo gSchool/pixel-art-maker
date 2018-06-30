@@ -1,0 +1,131 @@
+body{
+    /*min-width: 700px;*/
+
+}
+.background {
+    background-color: rgb(226, 226, 226);
+}
+
+h4 {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(255, 255, 255);
+    width: 600px;
+    margin: 2em;
+    margin: auto;
+    border: solid 1px black;
+}
+
+.grid {
+  width: 10px;
+  height: 10px;
+  border: solid .1px rgb(218, 218, 218);
+  display: inline-block;
+  box-sizing: border-box;
+  border-spacing: 0;
+}
+
+div {
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+
+section.palette{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    /*align-content: center;*/
+    /*align: auto;*/
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.colorLabel{
+    width: 100px;
+    font-weight: bold;
+    border: 1px solid rgb(226, 226, 226);
+    color: rgb(134, 134, 134);
+}
+
+
+.current{
+    border: 0px solid black;
+    width: 120px;
+    height: 20px;
+    color: rgb(134, 134, 134);
+}
+.currentColor {
+    border: 1px solid black;
+    width: 60px;
+    height: 20px;
+    background-color: lightblue;
+}
+
+.selected {
+	outline: 3px dotted black;
+}
+
+.saved-canvas-item {
+	cursor: pointer;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+#white {
+    background-color: white;
+}
+#green {
+    background-color: #2ae831;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#lightblue {
+    background-color: lightblue;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#lightgreen {
+    background-color: lightgreen;
+}
+
+#indianred {
+    background-color: indianred;
+}
+
+#hotpink {
+    background-color: hotpink;
+}
+
+#black {
+    background-color: black;
+}
