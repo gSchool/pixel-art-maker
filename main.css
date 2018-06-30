@@ -1,0 +1,106 @@
+body{
+  background-color: #9f9d9f;
+  width: 100%;
+}
+
+h1{
+  font-family: futura, sans-serif;
+  text-align: center;
+  font-size: 44px;
+  margin: 12px;
+}
+
+p {
+  font-family: futura, sans-serif;
+  text-align: center;
+  margin: 5px;
+}
+.canvas {
+  background-color: #ffffff;
+  border: 5px solid black;
+  height: 500px;
+  margin: auto;
+  width: 1000px;
+
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  height: 5px;
+}
+
+.cell {
+  width: 5px;
+}
+
+.pallet {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.currentColor {
+  background-color: white;
+  border: .5px solid black;
+  margin-right: 10px;
+  height: 30px;
+  width: 60px;
+}
+
+
+#red {
+  background-color: red;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#orange {
+  background-color: orange;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#yellow {
+  background-color: yellow;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#green {
+  background-color: green;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#blue {
+  background-color: blue;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#purple {
+  background-color: purple;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#brown {
+  background-color: brown;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#black {
+  background-color: black;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
+#white {
+  background-color: white;
+  border: .5px solid black;
+  height: 20px;
+  width: 20px;
+}
