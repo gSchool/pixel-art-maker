@@ -1,0 +1,6 @@
+{
+  "rootDir": "src",
+  "noImplicitReturns": false,
+  "strictNullChecks": true,
+  "strictFunctionTypes": false
+}

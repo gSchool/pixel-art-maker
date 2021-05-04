@@ -1,0 +1,22 @@
+#pixel-art-array {
+  height: 600px;
+  width: 1000px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#pixel-art-color-palette {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.pixel {
+  height: 25px;
+  width: 25px;
+}
+
+.palette-item {
+  height: 50px;
+  width: 50px;
+}
