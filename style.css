@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    background-color: LightGray;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gainsboro;
+    box-shadow: 0px 1px 5px black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    width: 800px;
+}
+
+#canvas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#palette {
+    margin-top: 10px;
+}
+
+#colorIndPanel {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 60px;
+    width: 250px;
+}
+
+#colorIndicator {
+    width: 100px;
+    float: right;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#currColor {
+    font-family: Helvetica;
+    font-size: 18px;
+    float: left;
+}
+
+.paletteItem {
+    width: 30px;
+    float: left;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 30px;
+}
+
+.pixel {
+    background-color: white;
+    width: 46px;
+    float: left;
+    padding-bottom: 46px;
+    margin-top: 0;
+    border: 2px solid rgb(148, 147, 147);
+}
+
+.red {
+    background-color: red;
+}
