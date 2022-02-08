@@ -11,8 +11,17 @@
         canvas.append(elem);
     }
 
+    var mouseDown = false;
+    document.body.onmousedown = function() {
+        mouseDown = true;
+    }
+    document.body.onmouseup = function() {
+        mouseDown = false;
+    }
 
-    palette.onclick = function(event) {
+    if (mouseDown && )
+
+        palette.onclick = function(event) {
         let target = event.target;
         if (target.className === 'paletteItem') {
             currColor = target.style.backgroundColor;
