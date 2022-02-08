@@ -11,6 +11,7 @@
         canvas.append(elem);
     }
 
+
     palette.onclick = function(event) {
         let target = event.target;
         if (target.className === 'paletteItem') {

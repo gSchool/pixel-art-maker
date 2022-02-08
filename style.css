@@ -1,12 +1,15 @@
 body {
     display: flex;
-    background-color: LightGray;
     align-items: center;
     justify-content: center;
+    background-color: LightGray;
 }
 
 #container {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 10px;
     flex-wrap: wrap;
     background-color: gainsboro;
     box-shadow: 0px 1px 5px black;
@@ -15,20 +18,11 @@ body {
     width: 800px;
 }
 
-#canvas {
+#bottomRow {
     display: flex;
-    flex-wrap: wrap;
-}
-
-#palette {
-    margin-top: 10px;
 }
 
 #colorIndPanel {
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 60px;
     width: 250px;
 }
 
@@ -38,6 +32,7 @@ body {
     padding-bottom: 30px;
     margin-top: 10px;
     margin-left: 5px;
+    border: 1px solid black;
 }
 
 #currColor {
