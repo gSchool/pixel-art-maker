@@ -4,6 +4,7 @@
     let canvas = document.getElementById('canvas');
     let palette = document.getElementById('palette');
     let colorInd = document.getElementById('colorIndicator')
+    let colorWheel = document.getElementById('colorWheel');
     let currColor;
     let mouseState = false;
 
@@ -26,18 +27,11 @@
         })
     }
 
-
-    // canvas.onmousedown = function(event) {
-    //     mouseState = true;
-    //     canvas.onmouseenter = function(event) {
-    //         let target = event.target;
-    //         console.log(target);
-    //         if (target.className === 'pixel') {
-    //             console.log('working');
-    //         }
-    //     }
-    // }
-
+    colorWheel.addEventListener('change', function() {
+        console.log(colorWheel.value);
+        currColor = colorWheel.value;
+        colorInd.style.backgroundColor = currColor;
+    })
 
     palette.onclick = function(event) {
         let target = event.target;

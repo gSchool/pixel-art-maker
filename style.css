@@ -41,6 +41,12 @@ body {
     float: left;
 }
 
+#colorWheel {
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+
 .paletteItem {
     width: 30px;
     float: left;
