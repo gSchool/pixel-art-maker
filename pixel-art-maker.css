@@ -1,0 +1,38 @@
+head {
+    width:100%;
+    height:100%;
+}
+body {
+    widtth: 100%;
+    height: 100%;
+    margin:0;
+}
+#backgroung-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#container {
+    display:flex;
+    width: 850px;
+    height: 550px;
+    margin-top: 175px;
+    padding: 20px;
+    background: rgb(56, 68, 230);
+    background: linear-gradient(0deg, rgb(59, 12, 230) 0%, rgb(37, 17, 219) 100%);
+    border-radius: 25px;
+    border: 2 px solid #555;
+    outline: 1px solid #222;
+
+}
+div.square {
+    width: 40px;
+    height: 50px;
+    margin: ;
+    padding: 0;
+    outline: 1px solid #000;
+    background: white;
+
+}
