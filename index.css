@@ -1,14 +1,21 @@
 div {
     width: 100%;
-    height: 25em;
+    text-align: center;
+    
+}
+header {
+    width: 100%;
+    text-align: center;
 }
 #colorBoard {
-    width: 59.5em;
-    height: 3em;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
     background-color: maroon;
     border-radius: 15px;
     align-content: flex-start;
     display: flex;
+    padding-top: .5em;
 }
 .color {
     height: 3em;
@@ -16,17 +23,19 @@ div {
     border-radius: 50px;
     
 }
+
 #canvas {
     width: 60em;
     height: 36em;
     margin: 0 auto;
     background-color: tan;
-    border-radius: 30px;
+    border-radius: 25px;
     border: 10px solid darkgreen;
     display: flex;
     flex-wrap: wrap;
     padding-top: 7px;
     padding-left: 7px;
+    padding-right: 7px;
     padding-bottom: 7px;
     align-content: flex-start;
 }
