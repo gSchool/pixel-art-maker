@@ -1,0 +1,30 @@
+body {
+    margin: 100px auto;
+    border: 10px solid silver;
+    margin-bottom: 10px;
+    height: 300px;
+    width: 500px;
+    border-radius: 15px;
+    border-bottom: 100px solid silver;
+
+}
+
+.container {
+height: 300px ;
+width: 498px;
+display: flex ;
+flex-wrap: wrap;
+background-color: silver;
+padding-bottom: 8px;
+padding-left: 3px;
+padding-top: 3px;
+}
+.pixels {
+background-color: white;
+border: 1px solid black;
+height: 10.2px;
+width: 10.1px;
+}
+
+
+
