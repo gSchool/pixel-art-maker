@@ -1,0 +1,49 @@
+#pixelBoard {
+  display: block;
+  position: relative;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#colorPicker {
+  display: inline-flex;
+  position: relative;
+  width: 125px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chooseButton {
+  display: inline;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chooseText {
+  display: inline;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#selector {
+  width: 320px;
+  height: 150px;
+  display: inline;
+  color: white;
+  font-size: large;
+  font-style: oblique;
+}
+
+.squarePixel {
+  background-color: white;
+}
+
+body {
+  background-color: grey;
+}
