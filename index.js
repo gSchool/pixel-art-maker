@@ -19,7 +19,8 @@ let draw = false;
 
 
 // Generate grid squares in container element
-for(let i = 0; i < 4437; i++) {
+let paintPixels = 4437
+for(let i = 0; i < paintPixels; i++) {
   let square = document.createElement('div');
   square.classList.add('square');
   screen.appendChild(square);
