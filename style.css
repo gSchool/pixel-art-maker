@@ -37,11 +37,11 @@ h1 {
     background: rgb(228,228,228);
     background: rgb(228,228,228);
     background: linear-gradient(0deg, rgb(237 237 237) 0%, rgb(255 255 255) 100%);
-    box-shadow: 0px 0px 20px 2px rgb(145 214 221);
-    -webkit-box-shadow: 0px 0px 20px 0px rgb(145 214 221);
-    border:1px solid #b5d6da;
+    box-shadow: 0px 0px 0px 2px rgb(145 214 221);
+    -webkit-box-shadow: 0px 0px 0px 0px rgb(145 214 221);
+    border:1px 1px 0px 1px solid #b5d6da;
     outline:1px solid #fff;
-    border-radius:10px;
+    border-radius:8px;
     justify-items: center;
     padding:10px;
 }
@@ -52,8 +52,9 @@ h1 {
     border:0;
     margin-left:25px;
     margin-top:2px;
+    margin-right:5px;
     cursor:pointer;
-    
+    outline: 1px solid black;
 }
 button:hover {
     box-shadow:inset 0px 0px 20px 2px #000;
@@ -90,14 +91,19 @@ button#currentColor {
     flex-wrap: wrap;
     height: 75px;
     width: 250px;
-    border-radius:0px;
+    border-radius:10px;
     border: 5px;
     border-style: inset;
     border-color: gray;
+    box-shadow: 0px 0px 20px 2px rgb(145 214 221);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     color:white;
     margin: 0 auto;
+}
+button#clear {
+    border: 0px 1px 1px 1px solid #b5d6da;
+    border-radius: 4px;
 }
 /* CANVAS */
 

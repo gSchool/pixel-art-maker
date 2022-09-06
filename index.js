@@ -12,7 +12,7 @@ const grid = [];
 //Adds a current color box to show the users color
 let currentColorBox = document.getElementById('currentColor')
 let assignedCurrentColor = currentColorBox.style.backgroundColor = 'black'
-let color = "black";
+let paintColor = "black";
 
 // Drawing defaults to false until changed with event listener
 let draw = false;
@@ -31,20 +31,19 @@ let colorButtons = document.querySelectorAll('#controls button')
 
 for (let i = 0; i < colorButtons.length; i++){
     colorButtons[i].addEventListener('click', function() {
-        color = colorButtons[i].id;
+        paintColor = colorButtons[i].id;
         currentColorBox.style.backgroundColor = colorButtons[i].id
       });
 }
-
 //Changes color to white to erase lines
 let eraserButton = document.getElementById('eraser');
 eraserButton.addEventListener('click', function (){
-  color = 'white'
+  paintColor = 'white'
   currentColorBox.style.backgroundColor = 'white'
 })
 //Allows user to reset cursor color to black and makes the default color black
 currentColorBox.addEventListener('click', function() {
-    color = 'black'
+    paintColor = 'black'
     currentColorBox.style.backgroundColor = 'black'
 })
 
@@ -55,11 +54,11 @@ for(let i = 0; i < squares.length; i++) {
   // If user mouses over square && mouse is pressed down
   squares[i].addEventListener("mouseover", function() {
     if(!draw) return;
-    squares[i].style.backgroundColor = color;
+    squares[i].style.backgroundColor = paintColor;
   });
   // If user clicks on a square
   squares[i].addEventListener("click", function() {
-    squares[i].style.backgroundColor = color;
+    squares[i].style.backgroundColor = paintColor;
   });
   clearButton.addEventListener('click', function(){
       squares[i].style.backgroundColor = 'white'
