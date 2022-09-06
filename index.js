@@ -9,6 +9,7 @@ const controls = document.getElementById('controls');
 
 // Empty array to hold grid squares
 const grid = [];
+//Adds a current color box to show the users color
 let currentColorBox = document.getElementById('currentColor')
 let assignedCurrentColor = currentColorBox.style.backgroundColor = 'black'
 let color = "black";
@@ -26,52 +27,22 @@ for(let i = 0; i < 1914; i++) {
 }
 
 // Color change button event listeners
+let colorButtons = document.querySelectorAll('#controls button')
 
-let redButton = document.getElementById('red');
-redButton.addEventListener('click', function() {
-  color = redButton.id;
-  currentColorBox.style.backgroundColor = redButton.id
-});
-let greenButton = document.getElementById('green');
-greenButton.addEventListener('click', function() {
-  color = greenButton.id;
-  currentColorBox.style.backgroundColor = greenButton.id
-});
-let blueButton = document.getElementById('blue');
-blueButton.addEventListener('click', function() {
-  color = blueButton.id;
-  currentColorBox.style.backgroundColor = blueButton.id
-});
-let purpleButton = document.getElementById('purple');
-purpleButton.addEventListener('click', function(){
-  color = purpleButton.id
-  currentColorBox.style.backgroundColor = purpleButton.id
-})
-let yellowButton = document.getElementById('yellow');
-yellowButton.addEventListener('click', function(){
-  color = yellowButton.id
-  currentColorBox.style.backgroundColor = yellowButton.id
-})
-let brownButton = document.getElementById('brown');
-brownButton.addEventListener('click', function() {
-  color = brownButton.id;
-  currentColorBox.style.backgroundColor = brownButton.id
-});
-let pinkButton = document.getElementById('pink');
-pinkButton.addEventListener('click', function(){
-  color = pinkButton.id
-  currentColorBox.style.backgroundColor = pinkButton.id
-})
-let greyButton = document.getElementById('grey');
-greyButton.addEventListener('click', function(){
-  color = greyButton.id
-  currentColorBox.style.backgroundColor = greyButton.id
-})
+for (let i = 0; i < colorButtons.length; i++){
+    colorButtons[i].addEventListener('click', function() {
+        color = colorButtons[i].id;
+        currentColorBox.style.backgroundColor = colorButtons[i].id
+      });
+}
+
+//Changes color to white to erase lines
 let eraserButton = document.getElementById('eraser');
 eraserButton.addEventListener('click', function (){
   color = 'white'
   currentColorBox.style.backgroundColor = 'white'
 })
+//Allows user to reset cursor color to black and makes the default color black
 currentColorBox.addEventListener('click', function() {
     color = 'black'
     currentColorBox.style.backgroundColor = 'black'
