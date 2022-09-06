@@ -1,11 +1,20 @@
+body {
+    background-image: url("Galaxy.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
 div {
-    width: 100%;
     text-align: center;
     
 }
 header {
     width: 100%;
     text-align: center;
+    color: beige;
+}
+h3 {
+    color: beige;
 }
 #colorBoard {
     width: 81em;
@@ -26,9 +35,6 @@ header {
     border-radius: 50px;
     
 }
-element {
-    --scale: (2, 1);
-  }
 
 #canvas {
     width: 80em;
