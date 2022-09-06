@@ -3,6 +3,7 @@ let clickedColor = 'white';
 let colorBoard = document.getElementById('colorBoard');
 let arrayOfColors = Object.values(colorBoard.getElementsByClassName('color'));
 let drag = false;
+let savedPainting = { };
 function makeDivs(){
     let pix = document.createElement('div');
     pix.className = 'pixel';
@@ -40,3 +41,35 @@ document.addEventListener('mouseover', (e) => {
         e.target.style.backgroundColor = clickedColor;
     }
 })
+
+function save(){
+var children = canvas.children;
+var colors = [];
+    for(let i = 0; i < children.length; i++){
+colors.push(children[i].style.backgroundColor);
+}
+console.log(colors.join(', '))
+localStorage.setItem('savedPainting', colors.join(','));
+}
+
+function clear() {
+    var children = canvas.children;
+    console.log(children);
+    for(let i = 0; i < children.length; i++){
+        console.log(children[i].style.backgroundColor);
+        children[i].style.backgroundColor = 'black';
+    }
+}
+
+function load(){
+    var children = canvas.children;
+    var colors = localStorage.getItem('savedPainting');
+    console.log(colors);
+    colors = colors.split(',');
+
+    for(let i = 0; i < children.length; i++){
+children[i].style.backgroundColor = colors[i];
+
+console.log('loaded');
+}
+}
