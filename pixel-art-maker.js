@@ -1,11 +1,51 @@
 
 
-//Add an event listener to each div so when clicked the background turns red.
-function addEventListeners() {
-    var divs = document.getElementsById('square');
-           divs.addEventListener('click', () => {
-            divs.style.background = 'red';
-       })};
+// //Add an event listener to each div so when clicked the background turns red.
+// function addEventListeners() {
+//     var divs = document.getElementsById('square');
+//            divs.addEventListener('click', () => {
+//             divs.style.background = 'red';
+//        })};
+
+      // pixelFunc()
+
+       // function pixelFunc() {
+              
+
+       //        for (let i = 0; i < 100; i++) {
+       //               let container = document.createElement('container')
+       //               let pixel = document.createElement('div');
+       //               container.appendChild(pixel);
+       //               pixel.classList.add("pixels");
+       //               console.log('hello world')
+
+       //        }
+
+       //        let pixels = document.getElementsByClassName('pixels');
+       //        console.log(pixels);
+       //        for(let j = 0; j < pixels.length; j++) { 
+       //               pixels[j].addEventListener("click"), function(e) {
+       //                      console.log("test")
+       //               }
+       //        }
+       // }
+       pixelFunc()
+       function pixelFunc() {
+              for (let i = 0; i < 529; i++) {
+                     let pixel = document.createElement('div');
+                       container.appendChild(pixel);
+                       pixel.classList.add("pixels");
+              }
+              let pixels = document.getElementsByClassName('pixels');
+              console.log(pixels);
+              for(let j = 0; j < pixels.length; j++) {
+                     pixels[j].addEventListener(("click"), () => {
+                            console.log("test");
+                     });
+              }
+       }
+
+       
 
 //  var redOn = false
 // let stopButton = document.getElementById('stopButton');
