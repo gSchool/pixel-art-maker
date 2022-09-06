@@ -52,6 +52,21 @@ yellowButton.addEventListener('click', function(){
   color = yellowButton.id
   currentColorBox.style.backgroundColor = yellowButton.id
 })
+let brownButton = document.getElementById('brown');
+brownButton.addEventListener('click', function() {
+  color = brownButton.id;
+  currentColorBox.style.backgroundColor = brownButton.id
+});
+let pinkButton = document.getElementById('pink');
+pinkButton.addEventListener('click', function(){
+  color = pinkButton.id
+  currentColorBox.style.backgroundColor = pinkButton.id
+})
+let greyButton = document.getElementById('grey');
+greyButton.addEventListener('click', function(){
+  color = greyButton.id
+  currentColorBox.style.backgroundColor = greyButton.id
+})
 let eraserButton = document.getElementById('eraser');
 eraserButton.addEventListener('click', function (){
   color = 'white'
