@@ -13,10 +13,8 @@ for (var i = 0; i < 5880; i++){
     canvas.append(makePix);
 }
 canvas.addEventListener('click', (e) => {
-    if (e.target.className === 'color'){
-        
+    if (e.target.className === 'color'){ 
         clickedColor = e.target.style.backgroundColor;
-
         arrayOfColors.forEach((i)=>{
             if (clickedColor === i.style.backgroundColor){
                 i.style.border = '3px solid white';
