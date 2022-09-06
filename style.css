@@ -1,36 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 html {
-    width:100%;
     height:100%;
+    background: rgb(203,250,255);
+    background: linear-gradient(0deg, rgba(203,250,255,1) 0%, rgba(239,253,255,1) 75%);
+    box-shadow: inset 3px 2px 50px -1px rgba(109, 173, 186, 1);
+    -webkit-box-shadow: inset 3px 2px 50px -1px rgba(109, 173, 186, 1);
 }
 body {
-    width:100%;
-    height:100%;
-    margin:0;
+    display:grid;
+    justify-content: center;
 }
-#background-container {
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
+
+h1 {
+    text-align:center;
+    font-family:'Dancing Script', cursive;;
+    color:#111;
+    font-size:45px;
 }
 #container {
-    display:flex;
-    width:850px;
-    height:550px;
-    margin-top:175px;
-    padding:20px;
-    background: rgb(62,62,62);
-    background: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(0,0,0,1) 100%);
-    border-radius:25px;
-    border:2px solid #555;
-    outline:1px solid #222;
+    width:800px;
+    height:500px;
+    border-radius:10px;
+    margin-top:20px;
+    background: #777;
+    box-shadow: inset 3px 2px 50px -1px #000;
+    -webkit-box-shadow: inset 3px 2px 50px -1px #000;
 }
-div.square {
-    width:10px;
-    height:10px;
-    margin:0;
-    padding:0;
-    outline:1px solid #000;
-    background:white;
+#controls {
+    width:780px;
+    height:50px;
+    margin-top:15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    background: rgb(228,228,228);
+    background: rgb(228,228,228);
+    background: linear-gradient(0deg, rgb(237 237 237) 0%, rgb(255 255 255) 100%);
+    box-shadow: 0px 0px 20px 2px rgb(145 214 221);
+    -webkit-box-shadow: 0px 0px 20px 0px rgb(145 214 221);
+    border:1px solid #b5d6da;
+    outline:1px solid #fff;
+    border-radius:10px;
+    justify-items: center;
+    padding:10px;
+}
+#controls button {
+    width:50px;
+    height:100%;
+    border-radius:50px;
+    border:0;
+    margin-left:25px;
+    margin-top:2px;
+    cursor:pointer;
+}
+#controls button:hover {
+    box-shadow:inset 0px 0px 20px 2px #000;
+    -webkit-box-shadow:inset 0px 0px 20px 0px #000;
+}
+button#red {
+    background-color:red;
+}
+button#green {
+    background-color:green;
+}
+button#blue {
+    background-color:blue;
+}
+
+/* CANVAS */
+
+div#screen {
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    width:700px;
+    height:400px;
+    margin:50px 50px 0 auto;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.square {
+    width:12px;
+    height:12px;
+    background-color:white;
+    outline:1px solid #f3f3f3;
 }
