@@ -1,3 +1,4 @@
+// defines properties of each pixel / creates pixel when invoked
 function makePixel() {
   let body = document.getElementsByTagName('body');
   let newPixel = document.createElement('div');
@@ -8,18 +9,19 @@ function makePixel() {
   newPixel.style.border = '1px solid lightGrey';
   newPixel.className = 'squarePixel'
   pixelBoard.append(newPixel);
-
+  // restores pixel properties back to grid default
   newPixel.addEventListener('dblclick', () => {
     newPixel.style.backgroundColor = 'white';
     newPixel.style.borderColor = 'lightGrey';
   })
 
 }
-
+// creates grid
 for (i = 0; i < 1125; i++) {
   makePixel();
 }
 
+// allows use of paintbrush feature
 let squarePixel = document.getElementsByClassName('squarePixel')
 for (let i = 0; i < squarePixel.length; i++) {
   squarePixel[i].addEventListener('mousedown', (e) => {
@@ -34,31 +36,29 @@ for (let i = 0; i < squarePixel.length; i++) {
   })
 }
 
+// saves color choice to variable for use in paintbrush
 let colorChoice;
 
 chooseButton.addEventListener('click', () => {
   colorChoice = colorPicker.value;
 })
 
-// function makePallete(color) {
-//   let colorOption = document.createElement('div')
-//   colorOption.style.width = '6%'
-//   colorOption.style.paddingBottom = '6%'
-//   colorOption.style.border = '2px solid black'
-//   colorOption.style.backgroundColor = color;
-//   colorOption.style.cssFloat = 'right'
-//   colorOption.className = 'color-choice'
-//   colors.append(colorOption);
 
-//   colorOption.addEventListener('click', () => {
 
-//   })
-// }
+// when save is clicked, pushes squarePixel values to array
+// when load is clicked, opens saved picture inside of grid (reapplies properties of each pixel)
 
-// makePallete('blue');
-// makePallete('orange');
-// makePallete('green');
-// makePallete('purple');
-// makePallete('red');
-// makePallete('pink');
+// save new array assigned to variable of input string (ex. tom) - creates array of squarePixel values
 
+// load tom - gets values of tom array - replaces all current values on the grid to the values of tom array
+
+// stringify to save, parse to load
+
+for (let i = 0; i < squarePixel.length; i++) {
+  saveButton.addEventListener('click', () => {
+    console.log(squarePixel[i].style.backgroundColor)
+  })
+  loadButton.addEventListener('click', () => {
+
+  })
+}
