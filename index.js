@@ -2,7 +2,7 @@ let canvas = document.getElementById('canvas');
 let clickedColor = 'white';
 let colorBoard = document.getElementById('colorBoard');
 let arrayOfColors = Object.values(colorBoard.getElementsByClassName('color'));
-
+let drag = false;
 function makeDivs(){
     let pix = document.createElement('div');
     pix.className = 'pixel';
@@ -23,6 +23,20 @@ document.addEventListener('click', (e) => {
             }
         })
     } else if (e.target.className === "pixel") {
+        e.target.style.backgroundColor = clickedColor;
+    }
+})
+canvas.addEventListener('mousedown', (e) => {
+    drag = true;
+})
+canvas.addEventListener('mouseup', (e) => {
+    drag = false;
+})
+document.addEventListener('mouseover', (e) => {
+    if (e.target.parentNode !== canvas){
+        drag = false;
+    }
+    if (drag && e.target.className === 'pixel'){
         e.target.style.backgroundColor = clickedColor;
     }
 })
