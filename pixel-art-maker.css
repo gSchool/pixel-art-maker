@@ -6,14 +6,17 @@ body {
     width: 100%;
     height: 100%;
     margin:0;
+    background-color: cadetblue;
+    font-family: "Segoe UI", Tahoma, Helvetica, sans-serif;
+    
 }
 
 
 
 .pixels { 
     background: white;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     border: 1px solid black;
     float: left; 
 
@@ -24,6 +27,9 @@ body {
     background-color: grey;
     width: 600px;
     height: 600px;
-    border: 10px solid black;
+    border: 25px solid transparent;
+    border-image-slice: 27 27 27 27;
+    border-image-width: 25px;
+    border-image-source: url('https://aduvan.ru/wp-content/uploads/photo-gallery/wood-texturs/wood-texture_(8).jpg');
 
 }
