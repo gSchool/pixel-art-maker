@@ -52,9 +52,9 @@ console.log(colors.join(', '))
 localStorage.setItem('savedPainting', colors.join(','));
 }
 
-function clear() {
+function clearPage(){
     var children = canvas.children;
-    console.log(children);
+    console.log('llll');
     for(let i = 0; i < children.length; i++){
         console.log(children[i].style.backgroundColor);
         children[i].style.backgroundColor = 'black';
