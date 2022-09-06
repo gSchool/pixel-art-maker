@@ -8,14 +8,7 @@ body {
     margin:0;
 }
 
-div.pixel{
-    width: 40px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    outline: 1px solid #000;
-    background: white; 
-}
+
 
 .pixels { 
     background: white;
@@ -34,4 +27,3 @@ div.pixel{
     border: 10px solid black;
 
 }
-
