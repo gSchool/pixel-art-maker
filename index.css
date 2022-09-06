@@ -8,42 +8,46 @@ header {
     text-align: center;
 }
 #colorBoard {
-    width: 100%;
-    height: 10%;
+    width: 81em;
+    justify-content: center;
+    height: 4em;
     margin: 0 auto;
     background-color: maroon;
     border-radius: 15px;
     align-content: flex-start;
     display: flex;
-    padding-top: .5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
 }
 .color {
-    height: 3em;
-    width: 3em;
+    height: 3.5em;
+    width: 3.5em;
+    margin-right: .5em;
     border-radius: 50px;
     
 }
+element {
+    --scale: (2, 1);
+  }
 
 #canvas {
-    width: 60em;
-    height: 36em;
+    width: 80em;
+    height: 40em;
     margin: 0 auto;
     background-color: tan;
     border-radius: 25px;
     border: 10px solid darkgreen;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    align-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(128, 0fr);
+    justify-items: center;
+    padding-top: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
 }
 .pixel {
-    width : 0.5em;
-    height : 0.5em;
-    border : .5px dotted #4713a3;
+    width : .5em;
+    height : .5em;
+    border : 1px dotted #4713a3;
     background-color : black;
-    display : flex ;
-    flex-wrap : wrap;
 }

@@ -8,11 +8,11 @@ function makeDivs(){
     pix.className = 'pixel';
     return pix;
 }
-for (var i = 0; i < 5880; i++){
+for (var i = 0; i < 8192; i++){
     var makePix = makeDivs();
     canvas.append(makePix);
 }
-canvas.addEventListener('click', (e) => {
+document.addEventListener('click', (e) => {
     if (e.target.className === 'color'){ 
         clickedColor = e.target.style.backgroundColor;
         arrayOfColors.forEach((i)=>{
