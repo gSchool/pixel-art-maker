@@ -113,8 +113,8 @@ div#screen {
     -webkit-user-select: none;
 }
 .square {
-    width:12px;
-    height:12px;
+    width:8px;
+    height:8px;
     background-color:white;
     outline:1px solid #f3f3f3;
 }
