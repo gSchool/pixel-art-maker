@@ -68,8 +68,12 @@ function load(){
     colors = colors.split(',');
 
     for(let i = 0; i < children.length; i++){
-children[i].style.backgroundColor = colors[i];
+        if (colors[i].length < 1){
 
+        }else {
+        children[i].style.backgroundColor = colors[i];
+        }
 console.log('loaded');
 }
+localStorage.removeItem('savedPainting');
 }
