@@ -39,3 +39,11 @@ header {
     padding-bottom: 7px;
     align-content: flex-start;
 }
+.pixel {
+    width : 0.5em;
+    height : 0.5em;
+    border : .5px dotted #4713a3;
+    background-color : black;
+    display : flex ;
+    flex-wrap : wrap;
+}

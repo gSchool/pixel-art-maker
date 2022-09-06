@@ -6,12 +6,12 @@ let arrayOfColors = Object.values(colorBoard.getElementsByClassName('color'));
 function makeDivs(){
     let pix = document.createElement('div');
     pix.className = 'pixel';
-    pix.style.width = '0.5em';
-    pix.style.height = '0.5em';
-    pix.style.border = '.5px dotted #4713a3';
-    pix.style.backgroundColor = 'black';
-    pix.style.display = 'flex' ;
-    pix.style.flexWrap = 'wrap';
+    // pix.style.width = '0.5em';
+    // pix.style.height = '0.5em';
+    // pix.style.border = '.5px dotted #4713a3';
+    // pix.style.backgroundColor = 'black';
+    // pix.style.display = 'flex' ;
+    // pix.style.flexWrap = 'wrap';
     return pix;
 }
 for (var i = 0; i < 5880; i++){
@@ -33,4 +33,4 @@ canvas.addEventListener('click', (e) => {
     } else if (e.target.className === "pixel") {
         e.target.style.backgroundColor = clickedColor;
     }
-}) 
+})
