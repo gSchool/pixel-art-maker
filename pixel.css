@@ -1,0 +1,36 @@
+#box {
+    margin: auto;
+    background-color: gray;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+
+}
+
+.pixels {
+    background-color: white;
+    width: 23px;
+    height: 23px;
+    border: 1px solid grey;
+    float: left;
+
+}
+
+
+
+#colorPalette {
+    margin: auto;
+    border: 3px solid black;
+    padding: 20px;
+    width: 100vw;
+    height: 5vw;
+
+    
+    
+}
+
+
+
+
+
+
