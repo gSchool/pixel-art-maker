@@ -11,7 +11,7 @@ let box = document.getElementById('box')
 var colorPalette = document.getElementById('colorPalette')
 var palette = colorPalette.childNodes
 
-
+ 
 var item1 = palette.item(1)
 var colorPicker = document.getElementById('colorPicker')
 colorPicker.addEventListener("input", watchColorPicker);
