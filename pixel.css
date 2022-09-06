@@ -7,6 +7,7 @@ body {
     border-radius: 15px;
     border-bottom: 100px solid silver;
 
+
 }
 
 .container {
@@ -27,4 +28,16 @@ width: 10.1px;
 }
 
 
+
+.paintAll {
+margin-left: 150px;
+}
+
+.eraseMe {
+    margin-left: 130px
+}
+
+.colorMe {
+    margin-left: 7px
+}
 
