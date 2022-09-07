@@ -1,0 +1,8 @@
+ .rows {
+    border-style: 5px solid black;
+    height: 50px;
+    width: 50px;
+    display: inline-block; 
+    outline: 5px solid black;
+    outline-offset: -5px;
+ }
