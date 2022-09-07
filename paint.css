@@ -1,0 +1,21 @@
+
+
+#box {
+    margin: auto; 
+    background-color: gray;
+    width: 500px;
+    height: 500px; 
+    border: 1px solid black; 
+}
+
+.squares {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+    float: left
+}
+
+.class {
+    background-color: red;
+}
