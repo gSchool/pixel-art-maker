@@ -1,0 +1,99 @@
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.gray{
+    background-color: gray;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.brown{
+    background-color: brown;
+}
+
+.black{
+    background-color: black ;
+}
+
+
+#canvas {
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    border-color: purple;
+    border-width: 20px;
+    border-style: solid;
+}
+
+.tile {
+    float: 'left';
+    height: 100px;
+    width: 100px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#palette{
+    background-color: #ababab;
+    border-radius: 40px;
+    margin: 30px auto;
+    height: 72px;
+    padding: 20px;
+    width: 800px;
+    bottom: 0;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.color {
+    border-radius: 50%;
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 8px;
+}
+
+.brushColor{
+    float: right;
+    height: 20px;
+    width: 120px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.blackText{
+    color: black;
+}
+
+.whiteText{
+    color: white;
+}
