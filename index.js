@@ -4,14 +4,18 @@ let colorBoard = document.getElementById('colorBoard');
 let arrayOfColors = Object.values(colorBoard.getElementsByClassName('color'));
 let drag = false;
 let savedPainting = { };
-function makeDivs(){
+
+ function makeDivs(){
     let pix = document.createElement('div');
     pix.className = 'pixel';
     return pix;
 }
 for (var i = 0; i < 8192; i++){
-    var makePix = makeDivs();
-    canvas.append(makePix);
+    
+    setTimeout(function () {
+        var makePix = makeDivs();
+        canvas.append(makePix);
+    }, 0);
 }
 document.addEventListener('click', (e) => {
     if (e.target.className === 'color'){ 
@@ -46,7 +50,7 @@ function save(){
 var children = canvas.children;
 var colors = [];
     for(let i = 0; i < children.length; i++){
-colors.push(children[i].style.backgroundColor);
+            colors.push(children[i].style.backgroundColor);
 }
 console.log(colors.join(', '))
 localStorage.setItem('savedPainting', colors.join(','));
@@ -56,8 +60,10 @@ function clearPage(){
     var children = canvas.children;
     console.log('llll');
     for(let i = 0; i < children.length; i++){
-        console.log(children[i].style.backgroundColor);
-        children[i].style.backgroundColor = 'black';
+        setTimeout(function () {
+            console.log(children[i].style.backgroundColor);
+            children[i].style.backgroundColor = 'black';
+        });
     }
 }
 
@@ -71,7 +77,10 @@ function load(){
         if (colors[i].length < 1){
 
         }else {
-        children[i].style.backgroundColor = colors[i];
+
+            setTimeout(function () {
+                children[i].style.backgroundColor = colors[i];
+            });
         }
 console.log('loaded');
 }
